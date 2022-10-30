@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    width: 50%;
+    text-align: center;
+    color: #F3FAFF;
+}
+
+.sign-in-container
+{
+    width: 50%;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40vh;
+    background: #D8F3FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+button
+{
+    background: #0097FF;
+    border-radius: 50px;
+    width: 50%;
+    border: none;
+    color: #F3FAFF;
+    padding: 1em;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+input
+{
+    background-color: transparent;
+    border: 2px solid #7095B2;
+    border-radius: 50px;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+    color: red;    
+}
+
+h1
+{
+    font-size: 3em;
+}
+
+h3
+{
+    font-size: 1.5em;
+}
+
+@media only screen and (max-device-width: 420px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    
+    *
+    {
+        font-size: 36px;
+    }
+    
+    .logo, .sign-in-container
+    {
+        width: 100%;
+    }
+    
+    h1
+    {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    h3
+    {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    form
+    {
+        margin:auto;
+    }
+
+    img
+    {
+        height: 10em;
+        margin: 2em;
+        margin-bottom: 0em;
+        margin-top: 0em;
+    }
+}
