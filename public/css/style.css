@@ -1,6 +1,8 @@
 body
 {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #F3FAFF;
 }
 
 .container
@@ -17,10 +19,40 @@ body
 
 .logo
 {
+    height: 14em;
+    width: 14em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo_and_title
+{
     width: 50%;
     text-align: center;
-    color: #F3FAFF;
+    margin: 3vw;
 }
+
+.title
+{
+    color: #F3FAFF;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 5em;
+    font-weight: 500;
+    margin: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+h3
+{
+    font-size: 2.27em;
+    font-weight: 400;
+    margin: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 
 .sign-in-container
 {
@@ -40,38 +72,39 @@ form
     border-radius: 50px;
 }
 
+
 button
 {
-    background: #0097FF;
-    border-radius: 50px;
     width: 50%;
-    border: none;
+    background: #0097FF;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50px;
     color: #F3FAFF;
     padding: 1em;
+    line-height: 2em;
     margin: 1em;
-    line-height: 2.5em;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: 400;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 input
 {
+    width: 50%;
     background-color: transparent;
     border: 2px solid #7095B2;
     border-radius: 50px;
     padding: 1em;
+    padding-left: 2em;
+    line-height: 2em;
     margin: 1em;
-    width: 50%;
-    color: red;    
+    font-weight: 400;
+    font-size: 1.1em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-h1
-{
-    font-size: 3em;
-}
-
-h3
-{
-    font-size: 1.5em;
-}
 
 @media only screen and (max-device-width: 420px)
 {
