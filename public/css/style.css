@@ -299,3 +299,9 @@ form.sign-in, form.register{
 {
     color:#AD3E42;
 }
+
+.row-of-cars > a
+{
+    text-decoration: none;
+    color: #F3FAFF;
+}
