@@ -87,14 +87,13 @@ nav > ul > li a{
     display: inline-block;
     color: #F3FAFF;
     text-align: center;
-    padding: 1.0vw;
-    padding: 0.4em;
+    padding: 0.5em;
     margin: 0.2em;
     text-decoration: none;
     border-top: 0.16em solid #F3FAFF;
     border-bottom: 0.16em solid #F3FAFF;
     font-weight: 500;
-    text-shadow: 0 0.2vh 0.2vh rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.25);
     
 }
 
@@ -177,13 +176,13 @@ form.sign-in, form.register{
     background: #0097FF;
     border: none;
     box-sizing: border-box;
-    border-radius: 5vh;
-    padding: 1vh;
-    margin: 2vh;
-    font-size: 2vh;
-    line-height: 4vh;
+    border-radius: 50px;
+    padding: 2%;
+    margin: 4%;
+    font-size: 1.56em;
+    line-height: 200%;
     font-weight: 600;
-    filter: drop-shadow(04px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
     color:#F3FAFF
 }
 
@@ -191,15 +190,15 @@ form.sign-in, form.register{
 #email, #pass{
     width: 50%;
     background-color: transparent;
-    border: 0.25vh solid #7095B2;
-    border-radius: 5vh;
+    border: 2px solid #7095B2;
+    border-radius: 50px;
     padding: 1vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-    line-height: 4vh;
-    margin: 2vh;
+    padding-left: 6%;
+    padding-right: 6%;
+    line-height: 1em;
+    margin: 4%;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 1.56em;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -224,72 +223,68 @@ form.sign-in, form.register{
 /*for our-cars*/
 .search-bar > form > input{
     box-sizing: border-box;
-    height: 8vh;
+    height: 2.5em;
     display: flex;
     justify-content: center;
-    margin: 2vh;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    width: 30vw;
-    border: 0.25vh solid #7095B2;
+    margin: 0.7em;
+    margin-top: 0;
+    border: 2px solid #7095B2;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
     background: #D8F3FF;
-    border-radius: 5vh;
-    font-size: 3vh;
-    padding: 1vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5em;
+    line-height: 1.9em;
     font-weight: 400;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*for our cars*/
 .row-of-cars{
-    margin-top: 2vh;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2vh;
     display: flex;
 }
 
 /*for our cars*/
 .car{
-    margin-left: 2vh;
-    margin-right: 2vh;
+   margin: 1em;
 }
 
 /*for our cars*/
 .car > img{
-    width: 40vh;
-    height: 23.2vh;
-    border-width: 0.5vh 0.5vh 0 0.5vh;
-    border-style: solid;
-    border-color: #2D3E50;
-    border-radius: 6.25vh 6.25vh 0 0;
+    width: 27em;
+    border: 4px solid #2D3E50;
+    border-radius: 25px 25px 0px 0px;
 }
 
 /*for our cars*/
 .background-of-car{
-    width: 40vh;
-    height: 23.5vh;
-    background-color: #00A396;
-    border-width: 0 0.5vh 0.5vh 0.5vh;
+    width: 27em;
+    height: 15em;
+    background: #00A396;
+    border-width: 0px 4px 4px 4px;
     border-style: solid;
     border-color: #2D3E50;
-    border-radius: 0 0 6.25vh 6.25vh;
+    border-radius: 0px 0px 25px 25px;
 }
 
 /*for our cars*/
 .background-of-car > p{
     margin: 0;
     text-align: center;
-    line-height: 7.83vh;
-    font-size: 2.6vh;
+    line-height: 3em;
+    font-size: 1.5em;
     font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*for our cars*/
 .background-of-car > img{
-    height: 7.83vh;
+    height: 5em;
     display: block;
     margin: auto;
 }
