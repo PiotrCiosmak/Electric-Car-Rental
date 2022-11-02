@@ -45,7 +45,7 @@ body{
 
 /*for all*/
 h2{
-    font-size: 300%;
+    font-size: 3em;
     font-weight: 500;
     margin: 0;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -105,7 +105,7 @@ nav > ul> li a:hover{
 
 /*for all*/
 .title{
-    margin: 1%;
+    margin-bottom: 1.5em;
     color: #F3FAFF;
 }
 
@@ -136,7 +136,7 @@ nav > ul> li a:hover{
 
 /*for sign_in and register*/
 h1{
-    font-size: 450%;
+    font-size: 4.5em;
     font-weight: 500;
     margin: 0;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -145,7 +145,7 @@ h1{
 
 /*for sign_in and register*/
 h3{
-    font-size: 200%;
+    font-size: 2em;
     font-weight: 400;
     margin: 0;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -476,4 +476,57 @@ table, .label, .row, .table > tr > td{
     margin: 1em;
     border: 3px solid #2D3E50;
     border-radius: 25px;
+}
+
+/*for faq*/
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
+}
+
+/*for faq*/
+.faq-main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+/*for faq*/
+.question{
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    color: #F3FAFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background: #00A396;
+    border-radius: 25px 25px 0px 0px;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+/*for faq*/
+.answer{
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #00A396;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background: #F3FAFF;
+    border-radius: 0px 0px 25px 25px;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/*for faq*/
+.answer > p, .question > p{
+    margin: 0;
 }
