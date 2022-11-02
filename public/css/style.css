@@ -74,7 +74,7 @@ nav > ul{
     overflow: hidden;
     justify-content: center;
     padding: 0;
-    font-size: 230%;
+    margin: 2em;
 }
 
 /*for all*/
@@ -89,6 +89,7 @@ nav > ul > li a{
     text-align: center;
     padding: 0.5em;
     margin: 0.2em;
+    font-size: 2.3em;
     text-decoration: none;
     border-top: 0.16em solid #F3FAFF;
     border-bottom: 0.16em solid #F3FAFF;
@@ -105,7 +106,7 @@ nav > ul> li a:hover{
 
 /*for all*/
 .title{
-    margin-bottom: 1.5em;
+    margin-bottom: 2.3em;
     color: #F3FAFF;
 }
 
@@ -442,9 +443,10 @@ table, .label, .row, .table > tr > td{
 /*for contact*/
 .contact-main{
     display: flex;
-    width: 100%;
+    width: 70%;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 /*for contact*/
@@ -529,4 +531,93 @@ table, .label, .row, .table > tr > td{
 /*for faq*/
 .answer > p, .question > p{
     margin: 0;
+}
+
+/*DONE: f40*/
+.f40-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
+}
+
+/*DONE: f40*/
+.f40-main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+/*ASK width, scale: f40*/
+#f40-name-and-price{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #00A396;
+    border-width: 4px 4px 0px 4px;
+    border-style: solid;
+    border-color: #2D3E50;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/*ASK width, scale: f40*/
+#f40-name, #f40-price{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    font-weight: 400;
+    font-size: 2.25em;
+    line-height: 2.75em;
+    margin: 0;
+}
+
+/*DONE: f40*/
+#f40-photo{
+    width: 100%;
+    border: 4px solid #2D3E50;
+    border-radius: 0px 0px 25px 25px;
+}
+
+/*DONE: f40*/
+#f40-all-description-box{
+    background: #00A396;
+    border: 4px solid #2D3E50;
+    border-radius: 25px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*DONE: f40*/
+.f40-description-box{
+    background: #2D3E50;
+    border-radius: 25px;
+    margin: 2em;
+}
+
+/*DONE: f40*/
+.f40-text{
+    padding: 2em;
+}
+
+/*DONE: f40*/
+.f40-description-title{
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*DONE: f40*/
+.f40-description-contect, .f40-description-subtitle{
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
