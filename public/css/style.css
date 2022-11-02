@@ -1,41 +1,4 @@
-@media only screen and (max-device-width: 420px)
-{
-    .container
-    {
-        flex-direction: column;
-    }
-    
-    *
-    {
-        font-size: 36px;
-    }
-    
-    .logo, .sign-in-container
-    {
-        width: 100%;
-    }
-    
-    h1, h3
-    {
-        margin-left: 1vh;
-        margin-right: 1vh;
-    }
-
-    form
-    {
-        margin:auto;
-    }
-
-    img
-    {
-        height: 10em;
-        margin: 2em;
-        margin-bottom: 0em;
-        margin-top: 0em;
-    }
-}
-
-/*for all*/
+/*DONE: all*/
 body{
     margin: 0;
     padding: 0;
@@ -43,7 +6,7 @@ body{
     color: #F3FAFF;
 }
 
-/*for all*/
+/*DONE: all*/
 h2{
     font-size: 3em;
     font-weight: 500;
@@ -52,7 +15,7 @@ h2{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*for all*/
+/*DONE: all*/
 nav{
     width: 100%;
     background: linear-gradient(180deg, #008A5D 0%, rgba(55, 193, 144, 0) 100%, rgba(0, 138, 93, 0) 100%);
@@ -60,15 +23,15 @@ nav{
     justify-content: center;
 }
 
-/*for all*/
+/*DONE: all*/
 nav > img{
     height: 6em;
-    margin-top: 2.2em;
-    padding-right: 1.1em;
+    margin: 2.38em;
+    margin-right: 0;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*for all*/
+/*DONE: all*/
 nav > ul{
     list-style-type: none;
     overflow: hidden;
@@ -77,12 +40,12 @@ nav > ul{
     margin: 2em;
 }
 
-/*for all*/
+/*DONE: all*/
 nav > ul > li{
     float: left;
 }
 
-/*for all*/
+/*DONE: all*/
 nav > ul > li a{
     display: inline-block;
     color: #F3FAFF;
@@ -98,13 +61,13 @@ nav > ul > li a{
     
 }
 
-/*for all*/
+/*DONE: all*/
 nav > ul> li a:hover{
     color:#AD3E42;
     border-color: #AD3E42;
 }
 
-/*for all*/
+/*DONE: all*/
 .title{
     margin-bottom: 2.3em;
     color: #F3FAFF;
