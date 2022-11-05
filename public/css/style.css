@@ -174,6 +174,7 @@ form.sign-in, form.register{
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/*DONE: sign_in and register*/
 #click-to-switch{
     background: #0097FF;
     border: none;
@@ -190,6 +191,56 @@ form.sign-in, form.register{
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
     color:#F3FAFF
 }
+/*DONE: input-data*/
+.data-input-container{
+    width: 50%;   
+}
+
+/*DONE: input-data*/
+form.data-input{
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background: #D8F3FF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 28px;
+}
+
+/*DONE: input-data*/
+.data-input > input{
+    display: flex;
+    font-size: 1.2em;
+    padding: 0.75em;
+    margin: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background: #D8F3FF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 28px;
+    border: 2px solid #2D3E50;   
+}
+
+/*DONE: input-data*/
+#submit-data-button{
+    background: #0097FF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0.5em;
+    font-size: 1.56em;
+    font-weight: 600;
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
+    color:#F3FAFF
+}
+
 
 /*DONE: our-cars*/
 .our-cars-container{
