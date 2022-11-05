@@ -174,6 +174,23 @@ form.sign-in, form.register{
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+#click-to-switch{
+    background: #0097FF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 4%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    line-height: 100%;
+    font-weight: 400;
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
+    color:#F3FAFF
+}
+
 /*DONE: our-cars*/
 .our-cars-container{
     display: flex;
