@@ -661,24 +661,29 @@ table{
     text-align: center;
 }
 
+/*DONE: porsche-tycan*/
 table tr th:nth-child(1) {
     border-radius: 25px 0 0 0;
     background: #AD3E42;
 }
 
+/*DONE: porsche-tycan*/
 table tr th:nth-child(2) {
     border-radius: 0 25px 0 0;
     background: #AD3E42;
 }
 
+/*DONE: porsche-tycan*/
 table tr:nth-child(even){
     background: #00A396;
 }
 
+/*DONE: porsche-tycan*/
 #first-column-last-row {
     border-radius: 0 0 0 25px;
 }
 
+/*DONE: porsche-tycan*/
 #second-column-last-row{
     border-radius: 0 0 25px 0;
 }
