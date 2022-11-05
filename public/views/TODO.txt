@@ -1,7 +1,6 @@
 TODO:
 główna zrobić
 dodać pole wpisz liczbe dni i przycisk rezerwuj
-dodać stronę wyświtlana po rejestarcji z formularzem na podanie danych
 dodaćEKRAN ZAREZERWOWANO Z INFOR NA KOGO I NA ILE DNI
 
 
