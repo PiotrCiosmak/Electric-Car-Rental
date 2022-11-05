@@ -177,31 +177,26 @@ form.sign-in, form.register{
 
 /*for our-cars*/
 .our-cars-main{
-    height: 236vh;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 /*for our-cars*/
-.search-bar > form > input{
+#input-search-bar {
     box-sizing: border-box;
     height: 2.5em;
-    display: flex;
-    justify-content: center;
-    margin: 0.7em;
-    margin-top: 0;
+    margin-bottom: 1em;
     border: 2px solid #7095B2;
     border-radius: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    width: 100%;
     background: #D8F3FF;
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
     font-size: 1.5em;
-    line-height: 1.9em;
     font-weight: 400;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -227,8 +222,6 @@ form.sign-in, form.register{
 
 /*for our cars*/
 .background-of-car{
-    width: 27em;
-    height: 15em;
     background: #00A396;
     border-width: 0px 4px 4px 4px;
     border-style: solid;
@@ -253,7 +246,7 @@ form.sign-in, form.register{
     margin: auto;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .car:hover{
     color:#AD3E42;
 }
