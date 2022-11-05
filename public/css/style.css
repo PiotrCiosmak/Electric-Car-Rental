@@ -404,8 +404,8 @@ form.sign-in, form.register{
     margin-bottom: 5em;
 }
 
-/*ASK width, scale: f40*/
-#f40-name-and-price{
+/*DONE: f40 and one-car*/
+#car-name-and-price{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -416,21 +416,33 @@ form.sign-in, form.register{
     border-radius: 25px 25px 0px 0px;
 }
 
-/*ASK width, scale: f40*/
-#f40-name, #f40-price{
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    font-weight: 400;
+/*DONE: f40 and one-car*/
+#car-name{
+    padding-left: 2em;
+    width: 70%;
+    float: left;
     font-size: 2.25em;
-    line-height: 2.75em;
+    line-height: 2.25em;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     margin: 0;
 }
 
-/*DONE: f40*/
-#f40-photo{
+/*DONE: f40 and one-car*/
+#car-price{
+    width: 30%;
+    float: right;
+    text-align: right;
+    font-size: 2.25em;
+    line-height: 2.25em;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding-right: 2em;
+}
+
+/*DONE: f40 and one-car*/
+#car-photo{
     width: 100%;
     border: 4px solid #2D3E50;
     border-radius: 0px 0px 25px 25px;
@@ -544,8 +556,8 @@ form.sign-in, form.register{
     line-height: 1.1em;
 }
 
-/*DONE: porsche-tycan*/
-.porsche-tycan-container{
+/*DONE: one-car*/
+.one-car-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,8 +565,8 @@ form.sign-in, form.register{
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
-/*DONE: porsche-tycan*/
-.porsche-tycan-main{
+/*DONE: one-car*/
+.one-car-main{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -562,52 +574,7 @@ form.sign-in, form.register{
     margin-bottom: 5em;
 }
 
-/*DONE: porsche-tycan*/
-.box-with-photo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #00A396;
-    border: 4px solid #2D3E50;
-    border-radius: 25px;
-    margin:0;
-}
-
-/*DONE: porsche-tycan*/
-.box-with-photo .info{
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-/*DONE: porsche-tycan*/
-#car-name{
-    width: 70%;
-    float: left;
-    font-size: 2.25em;
-    line-height: 2.25em;
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    margin: 0;
-}
-
-/*DONE: porsche-tycan*/
-#car-price{
-    width: 30%;
-    float: right;
-    text-align: right;
-    font-size: 2.25em;
-    line-height: 2.25em;
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    margin: 0;
-}
-
-/*DONE: porsche-tycan*/
-.box-with-photo > img{
-    border-radius: 0px 0px 25px 25px;
-}
-
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 .description{
     display: flex;
     flex-direction: row;
@@ -618,20 +585,14 @@ form.sign-in, form.register{
     border-radius: 25px;
 }
 
-/*DONE: porsche-tycan*/
-.description .info{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 .box{
     background: #2D3E50;
     border-radius: 25px;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 .box > p{
     margin:0;
     padding: 2em;
@@ -642,42 +603,41 @@ form.sign-in, form.register{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #first-box{
     height: 50%;
     margin:2em 1em 1em 2em;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #first-box > p{
     height: 75%;
     display: flex;
     align-items: center;
 }
 
-/*DONE: porsche-tycan*/
-#secound-box
-{
+/*DONE: one-car*/
+#secound-box{
     height: 50%;
     margin:1em 1em 2em 2em;
     text-align: left;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #secound-box > p{
     height: 75%;
     display: flex;
     align-items: center;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #third-box{
     height: 100%;
     margin: 2em 2em 2em 1em;
     width: 50%;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 table{
     width: 100%;
     border: 4px solid #2D3E50;
@@ -686,29 +646,29 @@ table{
     text-align: center;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 table tr th:nth-child(1) {
     border-radius: 25px 0 0 0;
     background: #AD3E42;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 table tr th:nth-child(2) {
     border-radius: 0 25px 0 0;
     background: #AD3E42;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 table tr:nth-child(even){
     background: #00A396;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #first-column-last-row {
     border-radius: 0 0 0 25px;
 }
 
-/*DONE: porsche-tycan*/
+/*DONE: one-car*/
 #second-column-last-row{
     border-radius: 0 0 25px 0;
 }
