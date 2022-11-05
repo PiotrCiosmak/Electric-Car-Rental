@@ -1,0 +1,58 @@
+TODO:
+główna zrobić   
+
+dodać pole wpisz liczbe dni i przycisk rezerwuj
+
+dodać stronę wyświtlana po rejestarcji z formularzem na podanie danych I EKRAN ZAREZERWOWANO Z INFOR NA KOGO I NA ILE DNI
+(imie, nazwisko, adres(ulica, numer domu, numer mieszkania, podcztowy, miejscowosc) numertelefonu, )
+
+przerobienie na mobile view
+
+
+
+
+PYTANIA:
+- f40, sign-in, register, contact: problem skalowania, our-cars, porsche-tycan: wyświetlania na np. 4k
+- our cars dzira między divami
+
+
+
+Póżniej:
+po kliknieciu zaloguj z błędnymi danymi wyświetla się na czerwono napis NIEPOPRAWNE DANE.
+po kliknieciu zarejestruj z zbyt słabym hasłem wyświetla się na czerwono napis NIEPORPAWNE HASŁO i info co musi zawierać
+dodać wiecej stron z autami (kopie)
+
+opcjonalne:
+1s WSZYSTKIE *MAIN i *container OPRÓCZ DWÓCH ZMIENIC NA WSPOLNA KLASE
+wstawić różne zdjęcia
+
+
+
+Bazda danych
+1 user ma jeden adres
+1 user moze zrobić wiele wynajmów
+
+Table:
+użtkowik
+id
+email
+haslo
+
+adres
+id
+ulica
+numer domu
+numer mieszkania
+kod podcztowy
+miejscowosc
+id_uzytkownika
+
+samochody
+id
+nazwa
+cena
+
+wynajmy:
+id
+id_uzytkownika
+id_samochodu

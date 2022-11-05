@@ -585,6 +585,12 @@ form.sign-in, form.register{
     border-radius: 25px;
 }
 
+/*DONE: one-car*/
+.description .info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
 /*DONE: one-car*/
 .box{
