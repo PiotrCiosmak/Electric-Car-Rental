@@ -73,14 +73,14 @@ nav > ul> li a:hover{
     color: #F3FAFF;
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 .logo_and_title{
     width: 50%;
     text-align: center;
     margin: 3%;
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 .container{
     width: 100%;
     height: 100vh;
@@ -91,7 +91,7 @@ nav > ul> li a:hover{
     align-items: center;
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 .logo_and_title > img{
     width: 20vh;
     width: 30%;
@@ -116,12 +116,12 @@ h3{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 .sign-in-container, .register-container{
     width: 50%;
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 form.sign-in, form.register{
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ form.sign-in, form.register{
     border-radius: 28px;
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 #sign-in-button, #register-button{
     width: 50%;
     background: #0097FF;
@@ -150,7 +150,7 @@ form.sign-in, form.register{
     color:#F3FAFF
 }
 
-/*for sign_in and register*/
+/*DONE: sign_in and register*/
 #email, #pass{
     width: 50%;
     background-color: transparent;
@@ -166,7 +166,7 @@ form.sign-in, form.register{
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*for our-cars*/
+/*DONE: our-cars*/
 .our-cars-container{
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@ form.sign-in, form.register{
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
-/*for our-cars*/
+/*DONE: our-cars*/
 .our-cars-main{
     width: 70%;
     display: flex;
@@ -184,7 +184,7 @@ form.sign-in, form.register{
     margin-bottom: 5em;
 }
 
-/*for our-cars*/
+/*DONE: our-cars*/
 #input-search-bar {
     box-sizing: border-box;
     height: 2.5em;
@@ -201,26 +201,26 @@ form.sign-in, form.register{
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .row-of-cars{
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .car{
    margin: 1em;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .car > img{
     width: 27em;
     border: 4px solid #2D3E50;
     border-radius: 25px 25px 0px 0px;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .background-of-car{
     background: #00A396;
     border-width: 0px 4px 4px 4px;
@@ -229,7 +229,7 @@ form.sign-in, form.register{
     border-radius: 0px 0px 25px 25px;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .background-of-car > p{
     margin: 0;
     text-align: center;
@@ -239,7 +239,7 @@ form.sign-in, form.register{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .background-of-car > img{
     height: 5em;
     display: block;
@@ -251,141 +251,13 @@ form.sign-in, form.register{
     color:#AD3E42;
 }
 
-/*for our cars*/
+/*DONE: our cars*/
 .row-of-cars > a{
     text-decoration: none;
     color: #F3FAFF;
 }
 
-.box-with-photo{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    background-color: #00A396;
-    border-color: #2D3E50;
-    border-radius: 3.125vh 3.125vh 3.125vh 3.125vh;
-    border-width: 0.5vh 0.5vh 0.5vh 0.5vh;
-    border-style: solid;
-    border-color: #2D3E50;
-    margin: 2vh;
-}
-
-.box-with-photo .info{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-left: 5vh;
-    padding-right: 5vh
-}
-
-#car-name{
-    text-align: left;
-    font-size: 3.9vh;
-}
-
-#car-price{
-    text-align:right;
-    font-size: 3.9vh;
-}
-
-.box-with-photo > img{
-    border-radius: 0 0 3.125vh 3.125vh;
-    flex-direction: column;
-}
-
-.description{
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    border-color: #2D3E50;
-    background: #00A396;
-    border: 0.5vh solid #2D3E50;
-    border-radius: 3.125vh;
-    border-style: solid;
-    border-color: #2D3E50;
-    margin: 2vh;
-}
-
-.description .info{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.description .table{
-    flex-direction: column;
-    width: 100%;
-}
-
-.box{
-    background: #2D3E50;
-    border-radius: 3.125vh;
-}
-
-.box > p{
-    margin:0;
-    padding: 4vh;
-    text-align: justify;
-}
-
-#first-box{
-    height: 25vh;
-    margin:4vh 2vh 2vh 4vh;
-    line-height: 25vh;
-    text-align: center;
-}
-
-#first-box > p{
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-#secound-box
-{
-    height: 25vh;
-    margin:2vh 2vh 4vh 4vh;
-    line-height: 25vh;
-    text-align: left;
-    
-}
-
-#secound-box > p{
-    line-height: 1.3;
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-#third-box{
-    height: 55vh;
-    margin:4vh 4vh 4vh 2vh;
-    width: 50%;
-}
-
-
-table, .label, .row, .table > tr > td{
-    height: 6.375vh;
-    height: 6.375vh;
-    border-radius: 3.125vh 3.125vh 3.125vh 3.125vh;
-    border-width: 0.5vh;
-    border-style: solid;
-    border-color: #2D3E50;
-}
-
-#row0{
-    background-color:red;
-}
-
-#row1, #row3, #row5, #row7{
-    background-color:#00A396;
-}
-
-
-/*for contact*/
+/*DONE: contact*/
 .contact-container{
     display: flex;
     width: 100%;
@@ -396,7 +268,7 @@ table, .label, .row, .table > tr > td{
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
-/*for contact*/
+/*DONE: contact*/
 .contact-main{
     display: flex;
     width: 70%;
@@ -405,13 +277,13 @@ table, .label, .row, .table > tr > td{
     margin-bottom: 5em;
 }
 
-/*for contact*/
+/*DONE: contact*/
 #contact-info{
     display: flex;
     width: 100%;
 }
 
-/*for contact*/
+/*DONE: contact*/
 #phone-numer-box{
     width: 50%;
     text-align: center;
@@ -420,7 +292,7 @@ table, .label, .row, .table > tr > td{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*for contact*/
+/*DONE: contact*/
 #email-address-box{
     width: 50%;
     text-align: center;
@@ -429,14 +301,14 @@ table, .label, .row, .table > tr > td{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*for contact*/
+/*DONE: contact*/
 #map > img{
     margin: 1em;
     border: 3px solid #2D3E50;
     border-radius: 25px;
 }
 
-/*for faq*/
+/*DONE: faq*/
 .faq-container{
     display: flex;
     flex-direction: column;
@@ -445,7 +317,7 @@ table, .label, .row, .table > tr > td{
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
-/*for faq*/
+/*DONE: faq*/
 .faq-main{
     width: 70%;
     display: flex;
@@ -454,7 +326,7 @@ table, .label, .row, .table > tr > td{
     margin-bottom: 5em;
 }
 
-/*for faq*/
+/*DONE: faq*/
 .question{
     font-size: 1.5em;
     font-weight: 500;
@@ -469,7 +341,7 @@ table, .label, .row, .table > tr > td{
     padding-right: 1.5em;
 }
 
-/*for faq*/
+/*DONE: faq*/
 .answer{
     font-size: 1.5em;
     font-weight: 400;
@@ -484,7 +356,7 @@ table, .label, .row, .table > tr > td{
     margin-bottom: 1.5em;
 }
 
-/*for faq*/
+/*DONE: faq*/
 .answer > p, .question > p{
     margin: 0;
 }
@@ -578,6 +450,7 @@ table, .label, .row, .table > tr > td{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+/*DONE: discount*/
 .discount-container{
     display: flex;
     flex-direction: column;
@@ -586,6 +459,7 @@ table, .label, .row, .table > tr > td{
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
+/*DONE: discount*/
 .discount-main{
     width: 70%;
     display: flex;
@@ -594,10 +468,12 @@ table, .label, .row, .table > tr > td{
     margin-bottom: 5em;
 }
 
+/*DONE: discount*/
 #first-part-of-text{
     margin-top: 0;
 }
 
+/*DONE: discount*/
 .discount-text-box > p{
     font-weight: 400;
     font-size: 1.5em;
@@ -606,10 +482,12 @@ table, .label, .row, .table > tr > td{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+/*DONE: discount*/
 #discount-all-box{
     display: flex;
 }
 
+/*DONE: discount*/
 .discount-box{
     background: #00A396;
     border: 4px solid #2D3E50;
@@ -618,6 +496,7 @@ table, .label, .row, .table > tr > td{
     width: 20%;
 }
 
+/*DONE: discount*/
 .discount-text{
     color: #F3FAFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -626,14 +505,180 @@ table, .label, .row, .table > tr > td{
     padding: 1em;
 }
 
+/*DONE: discount*/
 .discount-title{
     font-weight: 500;
     font-size: 2em;
     margin: 0;
 }
 
+/*DONE: discount*/
 .discount-content{
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.1em;
+}
+
+/*DONE: porsche-tycan*/
+.porsche-tycan-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
+}
+
+/*DONE: porsche-tycan*/
+.porsche-tycan-main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+/*DONE: porsche-tycan*/
+.box-with-photo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #00A396;
+    border: 4px solid #2D3E50;
+    border-radius: 25px;
+    margin:0;
+}
+
+/*DONE: porsche-tycan*/
+.box-with-photo .info{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*DONE: porsche-tycan*/
+#car-name{
+    width: 70%;
+    float: left;
+    font-size: 2.25em;
+    line-height: 2.25em;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+/*DONE: porsche-tycan*/
+#car-price{
+    width: 30%;
+    float: right;
+    text-align: right;
+    font-size: 2.25em;
+    line-height: 2.25em;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+/*DONE: porsche-tycan*/
+.box-with-photo > img{
+    border-radius: 0px 0px 25px 25px;
+}
+
+/*DONE: porsche-tycan*/
+.description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 2em;
+    background: #00A396;
+    border: 4px solid #2D3E50;
+    border-radius: 25px;
+}
+
+/*DONE: porsche-tycan*/
+.description .info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/*DONE: porsche-tycan*/
+.box{
+    background: #2D3E50;
+    border-radius: 25px;
+}
+
+/*DONE: porsche-tycan*/
+.box > p{
+    margin:0;
+    padding: 2em;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*DONE: porsche-tycan*/
+#first-box{
+    height: 50%;
+    margin:2em 1em 1em 2em;
+}
+
+/*DONE: porsche-tycan*/
+#first-box > p{
+    height: 75%;
+    display: flex;
+    align-items: center;
+}
+
+/*DONE: porsche-tycan*/
+#secound-box
+{
+    height: 50%;
+    margin:1em 1em 2em 2em;
+    text-align: left;
+}
+
+/*DONE: porsche-tycan*/
+#secound-box > p{
+    height: 75%;
+    display: flex;
+    align-items: center;
+}
+
+/*DONE: porsche-tycan*/
+#third-box{
+    height: 100%;
+    margin: 2em 2em 2em 1em;
+    width: 50%;
+}
+
+/*DONE: porsche-tycan*/
+table{
+    width: 100%;
+    border: 4px solid #2D3E50;
+    border-radius: 25px;
+    height: 50vh;
+    text-align: center;
+}
+
+table tr th:nth-child(1) {
+    border-radius: 25px 0 0 0;
+    background: #AD3E42;
+}
+
+table tr th:nth-child(2) {
+    border-radius: 0 25px 0 0;
+    background: #AD3E42;
+}
+
+table tr:nth-child(even){
+    background: #00A396;
+}
+
+#first-column-last-row {
+    border-radius: 0 0 0 25px;
+}
+
+#second-column-last-row{
+    border-radius: 0 0 25px 0;
 }
