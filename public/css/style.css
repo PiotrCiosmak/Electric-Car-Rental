@@ -81,6 +81,11 @@ nav > ul> li a:hover{
     color: #F3FAFF;
 }
 
+/*DONE: all*/
+#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover{
+    color:#AD3E42;
+}
+
 /*DONE: sign_in and register*/
 .logo_and_title{
     width: 50%;
@@ -191,6 +196,7 @@ form.sign-in, form.register{
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
     color:#F3FAFF
 }
+
 /*DONE: input-data*/
 .data-input-container{
     width: 50%;   
@@ -728,4 +734,73 @@ table tr:nth-child(even){
 /*DONE: one-car*/
 #second-column-last-row{
     border-radius: 0 0 25px 0;
+}
+
+#booking-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2em;
+    background: #00A396;
+    border: 4px solid #2D3E50;
+    border-radius: 25px;
+}
+
+#booking{
+    text-align: center;
+    display: flex;
+}
+
+#date{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.date-label{
+    font-size: 2em;
+    margin-left: 2em;
+    font-weight: 400;
+}
+
+#start-date{
+    padding: 0.5em;
+    margin: 2em;
+    margin-bottom:1em;
+    margin-right: 1em;
+    font-size: 1.56em;
+    border: 4px solid #2D3E50;
+    border-radius: 50px;
+    font-weight: 400;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+}
+
+#end-date{
+    padding: 0.5em;
+    margin: 2em;
+    margin-top: 0;
+    margin-right: 1em;
+    font-size: 1.56em;
+    border: 4px solid #2D3E50;
+    border-radius: 50px;
+    font-weight: 400;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+}
+
+#amount-of-days-button{
+    width: 59%;
+    background: #0097FF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 1em;
+    margin: 2em;
+    margin-left: 1em;
+    font-size: 1.56em;
+    line-height: 2em;
+    font-weight: 600;
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
+    color:#F3FAFF
 }
