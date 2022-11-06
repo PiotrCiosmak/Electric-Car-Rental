@@ -86,6 +86,16 @@ nav > ul> li a:hover{
     color:#AD3E42;
 }
 
+/*DONE: all*/
+#logout{
+    filter: invert(91%) sepia(6%) saturate(932%) hue-rotate(194deg) brightness(104%) contrast(105%);
+}
+
+/*DONE: all*/
+#logout:hover{
+    filter: invert(22%) sepia(85%) saturate(1724%) hue-rotate(334deg) brightness(92%) contrast(76%);
+}
+
 /*DONE: sign_in and register*/
 .logo_and_title{
     width: 50%;

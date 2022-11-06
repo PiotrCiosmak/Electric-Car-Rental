@@ -1,6 +1,5 @@
 TODO:
 główna zrobić
-podświetlenie przycisku logout
 przerobienie na mobile view
 
 
