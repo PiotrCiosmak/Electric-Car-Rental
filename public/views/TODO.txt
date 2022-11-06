@@ -1,6 +1,6 @@
 TODO:
 główna zrobić
-dodaćEKRAN ZAREZERWOWANO Z INFOR NA KOGO I NA ILE DNI
+dodaćEKRAN ZAREZERWOWANO info zarezerwowani szegóły rezerwacji zostały wysłane na maila
 podświetlenie przycisku logout
 przerobienie na mobile view
 
