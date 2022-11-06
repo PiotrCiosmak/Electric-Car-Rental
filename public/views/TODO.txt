@@ -1,12 +1,10 @@
 TODO:
-główna zrobić
 przerobienie na mobile view
-
 
 Póżniej:
 po kliknieciu zaloguj z błędnymi danymi wyświetla się na czerwono napis NIEPOPRAWNE DANE.
 po kliknieciu zarejestruj z zbyt słabym hasłem wyświetla się na czerwono napis NIEPORPAWNE HASŁO i info co musi zawierać
-po kliknieciu zarezerwuj z niedostępną dataw wyświetla się na czerwono napis że pojazd nie jest wtedy dostepy
+po kliknieciu zarezerwuj z niedostępną datą wyświetla się na czerwono napis że pojazd nie jest wtedy dostepy
 dodać wiecej stron z autami (kopie)
 1s WSZYSTKIE *MAIN i *container OPRÓCZ DWÓCH ZMIENIC NA WSPOLNA KLASE
 wstawić różne zdjęcia
@@ -15,7 +13,7 @@ wstawić różne zdjęcia
 
 PYTANIA:
 - f40, sign-in, register, contact: problem skalowania, our-cars, porsche-tycan: wyświetlania na np. 4k
-- our cars dzira między divami
+- main-page, our cars dziura między divami
 
 
 Baza danych
