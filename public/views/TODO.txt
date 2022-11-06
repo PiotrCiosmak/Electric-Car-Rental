@@ -1,6 +1,5 @@
 TODO:
 główna zrobić
-dodaćEKRAN ZAREZERWOWANO info zarezerwowani szegóły rezerwacji zostały wysłane na maila
 podświetlenie przycisku logout
 przerobienie na mobile view
 

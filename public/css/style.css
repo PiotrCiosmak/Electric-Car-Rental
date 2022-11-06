@@ -82,7 +82,7 @@ nav > ul> li a:hover{
 }
 
 /*DONE: all*/
-#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover{
+#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover{
     color:#AD3E42;
 }
 
@@ -800,6 +800,37 @@ table tr:nth-child(even){
     margin-left: 1em;
     font-size: 1.56em;
     line-height: 2em;
+    font-weight: 600;
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
+    color:#F3FAFF
+}
+
+.summary{
+    width: 90%;
+    text-align: center;
+}
+
+#summary-title{
+    font-size: 5.5em;
+    margin: 0.5em;
+}
+
+#summary-content{
+    font-size: 3em;
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+
+#summary-button{
+    width: 50%;
+    background: #0097FF;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 1em;
+    margin: 2em;
+    font-size: 1.56em;
+    line-height: 1em;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
     color:#F3FAFF
