@@ -12,6 +12,7 @@ Routing::get('booking','DefaultController');
 Routing::get('contact','DefaultController');
 Routing::get('discount','DefaultController');
 Routing::get('f40','DefaultController');
+Routing::get('faq','DefaultController');
 Routing::get('main_page','DefaultController');
 Routing::get('our_cars','DefaultController');
 Routing::get('porsche_tycan','DefaultController');
