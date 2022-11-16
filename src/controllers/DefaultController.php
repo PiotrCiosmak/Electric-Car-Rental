@@ -47,7 +47,7 @@ class DefaultController extends AppController
 
     public function main_page()
     {
-        $this->render('main-page');
+        $this->render('main_page');
     }
 
     public function our_cars()
