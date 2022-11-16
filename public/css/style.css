@@ -82,7 +82,7 @@ nav > ul> li a:hover{
 }
 
 /*DONE: all*/
-#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover{
+#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover{
     color:#AD3E42;
 }
 
