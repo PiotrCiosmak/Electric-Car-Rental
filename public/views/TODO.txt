@@ -1,5 +1,4 @@
-TODO:
-
+MOŻLIWE PO UTWORZENIU BAZY DANYCH
 SecurityController::sign_in_check: po kliknieciu zaloguj sprawdzić zgodnośc danych w bazie .
 SecurityController::register_check: po kliknięciu zarejestruj sprawdzić czy ten adres nie jest już w bazie, i załadować dane do bazy
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
