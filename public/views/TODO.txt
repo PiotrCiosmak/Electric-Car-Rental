@@ -1,14 +1,14 @@
 TODO:
-przerobienie na mobile view
+
+SecurityController::sign_in_check: po kliknieciu zaloguj sprawdzić zgodnośc danych w bazie .
+SecurityController::register_check: po kliknięciu zarejestruj sprawdzić czy ten adres nie jest już w bazie, i załadować dane do bazy
+register_data_input_check::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
+
+po kliknieciu zarezerwuj z niedostępną datą wyświetla się na czerwono napis że pojazd nie jest wtedy dostepy
 
 Póżniej:
-po kliknieciu zaloguj z błędnymi danymi wyświetla się na czerwono napis NIEPOPRAWNE DANE.
-po kliknieciu zarejestruj z zbyt słabym hasłem wyświetla się na czerwono napis NIEPORPAWNE HASŁO i info co musi zawierać
-po kliknieciu zarezerwuj z niedostępną datą wyświetla się na czerwono napis że pojazd nie jest wtedy dostepy
-dodać wiecej stron z autami (kopie)
-1s WSZYSTKIE *MAIN i *container OPRÓCZ DWÓCH ZMIENIC NA WSPOLNA KLASE
-wstawić różne zdjęcia
-
+przerobienie na mobile view
+dodać inne auta
 
 
 
