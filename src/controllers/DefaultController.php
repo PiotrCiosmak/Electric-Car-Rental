@@ -17,9 +17,8 @@ class DefaultController extends AppController
     public function sign_in()
     {
         $this->render('sign_in');
-
     }
-    
+
     public function booking()
     {
         $this->render('booking');
