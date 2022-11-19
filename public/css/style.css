@@ -24,6 +24,14 @@ nav{
 }
 
 /*DONE: all*/
+#xd
+{
+    color: black;
+    display: flex;
+    text-align: center;
+}
+
+/*DONE: all*/
 #logo{
     height: 6em;
     margin: 2.38em;
@@ -142,6 +150,7 @@ h3{
 /*DONE: sign_in and register*/
 .sign-in-container, .register-container{
     width: 50%;
+    color: black;
 }
 
 /*DONE: sign_in and register*/
