@@ -15,15 +15,17 @@
         <h1>Electric Car Rent</h1>
         <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
     </div class="data-input-container">
-    <div id="error-message">
-        <?php if (isset($messages)) {
-            foreach ($messages as $message) {
-                echo $message;
-            }
-        }
-        ?>
-    </div>
     <form class="data-input" action="register_data_input_check" METHOD="post">
+        <div id="error-message">
+            <p style="font-size:1.5em; color: red;">
+                <?php if (isset($messages)) {
+                    foreach ($messages as $message) {
+                        echo htmlspecialchars($message);
+                    }
+                }
+                ?>
+            </p>
+        </div>
         <input name="first-name" type="text" placeholder="imie" id="first-name">
         <input name="last-name" type="text" placeholder="nazwisko" id="last-name">
         <input name="phone-numer" type="text" placeholder="numer telefonu" id="phone-numer">

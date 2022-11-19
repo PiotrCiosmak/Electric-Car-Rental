@@ -15,15 +15,17 @@
         <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
     </div>
     <div class="register-container">
-        <div id="error-message">
-            <?php if (isset($messages)) {
-                foreach ($messages as $message) {
-                    echo $message;
-                }
-            }
-            ?>
-        </div>
         <form class="register" action="register_check" METHOD="post">
+            <div id="error-message">
+                <p style="font-size:1.5em; color: red;">
+                <?php if (isset($messages)) {
+                    foreach ($messages as $message) {
+                        echo htmlspecialchars($message);
+                    }
+                }
+                ?>
+                </p>
+            </div>   
             <input name="email" type="text" placeholder="email" id="email">
             <input name="password" type="password" placeholder="hasło" id="pass">
             <button id="register-button" type="submit">ZAREJESTRUJ SIĘ</button>
