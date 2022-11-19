@@ -10,6 +10,10 @@ class SecurityController extends AppController
 {
     public function register_check()
     {
+        if ((strlen($_POST["email"]) < 1) || (strlen($_POST["password"]) < 1)) {
+            return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
+        }
+
         $user = new User($_POST["email"], $_POST["password"]);
 
         $emailRegex = preg_match('[@]', $user->getEmail());
@@ -57,6 +61,13 @@ class SecurityController extends AppController
 
     public function sign_in_check()
     {
+        if ((strlen($_POST["email"]) < 1) || (strlen($_POST["password"]) < 1)) {
+            return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
+        }
+
+        if ($this->isPost()) {
+            return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione']]);
+        }
         $user = new User($_POST["email"], $_POST["password"]);
         //sprawdzenie czy sa takie dane w bazie
         /*        if(getEmial nie jest w bazie)
