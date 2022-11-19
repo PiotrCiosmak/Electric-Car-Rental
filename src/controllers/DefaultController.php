@@ -73,4 +73,9 @@ class DefaultController extends AppController
     {
         $this->render('register_data_input_check');
     }
+
+    public function sign_in_check()
+    {
+        $this->render('sign_in_check');
+    }
 }
