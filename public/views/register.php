@@ -8,21 +8,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo_and_title">
-            <img src="public/img/logo.svg">
-            <h1>Electric Car Rent</h1>
-            <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
-        </div>
-        <div class="register-container">
-            <form class="register" action="register" METHOD="post">
-                <input name="email" type="text" placeholder="email" id="email">
-                <input name="password" type="password" placeholder="hasło" id="pass">
-                <button id="register-button", type="submit">ZAREJESTRUJ SIĘ</button>
-            </form>
-            <a href="sign_in">
-                <button id="click-to-switch">Kliknij, aby się zalogowac</button>
-            </a>
-        </div>
+<div class="container">
+    <div class="logo_and_title">
+        <img src="public/img/logo.svg">
+        <h1>Electric Car Rent</h1>
+        <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
     </div>
+    <div class="register-container">
+        <div id="error-message">
+            <?php if (isset($messages)) {
+                foreach ($messages as $message) {
+                    echo $message;
+                }
+            }
+            ?>
+        </div>
+        <form class="register" action="register_check" METHOD="post">
+            <input name="email" type="text" placeholder="email" id="email">
+            <input name="password" type="password" placeholder="hasło" id="pass">
+            <button id="register-button" type="submit">ZAREJESTRUJ SIĘ</button>
+        </form>
+        <a href="sign_in">
+            <button id="click-to-switch">Kliknij, aby się zalogowac</button>
+        </a>
+    </div>
+</div>
 </body>
