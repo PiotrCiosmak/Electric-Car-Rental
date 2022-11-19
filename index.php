@@ -8,7 +8,6 @@ $path = parse_url($path,PHP_URL_PATH);
 Routing::get('index','DefaultController');
 Routing::get('register','DefaultController');
 Routing::get('sign_in','DefaultController');
-Routing::get('login','SecurityController');
 Routing::get('booking','DefaultController');
 Routing::get('contact','DefaultController');
 Routing::get('discount','DefaultController');
