@@ -2,37 +2,67 @@
 
 require_once "AppController.php";
 require_once __DIR__ . "/../models/User.php";
+require_once __DIR__ . "/../models/UserData.php";
 
 class SecurityController extends AppController
 {
     public function register_check()
     {
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+        $user = new User($_POST["email"], $_POST["password"]);
 
-        $regex = preg_match('[@]', $email);
-        if ($regex) {
-        } else {
-            return $this->render('register', ['messages' => ['Incorrect email!']]);
+        $emailRegex = preg_match('[@]', $user->getEmail());
+        if (!$emailRegex) {
+            return $this->render('register', ['messages' => ['Niepoprawny adres email!']]);
         }
 
-        if (strlen($password) < 8) {
-            return $this->render('register', ['messages' => ['Password is too short!']]);
+        if (strlen($user->getPassword()) < 8) {
+            return $this->render('register', ['messages' => ['Hasło jest zbyt krótki!']]);
         }
 
-        //hasło musi mieć jeden wielki jeden mały i jednen specjalny znak
+        //Sprawdzenie czy email nie jest zajęty
         /*        if(email jest w bazie)
                   {
-                    return $this->render('register',['messages'=>['There is already an account at the address. Go to the sign up page.']]);
+                    return $this->render('register',['messages'=>['Istnieje już konto powiązane z tym adresem email. Przejdź do strony logowania.']]);
                    }*/
 
-        //załadowanie do bazy danych
+        //Załadowanie danych do bazy danych
 
         return $this->render('register_data_input');
     }
 
     public function register_data_input_check()
     {
+        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["post-code"], $_POST["city"]);
+        if (strlen($_POST["apartment-number"]) > 0)
+            $userData->setApartmentNumber($_POST["apartment-number"]);
 
+        if (strlen($userData->getFirstName()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź imie!']]);
+        if (strlen($userData->getLastName()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź nazwisko!']]);
+        if (strlen($userData->getPhoneNumber()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź numer telefonu!']]);
+        if (strlen($userData->getStreet()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź ulicę!']]);
+        if (strlen($userData->getHouseNumber()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź numer domu!']]);
+        if (strlen($userData->getPostCode()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź kod pocztowy!']]);
+        if (strlen($userData->getTown()) == 0)
+            return $this->render('register_data_input', ['messages' => ['Wprowadź miejscowość!']]);
+
+        //Załadowanie danych do bazy danych
+        return $this->render('main_page');
+    }
+
+    public function sign_in_check()
+    {
+        $user = new User($_POST["email"], $_POST["password"]);
+        //sprawdzenie czy sa takie dane w bazie
+        /*        if(email nie jest w bazie)
+           {
+             return $this->render('sign_in',['messages'=>['Niepoprawne dane.']]);
+            }*/
+        return $this->render('main_page');
     }
 }

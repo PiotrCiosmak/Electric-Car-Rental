@@ -9,6 +9,7 @@ Routing::get('','DefaultController');
 Routing::get('register','DefaultController');
 Routing::get('register_check','SecurityController');
 Routing::get('sign_in','DefaultController');
+Routing::get('sign_in_check','SecurityController');
 Routing::get('booking','DefaultController');
 Routing::get('contact','DefaultController');
 Routing::get('discount','DefaultController');
