@@ -14,14 +14,14 @@ class DefaultController extends AppController
         $this->render('register');
     }
 
+    public function register_check()
+    {
+        $this->render('register_check');
+    }
+
     public function sign_in()
     {
         $this->render('sign_in');
-    }
-
-    public function after_sign_in()
-    {
-        $this->render('after_sign_in');
     }
 
     public function booking()
@@ -67,5 +67,10 @@ class DefaultController extends AppController
     public function register_data_input()
     {
         $this->render('register_data_input');
+    }
+
+    public function register_data_input_check()
+    {
+        $this->render('register_data_input_check');
     }
 }
