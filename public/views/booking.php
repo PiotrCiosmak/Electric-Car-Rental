@@ -6,22 +6,27 @@
     </style>
     <script src="https://kit.fontawesome.com/8d0d2d9a42.js" crossorigin="anonymous"></script>
     <title>PODSUMOWANIE REZERWACJI</title>
-    
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="summary">
-            <p id="summary-title">
-                Potwierdzenie dokonania rezerwacja
+<div class="container">
+    <div class="summary">
+        <p id="summary-title">
+        <div id="error-message">
+            <p style="font-size:3em; color: #F3FAFF;">
+                <?php if (isset($messages)) {
+                    foreach ($messages as $message) {
+                        echo htmlspecialchars($message);
+                    }
+                }
+                ?>
             </p>
-            <p id="summary-content">
-                |IMIE| |NAZWISKO| wynajął |MODEL_AUTA|.<br>
-                Od |DATA_START| do |DATA_KONIEC|.
-            </p>    
-            <a href="main_page">
-                <button id="summary-button">DALEJ</button>
-            </a>
         </div>
+        </p>
+        <a href="main_page">
+            <button id="summary-button">DALEJ</button>
+        </a>
     </div>
+</div>
 </body>

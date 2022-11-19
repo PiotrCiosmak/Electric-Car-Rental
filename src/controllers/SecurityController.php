@@ -3,6 +3,8 @@
 require_once "AppController.php";
 require_once __DIR__ . "/../models/User.php";
 require_once __DIR__ . "/../models/UserData.php";
+require_once __DIR__ . "/../models/Car.php";
+require_once __DIR__ . "/../models/Rent.php";
 
 class SecurityController extends AppController
 {
@@ -62,5 +64,25 @@ class SecurityController extends AppController
              return $this->render('sign_in',['messages'=>['Niepoprawne dane. Spróbuj ponownie']]);
             }*/
         return $this->render('main_page');
+    }
+
+    public function booking_check()
+    {
+        //zamiast 1 zwrócić id aktualnie zalogowanie użytkownika
+        //zamiast 2 zwrócić id aktualnie wybranego auta
+        if ((strlen($_POST["start-date"]) < 1) || (strlen($_POST["end-date"]) < 1))
+            return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
+
+        $rent = new Rent($_POST["start-date"], $_POST["end-date"], 1, 2);
+
+        //sprawdzenie czy data wynajmu nie zachodzi na jakieś wynajem który jest w bazie
+
+        //jeśli koliduje
+        //return $this->render('booking',['messages'=>['Brak możliwości dokonania rezerwacji w tym terminie']]);
+
+        //jesli nie koliduje
+        //zapisać wynajem w bazie
+        return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
+
     }
 }

@@ -78,4 +78,9 @@ class DefaultController extends AppController
     {
         $this->render('sign_in_check');
     }
+
+    public function booking_check()
+    {
+        $this->render('booking_check');
+    }
 }

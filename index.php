@@ -20,4 +20,5 @@ Routing::get('our_cars','DefaultController');
 Routing::get('porsche_tycan','DefaultController');
 Routing::get('register_data_input','DefaultController');
 Routing::get('register_data_input_check','SecurityController');
+Routing::get('booking_check','SecurityController');
 Routing::run($path);

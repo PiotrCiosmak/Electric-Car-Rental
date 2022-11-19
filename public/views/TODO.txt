@@ -2,9 +2,8 @@ TODO:
 
 SecurityController::sign_in_check: po kliknieciu zaloguj sprawdzić zgodnośc danych w bazie .
 SecurityController::register_check: po kliknięciu zarejestruj sprawdzić czy ten adres nie jest już w bazie, i załadować dane do bazy
-register_data_input_check::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
-
-po kliknieciu zarezerwuj z niedostępną datą wyświetla się na czerwono napis że pojazd nie jest wtedy dostepy
+SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
+SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
 
 Póżniej:
 przerobienie na mobile view

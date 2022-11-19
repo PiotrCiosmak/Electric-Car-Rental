@@ -48,7 +48,7 @@
             <img id="car-photo" src="public/img/porche.webp">
 
             <div id="booking-container">
-                <form id="booking" action="booking">
+                <form id="booking" action="booking_check" METHOD="post">
                     <div id="date">
                         <div id="first-date">
                             <label class="date-label" for="start-date">Początek:</label>
@@ -59,7 +59,7 @@
                             <input type="date" id="end-date" name="end-date">
                         </div>
                     </div>
-                    <button id="amount-of-days-button">ZAREZERWUJ</button>
+                    <button id="amount-of-days-button" type="submit">ZAREZERWUJ</button>
                 </form>
             </div>
 
