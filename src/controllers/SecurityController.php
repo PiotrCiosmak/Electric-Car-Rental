@@ -20,7 +20,7 @@ class SecurityController extends AppController
         }
 
         //Sprawdzenie czy email nie jest zajęty
-        /*        if(email jest w bazie)
+        /*        if(getEmail jest w bazie)
                   {
                     return $this->render('register',['messages'=>['Istnieje już konto powiązane z tym adresem email. Przejdź do strony logowania.']]);
                    }*/
@@ -32,9 +32,7 @@ class SecurityController extends AppController
 
     public function register_data_input_check()
     {
-        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["post-code"], $_POST["city"]);
-        if (strlen($_POST["apartment-number"]) > 0)
-            $userData->setApartmentNumber($_POST["apartment-number"]);
+        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"]);
 
         if (strlen($userData->getFirstName()) == 0)
             return $this->render('register_data_input', ['messages' => ['Wprowadź imie!']]);
@@ -59,7 +57,7 @@ class SecurityController extends AppController
     {
         $user = new User($_POST["email"], $_POST["password"]);
         //sprawdzenie czy sa takie dane w bazie
-        /*        if(email nie jest w bazie)
+        /*        if(getEmial nie jest w bazie)
            {
              return $this->render('sign_in',['messages'=>['Niepoprawne dane. Spróbuj ponownie']]);
             }*/
