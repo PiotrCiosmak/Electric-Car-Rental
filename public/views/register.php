@@ -15,10 +15,10 @@
             <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
         </div>
         <div class="register-container">
-            <form class="register" action="register_data_input">
+            <form class="register" action="register" METHOD="post">
                 <input name="email" type="text" placeholder="email" id="email">
                 <input name="password" type="password" placeholder="hasło" id="pass">
-                <button id="register-button">ZAREJESTRUJ SIĘ</button>
+                <button id="register-button", type="submit">ZAREJESTRUJ SIĘ</button>
             </form>
             <a href="sign_in">
                 <button id="click-to-switch">Kliknij, aby się zalogowac</button>
