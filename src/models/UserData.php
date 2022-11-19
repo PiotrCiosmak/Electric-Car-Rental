@@ -11,16 +11,16 @@ class UserData
     private $town;
     private $apartmentNumber;
 
-    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $street, string $houseNumber, string $postCode, string $town, string $apartmentNumber = null)
+    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $street, string $houseNumber, string $apartmentNumber, string $postCode, string $town)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->phoneNumber = $phoneNumber;
         $this->street = $street;
         $this->houseNumber = $houseNumber;
+        $this->apartmentNumber = $apartmentNumber;
         $this->postCode = $postCode;
         $this->town = $town;
-        $this->apartmentNumber = $apartmentNumber;
     }
 
     public function getFirstName(): string
