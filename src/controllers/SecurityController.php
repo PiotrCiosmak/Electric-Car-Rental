@@ -61,7 +61,7 @@ class SecurityController extends AppController
         //sprawdzenie czy sa takie dane w bazie
         /*        if(email nie jest w bazie)
            {
-             return $this->render('sign_in',['messages'=>['Niepoprawne dane.']]);
+             return $this->render('sign_in',['messages'=>['Niepoprawne dane. Spróbuj ponownie']]);
             }*/
         return $this->render('main_page');
     }
