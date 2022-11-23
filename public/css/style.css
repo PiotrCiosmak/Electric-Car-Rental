@@ -303,6 +303,8 @@ form.data-input{
 /*DONE: our cars*/
 .car{
    margin: 1em;
+   display: flex;
+   flex-direction: column;
 }
 
 /*DONE: our cars*/
@@ -979,4 +981,12 @@ table tr:nth-child(even){
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 
+}
+
+.cars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

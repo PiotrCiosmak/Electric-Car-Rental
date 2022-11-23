@@ -47,7 +47,8 @@
                    </form>
                 </div>
             </header>
-            <div class="row-of-cars">
+
+            <div class="cars">
                 <a href="porsche_tycan">
                     <div class="car">
                         <img src="public/img/porche.webp">
@@ -78,9 +79,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
 
-            <div class="row-of-cars">
                 <a href="porsche_tycan">
                     <div class="car">
                         <img src="public/img/porche.webp">
@@ -111,9 +110,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
                 
-            <div class="row-of-cars">
                 <a href="porsche_tycan">
                     <div class="car">
                         <img src="public/img/porche.webp"><div class="background-of-car">
@@ -143,9 +140,7 @@
                         </div>
                     </div>
                 </a>
-            </div>  
 
-            <div class="row-of-cars">
                 <a href="porsche_tycan">
                     <div class="car">
                         <img src="public/img/porche.webp">
