@@ -4,18 +4,18 @@ SecurityController::register_check: po kliknięciu zarejestruj sprawdzić czy te
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
 
-Póżniej:
+POŹNIEJ:
 przerobienie na mobile view
 dodać inne auta
 
 
 
-PYTANIA:
+PYTANIA: (zadane)
 wszędzie przy bardzo dużej rozdzielczości robi sie białe tło na dole
 
 
 
-Baza danych
+BAZA DANYCH:
 1 user ma jeden dane
 1 user moze zrobić wiele wynajmów
 
