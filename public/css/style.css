@@ -308,7 +308,7 @@ form.data-input {
 }
 
 /*DONE: our cars*/
-.cars {
+#cars {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
