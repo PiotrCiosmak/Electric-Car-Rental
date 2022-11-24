@@ -269,7 +269,7 @@ form.data-input {
 
 /*DONE: our-cars*/
 .our-cars-main {
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
