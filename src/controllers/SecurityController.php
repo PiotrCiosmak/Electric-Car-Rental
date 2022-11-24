@@ -79,6 +79,7 @@ class SecurityController extends AppController
 
     public function booking_check()
     {
+
         //Sprawdzić czy data nie jest ubiegła lub czy nie jest podana data na minusie
         //zamiast 1 zwrócić id aktualnie zalogowanie użytkownika
         //zamiast 2 zwrócić id aktualnie wybranego auta
