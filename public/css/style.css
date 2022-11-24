@@ -1,5 +1,5 @@
 /*DONE: all*/
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -7,7 +7,7 @@ body{
 }
 
 /*DONE: all*/
-h2{
+h2 {
     font-size: 3em;
     font-weight: 500;
     margin: 0;
@@ -16,7 +16,7 @@ h2{
 }
 
 /*DONE: all*/
-nav{
+nav {
     width: 100%;
     background: linear-gradient(180deg, #008A5D 0%, rgba(55, 193, 144, 0) 100%, rgba(0, 138, 93, 0) 100%);
     display: flex;
@@ -24,7 +24,7 @@ nav{
 }
 
 /*DONE: all*/
-#logo{
+#logo {
     height: 6em;
     margin: 2.38em;
     margin-right: 0;
@@ -32,7 +32,7 @@ nav{
 }
 
 /*DONE: all*/
-#logout{
+#logout {
     height: 6em;
     margin: 2.38em;
     margin-left: 0;
@@ -40,7 +40,7 @@ nav{
 }
 
 /*DONE: all*/
-nav > ul{
+nav > ul {
     list-style-type: none;
     overflow: hidden;
     justify-content: center;
@@ -49,12 +49,12 @@ nav > ul{
 }
 
 /*DONE: all*/
-nav > ul > li{
+nav > ul > li {
     float: left;
 }
 
 /*DONE: all*/
-nav > ul > li a{
+nav > ul > li a {
     display: inline-block;
     color: #F3FAFF;
     text-align: center;
@@ -66,45 +66,45 @@ nav > ul > li a{
     border-bottom: 0.16em solid #F3FAFF;
     font-weight: 500;
     text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.25);
-    
+
 }
 
 /*DONE: all*/
-nav > ul> li a:hover{
-    color:#AD3E42;
+nav > ul > li a:hover {
+    color: #AD3E42;
     border-color: #AD3E42;
 }
 
 /*DONE: all*/
-.title{
+.title {
     margin-bottom: 2em;
     color: #F3FAFF;
 }
 
 /*DONE: all*/
-#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover{
-    color:#AD3E42;
+#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover {
+    color: #AD3E42;
 }
 
 /*DONE: all*/
-#logout{
+#logout {
     filter: invert(91%) sepia(6%) saturate(932%) hue-rotate(194deg) brightness(104%) contrast(105%);
 }
 
 /*DONE: all*/
-#logout:hover{
+#logout:hover {
     filter: invert(22%) sepia(85%) saturate(1724%) hue-rotate(334deg) brightness(92%) contrast(76%);
 }
 
 /*DONE: sign_in and register*/
-.logo_and_title{
+.logo_and_title {
     width: 50%;
     text-align: center;
     margin: 3%;
 }
 
 /*DONE: sign_in and register*/
-.container{
+.container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
@@ -115,14 +115,14 @@ nav > ul> li a:hover{
 }
 
 /*DONE: sign_in and register*/
-.logo_and_title > img{
+.logo_and_title > img {
     width: 20vh;
     width: 30%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*for sign_in and register*/
-h1{
+h1 {
     font-size: 4.5em;
     font-weight: 500;
     margin: 0;
@@ -131,7 +131,7 @@ h1{
 }
 
 /*for sign_in and register*/
-h3{
+h3 {
     font-size: 2em;
     font-weight: 400;
     margin: 0;
@@ -140,12 +140,12 @@ h3{
 }
 
 /*DONE: sign_in and register*/
-.sign-in-container, .register-container{
+.sign-in-container, .register-container {
     width: 50%;
 }
 
 /*DONE: sign_in and register*/
-form.sign-in, form.register{
+form.sign-in, form.register {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +158,7 @@ form.sign-in, form.register{
 }
 
 /*DONE: sign_in and register*/
-#sign-in-button, #register-button{
+#sign-in-button, #register-button {
     width: 50%;
     background: #0097FF;
     border: none;
@@ -170,11 +170,11 @@ form.sign-in, form.register{
     line-height: 200%;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
 /*DONE: sign_in and register*/
-#email, #pass{
+#email, #pass {
     width: 50%;
     background-color: transparent;
     border: 2px solid #7095B2;
@@ -190,7 +190,7 @@ form.sign-in, form.register{
 }
 
 /*DONE: sign_in and register*/
-#click-to-switch{
+#click-to-switch {
     background: #0097FF;
     border: none;
     box-sizing: border-box;
@@ -204,16 +204,16 @@ form.sign-in, form.register{
     line-height: 100%;
     font-weight: 400;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
 /*DONE: input-data*/
-.data-input-container{
-    width: 50%;   
+.data-input-container {
+    width: 50%;
 }
 
 /*DONE: input-data*/
-form.data-input{
+form.data-input {
     margin: 5em;
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ form.data-input{
 }
 
 /*DONE: input-data*/
-.data-input > input{
+.data-input > input {
     display: flex;
     font-size: 1.2em;
     padding: 0.75em;
@@ -238,11 +238,11 @@ form.data-input{
     background: #D8F3FF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 28px;
-    border: 2px solid #2D3E50;   
+    border: 2px solid #2D3E50;
 }
 
 /*DONE: input-data*/
-#submit-data-button{
+#submit-data-button {
     background: #0097FF;
     border: none;
     box-sizing: border-box;
@@ -254,12 +254,12 @@ form.data-input{
     font-size: 1.56em;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
 
 /*DONE: our-cars*/
-.our-cars-container{
+.our-cars-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +268,7 @@ form.data-input{
 }
 
 /*DONE: our-cars*/
-.our-cars-main{
+.our-cars-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -294,26 +294,37 @@ form.data-input{
 }
 
 /*DONE: our cars*/
-.row-of-cars{
+.row-of-cars {
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
 
 /*DONE: our cars*/
-.car{
-   margin: 1em;
+.car {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 /*DONE: our cars*/
-.car > img{
+.cars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*DONE: our cars*/
+.car > img {
     width: 27em;
     border: 4px solid #2D3E50;
     border-radius: 25px 25px 0px 0px;
 }
 
 /*DONE: our cars*/
-.background-of-car{
+.background-of-car {
     background: #00A396;
     border-width: 0px 4px 4px 4px;
     border-style: solid;
@@ -322,7 +333,7 @@ form.data-input{
 }
 
 /*DONE: our cars*/
-.background-of-car > p{
+.background-of-car > p {
     margin: 0;
     text-align: center;
     line-height: 3em;
@@ -332,25 +343,25 @@ form.data-input{
 }
 
 /*DONE: our cars*/
-.background-of-car > img{
+.background-of-car > img {
     height: 5em;
     display: block;
     margin: auto;
 }
 
 /*DONE: our cars*/
-.car:hover{
-    color:#AD3E42;
+.car:hover {
+    color: #AD3E42;
 }
 
 /*DONE: our cars*/
-.row-of-cars > a{
+.row-of-cars > a {
     text-decoration: none;
     color: #F3FAFF;
 }
 
 /*DONE: contact*/
-.contact-container{
+.contact-container {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -361,7 +372,7 @@ form.data-input{
 }
 
 /*DONE: contact*/
-.contact-main{
+.contact-main {
     display: flex;
     width: 70%;
     flex-direction: column;
@@ -370,13 +381,13 @@ form.data-input{
 }
 
 /*DONE: contact*/
-#contact-info{
+#contact-info {
     display: flex;
     width: 100%;
 }
 
 /*DONE: contact*/
-#phone-numer-box{
+#phone-numer-box {
     width: 50%;
     text-align: center;
     font-weight: 400;
@@ -385,7 +396,7 @@ form.data-input{
 }
 
 /*DONE: contact*/
-#email-address-box{
+#email-address-box {
     width: 50%;
     text-align: center;
     font-weight: 400;
@@ -394,14 +405,14 @@ form.data-input{
 }
 
 /*DONE: contact*/
-#map > img{
+#map > img {
     margin: 1em;
     border: 3px solid #2D3E50;
     border-radius: 25px;
 }
 
 /*DONE: faq*/
-.faq-container{
+.faq-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,7 +421,7 @@ form.data-input{
 }
 
 /*DONE: faq*/
-.faq-main{
+.faq-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -419,7 +430,7 @@ form.data-input{
 }
 
 /*DONE: faq*/
-.question{
+.question {
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1em;
@@ -434,7 +445,7 @@ form.data-input{
 }
 
 /*DONE: faq*/
-.answer{
+.answer {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 1em;
@@ -449,12 +460,12 @@ form.data-input{
 }
 
 /*DONE: faq*/
-.answer > p, .question > p{
+.answer > p, .question > p {
     margin: 0;
 }
 
 /*DONE: f40*/
-.f40-container{
+.f40-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -463,7 +474,7 @@ form.data-input{
 }
 
 /*DONE: f40*/
-.f40-main{
+.f40-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -472,7 +483,7 @@ form.data-input{
 }
 
 /*DONE: f40 and one-car*/
-#car-name-and-price{
+#car-name-and-price {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -484,7 +495,7 @@ form.data-input{
 }
 
 /*DONE: f40 and one-car*/
-#car-name{
+#car-name {
     padding-left: 2em;
     width: 70%;
     float: left;
@@ -496,7 +507,7 @@ form.data-input{
 }
 
 /*DONE: f40 and one-car*/
-#car-price{
+#car-price {
     width: 30%;
     float: right;
     text-align: right;
@@ -509,14 +520,14 @@ form.data-input{
 }
 
 /*DONE: f40 and one-car*/
-#car-photo{
+#car-photo {
     width: 100%;
     border: 4px solid #2D3E50;
     border-radius: 0px 0px 25px 25px;
 }
 
 /*DONE: f40*/
-#f40-all-description-box{
+#f40-all-description-box {
     background: #00A396;
     border: 4px solid #2D3E50;
     border-radius: 25px;
@@ -525,19 +536,19 @@ form.data-input{
 }
 
 /*DONE: f40*/
-.f40-description-box{
+.f40-description-box {
     background: #2D3E50;
     border-radius: 25px;
     margin: 2em;
 }
 
 /*DONE: f40*/
-.f40-text{
+.f40-text {
     padding: 2em;
 }
 
 /*DONE: f40*/
-.f40-description-title{
+.f40-description-title {
     font-weight: 500;
     font-size: 1.1em;
     line-height: 1.3em;
@@ -546,7 +557,7 @@ form.data-input{
 }
 
 /*DONE: f40*/
-.f40-description-content, .f40-description-subtitle{
+.f40-description-content, .f40-description-subtitle {
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.5em;
@@ -555,7 +566,7 @@ form.data-input{
 }
 
 /*DONE: discount*/
-.discount-container{
+.discount-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -564,7 +575,7 @@ form.data-input{
 }
 
 /*DONE: discount*/
-.discount-main{
+.discount-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -573,12 +584,12 @@ form.data-input{
 }
 
 /*DONE: discount*/
-#first-part-of-text{
+#first-part-of-text {
     margin-top: 0;
 }
 
 /*DONE: discount*/
-.discount-text-box > p{
+.discount-text-box > p {
     font-weight: 400;
     font-size: 1.5em;
     line-height: 1.8em;
@@ -587,12 +598,12 @@ form.data-input{
 }
 
 /*DONE: discount*/
-#discount-all-box{
+#discount-all-box {
     display: flex;
 }
 
 /*DONE: discount*/
-.discount-box{
+.discount-box {
     background: #00A396;
     border: 4px solid #2D3E50;
     border-radius: 25px;
@@ -601,7 +612,7 @@ form.data-input{
 }
 
 /*DONE: discount*/
-.discount-text{
+.discount-text {
     color: #F3FAFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     align-items: center;
@@ -610,21 +621,21 @@ form.data-input{
 }
 
 /*DONE: discount*/
-.discount-title{
+.discount-title {
     font-weight: 500;
     font-size: 2em;
     margin: 0;
 }
 
 /*DONE: discount*/
-.discount-content{
+.discount-content {
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1.1em;
 }
 
 /*DONE: one-car*/
-.one-car-container{
+.one-car-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -633,7 +644,7 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-.one-car-main{
+.one-car-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -642,7 +653,7 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-.description{
+.description {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -653,7 +664,7 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-.description .info{
+.description .info {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -661,7 +672,7 @@ form.data-input{
 
 
 /*DONE: one-car*/
-#booking-container{
+#booking-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -672,30 +683,30 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#booking{
+#booking {
     text-align: center;
     display: flex;
 }
 
 /*DONE: one-car*/
-#date{
+#date {
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 
 /*DONE: one-car*/
-.date-label{
+.date-label {
     font-size: 2em;
     margin-left: 2em;
     font-weight: 400;
 }
 
 /*DONE: booking*/
-#start-date{
+#start-date {
     padding: 0.5em;
     margin: 2em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
     margin-right: 1em;
     font-size: 1.56em;
     border: 4px solid #2D3E50;
@@ -706,7 +717,7 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#end-date{
+#end-date {
     padding: 0.5em;
     margin: 2em;
     margin-top: 0;
@@ -720,7 +731,7 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#amount-of-days-button{
+#amount-of-days-button {
     width: 59%;
     background: #0097FF;
     border: none;
@@ -733,18 +744,18 @@ form.data-input{
     line-height: 2em;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
 /*DONE: one-car*/
-.box{
+.box {
     background: #2D3E50;
     border-radius: 25px;
 }
 
 /*DONE: one-car*/
-.box > p{
-    margin:0;
+.box > p {
+    margin: 0;
     padding: 2em;
     text-align: justify;
     font-weight: 400;
@@ -754,13 +765,13 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#first-box{
+#first-box {
     height: 50%;
-    margin:2em 1em 1em 2em;
+    margin: 2em 1em 1em 2em;
 }
 
 /*DONE: one-car*/
-#first-box > p{
+#first-box > p {
     height: 75%;
     display: flex;
     align-items: center;
@@ -768,14 +779,14 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#secound-box{
+#secound-box {
     height: 50%;
-    margin:1em 1em 2em 2em;
+    margin: 1em 1em 2em 2em;
     text-align: left;
 }
 
 /*DONE: one-car*/
-#secound-box > p{
+#secound-box > p {
     height: 75%;
     display: flex;
     align-items: center;
@@ -783,14 +794,14 @@ form.data-input{
 }
 
 /*DONE: one-car*/
-#third-box{
+#third-box {
     height: 100%;
     margin: 2em 2em 2em 1em;
     width: 50%;
 }
 
 /*DONE: one-car*/
-table{
+table {
     width: 100%;
     border: 4px solid #2D3E50;
     border-radius: 25px;
@@ -811,7 +822,7 @@ table tr th:nth-child(2) {
 }
 
 /*DONE: one-car*/
-table tr:nth-child(even){
+table tr:nth-child(even) {
     background: #00A396;
 }
 
@@ -821,31 +832,31 @@ table tr:nth-child(even){
 }
 
 /*DONE: one-car*/
-#second-column-last-row{
+#second-column-last-row {
     border-radius: 0 0 25px 0;
 }
 
 /*DONE: booking*/
-.summary{
+.summary {
     width: 90%;
     text-align: center;
 }
 
 /*DONE: booking*/
-#summary-title{
+#summary-title {
     font-size: 5.5em;
     margin: 0.5em;
 }
 
 /*DONE: booking*/
-#summary-content{
+#summary-content {
     font-size: 3em;
     margin: 0.5em;
     line-height: 1.5em;
 }
 
 /*DONE: booking*/
-#summary-button{
+#summary-button {
     width: 50%;
     background: #0097FF;
     border: none;
@@ -857,10 +868,10 @@ table tr:nth-child(even){
     line-height: 1em;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
-.main-page-container{
+.main-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -868,7 +879,7 @@ table tr:nth-child(even){
     background: linear-gradient(180deg, #00B0B9 0%, #0269A4 100%);
 }
 
-.main-page-main{
+.main-page-main {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -876,11 +887,11 @@ table tr:nth-child(even){
     margin-bottom: 5em;
 }
 
-#see-more{
+#see-more {
     width: 50%;
 }
 
-#see-more-button{
+#see-more-button {
     width: 100%;
     background: #0097FF;
     border: none;
@@ -893,10 +904,10 @@ table tr:nth-child(even){
     line-height: 2em;
     font-weight: 600;
     filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.25));
-    color:#F3FAFF
+    color: #F3FAFF
 }
 
-.main-box-background{
+.main-box-background {
     width: 100%;
     background: #00A396;
     border: 4px solid #2D3E50;
@@ -904,7 +915,7 @@ table tr:nth-child(even){
     margin-bottom: 2em;
 }
 
-#car-transporter-photo > img{
+#car-transporter-photo > img {
     width: calc(100% - 4em);
     margin: 2em;
     margin-bottom: 0.5em;
@@ -912,16 +923,16 @@ table tr:nth-child(even){
     border-radius: 25px;
 }
 
-#car-transporter-description{
+#car-transporter-description {
     width: calc(100% - 4em);
     margin: 2em;
     margin-bottom: 0.5em;
     background: #2D3E50;
     border-radius: 25px;
-  
+
 }
 
-#car-transporter-description > p{
+#car-transporter-description > p {
     font-weight: 500;
     font-size: 2em;
     line-height: 39px;
@@ -934,35 +945,35 @@ table tr:nth-child(even){
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.main-icon-and-description{
+.main-icon-and-description {
     display: flex;
     flex-direction: row;
     padding: 2em;
 }
 
-.main-icon{
+.main-icon {
     background: #2D3E50;
     border-radius: 25px;
     width: 20%;
     margin-right: 1em;
 }
 
-.main-icon > i{
+.main-icon > i {
     width: 100%;
     text-align: center;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
 }
 
-.main-description{
+.main-description {
     background: #2D3E50;
     border-radius: 25px;
     width: 80%;
     margin-left: 1em;
-    
+
 }
 
-.main-description-title{
+.main-description-title {
     margin: 0.25em 2em 0 2em;
     font-size: 3em;
     font-weight: 500;
@@ -971,7 +982,7 @@ table tr:nth-child(even){
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.main-description-content{
+.main-description-content {
     margin: 0 2em 0.5em 2em;
     font-size: 1.5em;
     font-weight: 500;
