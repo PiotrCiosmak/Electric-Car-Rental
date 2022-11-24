@@ -12,7 +12,6 @@ dodać inne auta
 
 PYTANIA:
 - f40, sign-in, register, contact: problem skalowania, our-cars, porsche-tycan: wyświetlania na np. 4k
-- main-page, our cars dziura między divami
 
 
 
