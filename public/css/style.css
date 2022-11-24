@@ -418,6 +418,7 @@ form.data-input {
 
 /*DONE: faq*/
 .faq-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -572,6 +573,7 @@ form.data-input {
 
 /*DONE: discount*/
 .discount-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
