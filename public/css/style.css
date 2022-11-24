@@ -293,7 +293,7 @@ form.data-input {
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*DONE: our cars*/
+/*TO DELETE*/
 .row-of-cars {
     margin-left: auto;
     margin-right: auto;
@@ -308,7 +308,7 @@ form.data-input {
 }
 
 /*DONE: our cars*/
-#cars {
+.cars {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -354,8 +354,14 @@ form.data-input {
     color: #AD3E42;
 }
 
-/*DONE: our cars*/
+/*TO DELETEs*/
 .row-of-cars > a {
+    text-decoration: none;
+    color: #F3FAFF;
+}
+
+/*DONE: our cars*/
+.cars > a {
     text-decoration: none;
     color: #F3FAFF;
 }

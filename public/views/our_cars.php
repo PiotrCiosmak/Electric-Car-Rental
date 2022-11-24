@@ -48,7 +48,7 @@
             </div>
         </header>
 
-        <div class="cars" id="cars">
+        <div class="cars">
             <a href="porsche_tycan">
                 <div class="car">
                     <img src="public/img/porche.webp">
