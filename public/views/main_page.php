@@ -41,7 +41,7 @@
             <div class="title">
                 <h2>NASZA FLOTA</h2>
             </div>
-            <div class="row-of-cars">
+            <div class="cars">
                 <a href="porsche_tycan">
                     <div class="car">
                         <img src="public/img/porche.webp">
