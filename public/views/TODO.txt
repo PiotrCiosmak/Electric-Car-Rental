@@ -11,8 +11,7 @@ dodać inne auta
 
 
 PYTANIA:
-- f40, sign-in, register, contact: problem skalowania, our-cars, porsche-tycan: wyświetlania na np. 4k
-
+wszędzie przy bardzo dużej rozdzielczości robi sie białe tło na dole
 
 
 
