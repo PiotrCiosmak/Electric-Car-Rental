@@ -9,8 +9,6 @@ require_once __DIR__ . "/../repository/UserRepository.php";
 
 class SecurityController extends AppController
 {
-    private $userRepository;
-
     public function __construct()
     {
         parent::__constructor();
@@ -42,12 +40,6 @@ class SecurityController extends AppController
         if ($tmpUser) {
             return $this->render('register', ['messages' => ['Ten adres email jest juz zajęty!']]);
         }
-
-        //Sprawdzenie czy email nie jest zajęty
-        /*        if(getEmail jest w bazie)
-                  {
-                    return $this->render('register',['messages'=>['Istnieje już konto powiązane z tym adresem email. Przejdź do strony logowania.']]);
-                   }*/
 
         $userRepository = new UserRepository();
         $userRepository->addUser($user);
@@ -103,7 +95,6 @@ class SecurityController extends AppController
 
     public function booking_check()
     {
-
         //Sprawdzić czy data nie jest ubiegła lub czy nie jest podana data na minusie
         //zamiast 1 zwrócić id aktualnie zalogowanie użytkownika
         //zamiast 2 zwrócić id aktualnie wybranego auta
