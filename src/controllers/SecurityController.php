@@ -16,7 +16,7 @@ class SecurityController extends AppController
 
     public function register_check()
     {
-        $user = new User($_POST["email"], $_POST["password"]);
+        $user = new User($_POST["email"], md5($_POST["password"]));
         if ((strlen($user->getEmail()) < 1) || (strlen($user->getPassword()) < 1)) {
             return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
         }
@@ -29,6 +29,7 @@ class SecurityController extends AppController
 
         //TODO sprawdzenie czy haslo ma 1 wielki, 1 mała, 1 znak specialny, 1 cyfre
         //TODO Haszownie hasła
+        //TODO upewnienie się ze bez logowania nie da się wejśc na inne podstrony niż register, sign in
         if (strlen($user->getPassword()) < 8) {
             return $this->render('register', ['messages' => ['Hasło jest zbyt krótkie!']]);
         }
@@ -73,7 +74,7 @@ class SecurityController extends AppController
     public function sign_in_check()
     {
         $email = $_POST['email'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         if ((strlen($email) < 1) || (strlen($password) < 1)) {
             return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
