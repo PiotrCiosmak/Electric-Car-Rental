@@ -1,11 +1,13 @@
 SecurityController::register_check: 3TODO
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
-
+Diagram erd bazy danych w formacie pdf
 
 POŹNIEJ:
 przerobienie na mobile view
 dodać inne auta
+readme.md
+Dodanie roli admina, który będzie mógł dodawac samochodu (dodatkowe pole w bazie users bool is admin)
 
 
 
