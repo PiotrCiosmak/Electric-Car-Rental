@@ -62,19 +62,25 @@ class SecurityController extends AppController
 
     public function sign_in_check()
     {
-        if ((strlen($_POST["email"]) < 1) || (strlen($_POST["password"]) < 1)) {
-            return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
+        $userRepository = new UserRepository();
+
+        /*        if (!$this->isPost()) {
+                    return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione']]);
+                }*/
+
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $user = $userRepository->getUser($email);
+
+        if (!$user) {
+            return $this->render('sign_in', ['messages' => ['Taki użytkownik nie istnieje!']]);
         }
 
-        if ($this->isPost()) {
-            return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione']]);
+        if ($user->getPassword() != $password) {
+            return $this->render('sign_in', ['messages' => ['Niepoprawne hasło!']]);
         }
-        $user = new User($_POST["email"], $_POST["password"]);
-        //sprawdzenie czy sa takie dane w bazie
-        /*        if(getEmial nie jest w bazie)
-           {
-             return $this->render('sign_in',['messages'=>['Niepoprawne dane. Spróbuj ponownie']]);
-            }*/
+
         return $this->render('main_page');
     }
 

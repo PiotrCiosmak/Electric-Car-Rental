@@ -3,6 +3,7 @@ SecurityController::sign_in_check: po kliknieciu zaloguj sprawdzić zgodnośc da
 SecurityController::register_check: po kliknięciu zarejestruj sprawdzić czy ten adres nie jest już w bazie, i załadować dane do bazy
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
+haszowanie hasła, inne zabezpieczenia
 
 POŹNIEJ:
 przerobienie na mobile view
@@ -12,39 +13,3 @@ dodać inne auta
 
 PYTANIA: (zadane)
 wszędzie przy bardzo dużej rozdzielczości robi sie białe tło na dole
-
-
-
-BAZA DANYCH:
-1 user ma jeden dane
-1 user moze zrobić wiele wynajmów
-
-Table:
-użtkowik
-id
-email
-haslo
-
-dane
-id
-imie
-nazwisko
-numertelefonu
-ulica
-numer domu
-numer mieszkania
-kod podcztowy
-miejscowosc
-id_uzytkownika
-
-samochody
-id
-nazwa
-cena
-
-wynajmy:
-id
-data poczatkowa
-data koncowa
-id_uzytkownika
-id_samochodu
