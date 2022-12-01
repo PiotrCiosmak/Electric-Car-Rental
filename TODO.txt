@@ -1,15 +1,28 @@
+Najpierw:
+Dodanie sesji użytkownika oraz cookies Lab 7 milestones (wraz z usunięciem sesji/cookies przy wylogowaniu oraz aktualizacja bazy)
 SecurityController::register_check: 3TODO
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
-Diagram erd bazy danych w formacie pdf
 
 POŹNIEJ:
-przerobienie na mobile view
-dodać inne auta
-readme.md
+Przerobienie na widoki mobilne
+Dodanie innych aut(podstrona, nowe zdjęcie, nowy cennik)
 Dodanie roli admina, który będzie mógł dodawac samochodu (dodatkowe pole w bazie users bool is admin)
+Dodanie jednego z 4 użycie zapyta do utworzenia widoków na bazie danych, zastosowanie triggerów, funkcji, transakcji
+W zapytaniach używane sa JOINY
 
 
 
 PYTANIA: (zadane)
 wszędzie przy bardzo dużej rozdzielczości robi sie białe tło na dole
+
+
+POZA KODEM:
+Diagram ERD bazy danych w formacie pdf, w głównym folderze projektu na repozytorium
+readme.md
+Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
+
+
+TO CZEGO NIE OBEJRZAŁEM
+JS basic, JS mid, JS fetch
+DEPLOY
