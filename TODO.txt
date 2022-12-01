@@ -1,6 +1,6 @@
 Najpierw:
 Dodanie sesji użytkownika oraz cookies Lab 7 milestones (wraz z usunięciem sesji/cookies przy wylogowaniu oraz aktualizacja bazy)
-SecurityController::register_check: 3TODO
+SecurityController::register_check: 4TODO
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
 

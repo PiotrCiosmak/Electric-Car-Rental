@@ -29,7 +29,6 @@ class SecurityController extends AppController
         }
 
         //TODO sprawdzenie czy haslo ma 1 wielki, 1 mała, 1 znak specialny, 1 cyfre
-        //TODO Haszownie hasła
         //TODO upewnienie się ze bez logowania nie da się wejśc na inne podstrony niż register, sign in
         if (strlen($user->getPassword()) < 8) {
             return $this->render('register', ['messages' => ['Hasło jest zbyt krótkie!']]);
