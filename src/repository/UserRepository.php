@@ -5,7 +5,6 @@ require_once __DIR__ . '/../models/User.php';
 
 class UserRepository extends Repository
 {
-
     public function __construct()
     {
         parent::__constructor();
