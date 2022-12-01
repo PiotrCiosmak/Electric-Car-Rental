@@ -9,21 +9,38 @@ require_once __DIR__ . "/../repository/UserRepository.php";
 
 class SecurityController extends AppController
 {
+    private $userRepository;
+
+    public function __construct()
+    {
+        parent::__constructor();
+    }
+
     public function register_check()
     {
-        if ((strlen($_POST["email"]) < 1) || (strlen($_POST["password"]) < 1)) {
+        $user = new User($_POST["email"], $_POST["password"]);
+        if ((strlen($user->getEmail()) < 1) || (strlen($user->getPassword()) < 1)) {
             return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
         }
 
-        $user = new User($_POST["email"], $_POST["password"]);
-
+        //TODO sprawdzenie czy email nie zaczyna sie od @ i czy ma . i czy nie kończy sie na .
         $emailRegex = preg_match('[@]', $user->getEmail());
         if (!$emailRegex) {
             return $this->render('register', ['messages' => ['Niepoprawny adres email!']]);
         }
 
+        //TODO sprawdzenie czy haslo ma 1 wielki, 1 mała, 1 znak specialny, 1 cyfre
+        //TODO Haszownie hasła
         if (strlen($user->getPassword()) < 8) {
-            return $this->render('register', ['messages' => ['Hasło jest zbyt krótki!']]);
+            return $this->render('register', ['messages' => ['Hasło jest zbyt krótkie!']]);
+        }
+
+        $tmpUserRepository = new UserRepository();
+
+        $tmpUser = $tmpUserRepository->getUser($user->getEmail());
+
+        if ($tmpUser) {
+            return $this->render('register', ['messages' => ['Ten adres email jest juz zajęty!']]);
         }
 
         //Sprawdzenie czy email nie jest zajęty
@@ -32,7 +49,8 @@ class SecurityController extends AppController
                     return $this->render('register',['messages'=>['Istnieje już konto powiązane z tym adresem email. Przejdź do strony logowania.']]);
                    }*/
 
-        //Załadowanie danych do bazy danych
+        $userRepository = new UserRepository();
+        $userRepository->addUser($user);
 
         return $this->render('register_data_input');
     }
@@ -62,15 +80,14 @@ class SecurityController extends AppController
 
     public function sign_in_check()
     {
-        $userRepository = new UserRepository();
-
-        /*        if (!$this->isPost()) {
-                    return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione']]);
-                }*/
-
         $email = $_POST['email'];
         $password = $_POST['password'];
 
+        if ((strlen($email) < 1) || (strlen($password) < 1)) {
+            return $this->render('sign_in', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
+        }
+
+        $userRepository = new UserRepository();
         $user = $userRepository->getUser($email);
 
         if (!$user) {
