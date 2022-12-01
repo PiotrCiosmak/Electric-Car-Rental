@@ -7,9 +7,9 @@ class UserData
     private $phoneNumber;
     private $street;
     private $houseNumber;
+    private $apartmentNumber;
     private $postCode;
     private $town;
-    private $apartmentNumber;
 
     public function __construct(string $firstName, string $lastName, string $phoneNumber, string $street, string $houseNumber, string $apartmentNumber, string $postCode, string $town)
     {
