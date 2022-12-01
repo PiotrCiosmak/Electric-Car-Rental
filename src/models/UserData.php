@@ -10,8 +10,9 @@ class UserData
     private $apartmentNumber;
     private $postCode;
     private $town;
+    private $idUser;
 
-    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $street, string $houseNumber, string $apartmentNumber, string $postCode, string $town)
+    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $street, string $houseNumber, string $apartmentNumber, string $postCode, string $town, int $idUser)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
@@ -21,6 +22,7 @@ class UserData
         $this->apartmentNumber = $apartmentNumber;
         $this->postCode = $postCode;
         $this->town = $town;
+        $this->idUser = $idUser;
     }
 
     public function getFirstName(): string
@@ -102,4 +104,16 @@ class UserData
     {
         $this->apartmentNumber = $apartmentNumber;
     }
+
+    public function getIdUser(): int
+    {
+        return $this->idUser;
+    }
+
+    public function setIdUser(int $idUser): void
+    {
+        $this->idUser = $idUser;
+    }
+
+
 }
