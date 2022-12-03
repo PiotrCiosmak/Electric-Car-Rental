@@ -90,7 +90,8 @@ class SecurityController extends AppController
         if (!password_verify($password, $user->getPassword())) {
             return $this->render('sign_in', ['messages' => ['Niepoprawne hasło!']]);
         }
-
+        session_start();
+        $_SESSION['user_id'] = $userRepository->getId($email);
         return $this->render('main_page');
     }
 
