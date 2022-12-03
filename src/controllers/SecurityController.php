@@ -16,12 +16,11 @@ class SecurityController extends AppController
 
     public function register_check()
     {
-        $user = new User($_POST["email"], password_hash($_POST["password"], PASSWORD_BCRYPT, ['cost' => 12,]));
+        $user = new User(strtolower($_POST["email"]), password_hash($_POST["password"], PASSWORD_BCRYPT, ['cost' => 12,]));
         if ((strlen($user->getEmail()) < 1) || (strlen($user->getPassword()) < 1)) {
             return $this->render('register', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
         }
 
-        //TODO mail to lower
         //TODO sprawdzenie czy email nie zaczyna sie od @ i czy ma . i czy nie kończy sie na .
         $emailRegex = preg_match('[@]', $user->getEmail());
         if (!$emailRegex) {
