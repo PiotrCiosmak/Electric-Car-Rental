@@ -35,7 +35,7 @@ session_start();
             <button id="sign-in-button">ZALOGUJ SIĘ</button>
         </form>
         <a href="register">
-            <button id="click-to-switch" type="submit">Kliknij, aby się zajerestrować</button>
+            <button id="click-to-switch" type="submit">Kliknij, aby się zarejestrować</button>
         </a>
     </div>
 </div>
