@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
@@ -13,6 +17,9 @@
     <div class="main-page-container">
         <nav>
             <img src="public/img/logo.svg" id="logo">
+            <?php
+                echo $_SESSION['user_id'];
+            ?>
             <ul>
                 <li>
                     <a href="main_page" class="menu-button">GŁÓWNA</a>

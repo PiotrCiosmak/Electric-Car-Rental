@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
@@ -42,17 +46,17 @@
         </div>
             <section class="questions-and-answers">
                 <div class="question">
-                    <p>W jaki sposób zarezerwować samchód?</p>
+                    <p>W jaki sposób zarezerwować samochód?</p>
                 </div>
                 <div class="answer">
                     <p>Samochód można zarezerwować przy pomocy naszej strony internetowej lub telefonicznie, zapraszamy do kontaktu pod numerem: +48 791 371 715.</p>
                 </div>
                 <div class="question">
-                    <p>Jakie kryteria należy spełnić żeby wynająć samochód.</p>
+                    <p>Jakie kryteria należy spełnić, żeby wynająć samochód.</p>
                 </div>
                 <div class="answer">
                     <p>W przypadku wynajmu przez osobę fizyczną: samochód może wynająć każda osoba, która ukończyła 18 lat, ma przy sobie ważne prawo jazdy oraz drugi dokument tożsamości (dowód osobisty, paszport). <br> <br>
-                        W przypadku wynajmu przez firmę: aby wynająć samochód należy mieć ze sobą kompletu dokumentów składających się z zaświadczenia NIP, zaświadczenia REGON, zaświadczenia Wpisu do Ewidencji Działalności Gospodarczej lub zaświadczenia z KRS (nie starszy niż 3 miesięczny). Upoważnienie dla osoby podpisującej umowę/odbierającej samochód do zawarcia zobowiązania w imieniu firmy.</p>
+                        W przypadku wynajmu przez firmę: aby wynająć samochód należy mieć ze sobą kompletu dokumentów składających się z zaświadczenia NIP, zaświadczenia REGON, zaświadczenia Wpisu do Ewidencji Działalności Gospodarczej lub zaświadczenia z KRS (nie starszy niż 3-miesięczny). Upoważnienie dla osoby podpisującej umowę/odbierającej samochód do zawarcia zobowiązania w imieniu firmy.</p>
                 </div>
                 <div class="question">
                     <p>Co w przypadku kiedy spowoduję szkodę komunikacyjną?</p>
@@ -70,7 +74,7 @@
                     <p>Czy samochód może prowadzić tylko osoba wynajmująca?</p>
                 </div>
                 <div class="answer">
-                    <p>Tak, samochód może prowadzić jedynie osoba która podpisała umowę wynajmu z Electric Car Rent.</p>
+                    <p>Tak, samochód może prowadzić jedynie osoba, która podpisała umowę wynajmu z Electric Car Rent.</p>
                 </div>
                 <div class="question">
                     <p>Czy otrzymam fakturę?</p>
