@@ -1,5 +1,15 @@
 Najpierw:
-Dodanie sesji użytkownika oraz cookies Lab 7 milestones (wraz z usunięciem sesji/cookies przy wylogowaniu oraz aktualizacja bazy)
+Dodanie sesji użytkownika oraz cookies Lab 7 milestones
+Rozpoczynam wszedzie sesje
+po zalogowaniu zapisuje id usera
+po rejestacj zapisuje id usera
+na każedj innej podstronie sprawdam czy to id usera jest wpisane
+czasem używam id usera do rezerwacji np. auta
+po wylogowaniu usuwam
+po zamknieciu strony chyba samo się usuwa
+
+
+
 SecurityController::register_check: 4TODO
 SecurityController::register_data_input_check: po kliknięciu dalej załadownie danych do bazy
 SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
