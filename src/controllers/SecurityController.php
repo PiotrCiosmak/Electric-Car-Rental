@@ -7,6 +7,7 @@ require_once __DIR__ . "/../models/Car.php";
 require_once __DIR__ . "/../models/Rent.php";
 require_once __DIR__ . "/../repository/UserRepository.php";
 require_once __DIR__ . "/../repository/UserDataRepository.php";
+require_once __DIR__ . "/../repository/RentRepository.php";
 
 class SecurityController extends AppController
 {
@@ -49,7 +50,7 @@ class SecurityController extends AppController
 
     public function register_data_input_check()
     {
-        //ZAMIAST 12 === $_SESSION['user_id']
+        //TODO ZAMIAST 12 DAĆ $_SESSION['user_id']
         $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], 1);
 
         if ((strlen($userData->getFirstName()) == 0) || (strlen($userData->getLastName()) == 0) || (strlen($userData->getPhoneNumber()) == 0) || (strlen($userData->getStreet()) == 0) || (strlen($userData->getHouseNumber()) == 0) || (strlen($userData->getPostCode()) == 0) || (strlen($userData->getTown()) == 0)) {
@@ -87,22 +88,27 @@ class SecurityController extends AppController
 
     public function booking_check()
     {
-        //Sprawdzić czy data nie jest ubiegła lub czy nie jest podana data na minusie
-        //zamiast 1 zwrócić id aktualnie zalogowanie użytkownika
-        //zamiast 2 zwrócić id aktualnie wybranego auta
-        if ((strlen($_POST["start-date"]) < 1) || (strlen($_POST["end-date"]) < 1))
-            return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
-
+        //TODO ZAMIAST 1 DAĆ $_SESSION['user_id'] | ZAMIAST 2 DAĆ $_SESSION['car_id']
         $rent = new Rent($_POST["start-date"], $_POST["end-date"], 1, 2);
 
-        //sprawdzenie czy data wynajmu nie zachodzi na jakieś wynajem który jest w bazie
+        if ((strlen($rent->getBeginDate()) < 1) || (strlen($rent->getEndDate()) < 1))
+            return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
 
-        //jeśli koliduje
-        //return $this->render('booking',['messages'=>['Brak możliwości dokonania rezerwacji w tym terminie']]);
 
-        //jesli nie koliduje
-        //zapisać wynajem w bazie
-        return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
+        //TODO Sprawdzić czy data nie jest ubiegła lub czy nie jest podana data na minusie
+        if (false) {
+            return $this->render('booking', ['messages' => ['Niepoprawna data wynajmu']]);
+        }
 
+        $rentRepository = new RentRepository();
+        if($rentRepository->DateIsFree($rent))
+        {
+            $rentRepository->addRent($rent);
+            return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
+        }
+        else
+        {
+            return $this->render('booking', ['messages' => ['Brak możliwości dokonania rezerwacji w tym terminie']]);
+        }
     }
 }
