@@ -1,18 +1,19 @@
 Najpierw:
-Dodanie sesji użytkownika oraz cookies Lab 7 milestones
-Rozpoczynam wszedzie sesje
+Rozpoczynam wszedzie sesje - zrobione chyba
 po zalogowaniu zapisuje id usera
 po rejestacj zapisuje id usera
 na każedj innej podstronie sprawdam czy to id usera jest wpisane
-czasem używam id usera do rezerwacji np. auta
 po wylogowaniu usuwam
 po zamknieciu strony chyba samo się usuwa
+SecurityController::register_data_input_check: zastąpić 12 na $_SESSION['user_id']
+SecurityController::booking_check: ZAMIAST 1 DAĆ $_SESSION['user_id'] | ZAMIAST 2 DAĆ $_SESSION['car_id']
+
 
 
 
 SecurityController::register_check: 1TODO
-SecurityController::register_data_input_check: zastąpić 12 na $_SESSION['user_id']
-SecurityController::booking_check zwrócić dwa ID, sprawdzić czy można wtedy wynajać zrobić dwa przypadki
+SecurityController::booking_check: 1TODO
+RentRepository: 2TODO
 
 POŹNIEJ:
 Przerobienie na widoki mobilne
