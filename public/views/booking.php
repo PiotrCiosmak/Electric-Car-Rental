@@ -1,9 +1,9 @@
 <?php
-include ('session.php');
+include('session.php');
 ?>
 
 <!DOCTYPE html>
-<head>x
+<head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
