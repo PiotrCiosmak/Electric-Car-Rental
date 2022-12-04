@@ -119,7 +119,7 @@ include ('session.php');
                 <div class="car">
                     <img src="public/img/porche.webp">
                     <div class="background-of-car">
-                        <p>Tesla Moodel S</p>
+                        <p>Tesla Model S</p>
                         <img src="public/img/0-100icon.svg">
                         <p>2,1</p>
                     </div>
