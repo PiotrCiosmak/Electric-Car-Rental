@@ -1,5 +1,5 @@
 <?php
-include('userCookie.php');
+include('user_cookie.php');
 ?>
 
 <!DOCTYPE html>
