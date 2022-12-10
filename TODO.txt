@@ -1,8 +1,7 @@
 Najpierw:
-cookie.php sprawdzić czy id jest ustawione | na każedj innej podstronie sprawdam czy to id usera jest wpisane
-gdy nie uzupełnie register_data_input a cookie user_id jest istawione nie pozwalam opuscic tej pod strony i ze wsztkich stron tam kieruje ruch
-po wylogowaniu usuwam cookie
 zahaszować to user_id
+połaczyć gałąż do main
+
 
 SecurityController::register_check: 1TODO
 SecurityController::booking_check: 4TODO
