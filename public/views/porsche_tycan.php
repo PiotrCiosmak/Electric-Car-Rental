@@ -1,7 +1,7 @@
 <?php
 $carName = "Porsche Tycan"; //Zmienna
-
 include('userCookie.php');
+
 require_once __DIR__ . "/../../src/repository/CarRepository.php";
 $carRepository = new CarRepository();
 $cookie_name = "car_id";//
@@ -16,12 +16,13 @@ setcookie($cookie_name, $cookie_value, 0, "/");
     </style>
     <script src="https://kit.fontawesome.com/8d0d2d9a42.js" crossorigin="anonymous"></script>
     <title>Porsche Tycan</title>
-
+    name
 </head>
 
 <body>
 <div class="one-car-container">
     <nav>
+        <img src="public/img/logo.svg" id="logo">
         <ul>
             <li>
                 <a href="main_page" class="menu-button">GŁÓWNA</a>
@@ -58,6 +59,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
 
         <div id="booking-container">
             <form id="booking" action="booking_check" METHOD="post">
+
                 <div id="date">
                     <div id="first-date">
                         <label class="date-label" for="start-date">Początek:</label>
