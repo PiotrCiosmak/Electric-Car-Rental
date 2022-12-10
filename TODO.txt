@@ -1,4 +1,6 @@
 Najpierw:
+zapisywać user_id nie maila
+zahaszować to user_id
 po zalogowaniu zapisuje id usera - zrobione
 po rejestacj zapisuje id usera - zrobione
 na każedj innej podstronie sprawdam czy to id usera jest wpisane
