@@ -81,8 +81,9 @@ class SecurityController extends AppController
         if (!password_verify($password, $user->getPassword())) {
             return $this->render('sign_in', ['messages' => ['Niepoprawne hasło!']]);
         }
-        session_start();
-        $_SESSION['user_id'] = $userRepository->getId($email);
+        $cookie_name = "user_id";
+        $cookie_value = $email;
+        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
         return $this->render('main_page');
     }
 
@@ -101,13 +102,10 @@ class SecurityController extends AppController
         }
 
         $rentRepository = new RentRepository();
-        if($rentRepository->DateIsFree($rent))
-        {
+        if ($rentRepository->DateIsFree($rent)) {
             $rentRepository->addRent($rent);
             return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
-        }
-        else
-        {
+        } else {
             return $this->render('booking', ['messages' => ['Brak możliwości dokonania rezerwacji w tym terminie']]);
         }
     }
