@@ -1,7 +1,5 @@
 <?php
-$user_id = $_COOKIE["user_id"];
-$length = mb_strlen($user_id);
-if ($length <= 0) {
-    echo($user_id);
-    exit(1);
-}
+/*if (!isset($_COOKIE['user_id]'])) {
+    $url = "http://$_SERVER[HTTP_HOST]";
+    header("Locaction: {$url}/");*/
+//}
