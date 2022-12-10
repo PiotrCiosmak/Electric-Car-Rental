@@ -1,4 +1,5 @@
 <?php
+include('autologin.php');
 ?>
 
 <!DOCTYPE html>
