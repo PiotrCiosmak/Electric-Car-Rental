@@ -24,6 +24,7 @@ include('userCookie.php');
                         echo htmlspecialchars($message);
                     }
                 }
+                setcookie('car_id', "", -1, "/");
                 ?>
             </p>
         </div>
