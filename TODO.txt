@@ -1,13 +1,10 @@
 Najpierw:
-zapisywać user_id nie maila
-zahaszować to user_id
-po zalogowaniu zapisuje id usera - zrobione
-po rejestacj zapisuje id usera - zrobione
-na każedj innej podstronie sprawdam czy to id usera jest wpisane
+cookie.php sprawdzić czy id jest ustawione | na każedj innej podstronie sprawdam czy to id usera jest wpisane
 po wylogowaniu usuwam
 po zamknieciu strony chyba samo się usuwa
 SecurityController::register_data_input_check: zastąpić 12 na $_SESSION['user_id']
 SecurityController::booking_check: ZAMIAST 1 DAĆ $_SESSION['user_id'] | ZAMIAST 2 DAĆ $_SESSION['car_id']
+zahaszować to user_id
 
 
 
