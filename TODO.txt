@@ -1,16 +1,14 @@
 Najpierw:
 cookie.php sprawdzić czy id jest ustawione | na każedj innej podstronie sprawdam czy to id usera jest wpisane
-po wylogowaniu usuwam
-po zamknieciu strony chyba samo się usuwa
-SecurityController::register_data_input_check: zastąpić 12 na $_SESSION['user_id']
-SecurityController::booking_check: ZAMIAST 1 DAĆ $_SESSION['user_id'] | ZAMIAST 2 DAĆ $_SESSION['car_id']
+gdy nie uzupełnie register_data_input a cookie user_id jest istawione nie pozwalam opuscic tej pod strony i ze wsztkich stron tam kieruje ruch
+po wylogowaniu usuwam cookie
 zahaszować to user_id
 
 
-
+porsche_tycan.php: 1TODO
 
 SecurityController::register_check: 1TODO
-SecurityController::booking_check: 1TODO
+SecurityController::booking_check: 4TODO
 RentRepository: 2TODO
 
 POŹNIEJ:

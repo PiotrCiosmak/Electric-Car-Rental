@@ -108,6 +108,9 @@ class SecurityController extends AppController
         $rentRepository = new RentRepository();
         if ($rentRepository->DateIsFree($rent)) {
             $rentRepository->addRent($rent);
+            //TODO dodać napis z jakiego maila została rezerwacja zrobione
+            //TODO dodac napis jakie auto zostało zarezerownane
+            //TODO dodac napis na jaki czas została rezerwacja zrbione
             return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
         } else {
             return $this->render('booking', ['messages' => ['Brak możliwości dokonania rezerwacji w tym terminie']]);
