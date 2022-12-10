@@ -1,5 +1,5 @@
 <?php
-include ('session.php');
+include('cookie.php');
 $_SESSION['car_id'] = 2;
 ?>
 <!DOCTYPE html>
