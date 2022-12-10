@@ -4,9 +4,6 @@ gdy nie uzupełnie register_data_input a cookie user_id jest istawione nie pozwa
 po wylogowaniu usuwam cookie
 zahaszować to user_id
 
-
-porsche_tycan.php: 1TODO
-
 SecurityController::register_check: 1TODO
 SecurityController::booking_check: 4TODO
 RentRepository: 2TODO
