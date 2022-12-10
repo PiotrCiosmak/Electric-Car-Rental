@@ -45,6 +45,11 @@ class SecurityController extends AppController
         $userRepository = new UserRepository();
         $userRepository->addUser($user);
 
+
+        $cookie_name = "user_id";
+        $cookie_value = $user->getEmail();
+        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
         return $this->render('register_data_input');
     }
 
@@ -81,6 +86,7 @@ class SecurityController extends AppController
         if (!password_verify($password, $user->getPassword())) {
             return $this->render('sign_in', ['messages' => ['Niepoprawne hasło!']]);
         }
+
         $cookie_name = "user_id";
         $cookie_value = $email;
         setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");

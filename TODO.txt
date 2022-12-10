@@ -1,7 +1,7 @@
 Najpierw:
 Rozpoczynam wszedzie sesje - zrobione
 po zalogowaniu zapisuje id usera - zrobione
-po rejestacj zapisuje id usera
+po rejestacj zapisuje id usera - zrobione
 na każedj innej podstronie sprawdam czy to id usera jest wpisane
 po wylogowaniu usuwam
 po zamknieciu strony chyba samo się usuwa
