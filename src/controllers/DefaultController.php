@@ -83,4 +83,9 @@ class DefaultController extends AppController
     {
         $this->render('booking_check');
     }
+
+    public function delete_cookie()
+    {
+        $this->render('delete_cookie');
+    }
 }
