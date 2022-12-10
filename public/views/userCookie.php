@@ -1,5 +1,4 @@
 <?php
-/*if (!isset($_COOKIE['user_id]'])) {
-    $url = "http://$_SERVER[HTTP_HOST]";
-    header("Locaction: {$url}/");*/
-//}
+if (!isset($_COOKIE["user_id"])) {
+    header("Location: sign_in");
+}
