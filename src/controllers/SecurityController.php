@@ -95,7 +95,7 @@ class SecurityController extends AppController
     public function booking_check()
     {
         //TODO ZAMIAST 1 DAĆ $_SESSION['user_id'] | ZAMIAST 2 DAĆ $_SESSION['car_id']
-        $rent = new Rent($_POST["start-date"], $_POST["end-date"], 1, 2);
+        $rent = new Rent($_POST["start-date"], $_POST["end-date"], $_COOKIE['user_id'], $_COOKIE['car_id']);
 
         if ((strlen($rent->getBeginDate()) < 1) || (strlen($rent->getEndDate()) < 1))
             return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
