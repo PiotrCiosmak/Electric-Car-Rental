@@ -16,6 +16,7 @@ include('cookie.php');
 <body>
 <div class="our-cars-container">
     <nav>
+        <img src="public/img/logo.svg" id="logo">
         <ul>
             <li>
                 <a href="main_page" class="menu-button">GŁÓWNA</a>
