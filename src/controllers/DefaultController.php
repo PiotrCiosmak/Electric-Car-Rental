@@ -88,4 +88,9 @@ class DefaultController extends AppController
     {
         $this->render('delete_cookie');
     }
+
+    public function register_data_cookie()
+    {
+        $this->render('register_data_cookie');
+    }
 }
