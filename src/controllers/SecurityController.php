@@ -55,8 +55,7 @@ class SecurityController extends AppController
 
     public function register_data_input_check()
     {
-        //TODO ZAMIAST 12 DAĆ $_SESSION['user_id']
-        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], 1);
+        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], $_COOKIE['user_id']);
 
         if ((strlen($userData->getFirstName()) == 0) || (strlen($userData->getLastName()) == 0) || (strlen($userData->getPhoneNumber()) == 0) || (strlen($userData->getStreet()) == 0) || (strlen($userData->getHouseNumber()) == 0) || (strlen($userData->getPostCode()) == 0) || (strlen($userData->getTown()) == 0)) {
             return $this->render('register_data_input', ['messages' => ['Uzupełnij wszystkie pola!']]);
