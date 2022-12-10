@@ -1,4 +1,7 @@
 <?php
+if (isset($_COOKIE["register_data_input"])) {
+    header("Location: main_page");
+}
 ?>
 
 <!DOCTYPE html>
