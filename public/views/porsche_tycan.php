@@ -16,7 +16,6 @@ setcookie($cookie_name, $cookie_value, 0, "/");
     </style>
     <script src="https://kit.fontawesome.com/8d0d2d9a42.js" crossorigin="anonymous"></script>
     <title>Porsche Tycan</title>
-    name
 </head>
 
 <body>
