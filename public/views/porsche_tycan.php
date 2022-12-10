@@ -1,6 +1,8 @@
 <?php
 include('cookie.php');
-$_SESSION['car_id'] = 2;
+$cookie_name = "car_id";//TODO pobiera id z CarRepostiory funkcją getId po nazwie auta
+$cookie_value = 2;
+setcookie($cookie_name, $cookie_value, 0, "/");
 ?>
 <!DOCTYPE html>
 <head>
