@@ -49,7 +49,6 @@ class SecurityController extends AppController
         $cookie_name = "user_id";
         $cookie_value = $userRepository->getId($user->getEmail());
         setcookie($cookie_name, $cookie_value, 0, "/");
-
         return $this->render('register_data_input');
     }
 
@@ -63,6 +62,10 @@ class SecurityController extends AppController
 
         $userDataRepository = new UserDataRepository();
         $userDataRepository->addUserData($userData);
+
+        $cookie_name = "register_data_input";
+        $cookie_value = 1;
+        setcookie($cookie_name, $cookie_value, 0, "/");
         return $this->render('main_page');
     }
 
@@ -88,6 +91,10 @@ class SecurityController extends AppController
 
         $cookie_name = "user_id";
         $cookie_value = $userRepository->getId($user->getEmail());
+        setcookie($cookie_name, $cookie_value, 0, "/");
+
+        $cookie_name = "register_data_input";
+        $cookie_value = 1;
         setcookie($cookie_name, $cookie_value, 0, "/");
         return $this->render('main_page');
     }
