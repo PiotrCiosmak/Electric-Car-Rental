@@ -1,7 +1,6 @@
 Najpierw:
-SecurityController::booking_check: 4TODO
+RentRepository: 1TODO
 porsche_tycan.php: 1TODO
-RentRepository: 2TODO
 
 POŹNIEJ:
 Przerobienie na widoki mobilne
