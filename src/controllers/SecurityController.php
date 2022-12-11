@@ -101,14 +101,12 @@ class SecurityController extends AppController
 
     public function booking_check()
     {
-        $rent = new Rent($_POST["start-date"], $_POST["end-date"], $_COOKIE['user_id'], decryptIt($_COOKIE['car_id']));
+        $rent = new Rent($_POST["start-date"], $_POST["end-date"], $this->decryptIt($_COOKIE['user_id']), $_COOKIE['car_id']);
 
         if ((strlen($rent->getBeginDate()) < 1) || (strlen($rent->getEndDate()) < 1))
             return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
 
-
-        //TODO Sprawdzić czy data nie jest ubiegła lub czy nie jest podana data na minusie
-        if (false) {
+        if (($rent->getBeginDate() >= $rent->getEndDate()) || ($rent->getBeginDate() < date('Y-m-d '))) {
             return $this->render('booking', ['messages' => ['Niepoprawna data wynajmu']]);
         }
 
@@ -126,7 +124,8 @@ class SecurityController extends AppController
 
     private function encryptIt(?string $x): string
     {
-        return openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121');
+
+        return strval(openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121'));
     }
 
     private function decryptIt(string $x): string
