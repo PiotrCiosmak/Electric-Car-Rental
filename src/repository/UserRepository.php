@@ -27,6 +27,18 @@ class UserRepository extends Repository
         );
     }
 
+    public function getEmail(string $id_user)
+    {
+        $stmt = $this->database->connect()->prepare('SELECT email FROM public.users WHERE id_user = :id_user');
+        $stmt->bindParam(':id_user', $id_user, PDO::PARAM_STR);
+        $stmt->execute();
+        $email = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$email) {
+            return null;
+        }
+        return $email['email'];
+    }
+
     public function addUser(User $user): void
     {
         $stmt = $this->database->connect()->prepare('
