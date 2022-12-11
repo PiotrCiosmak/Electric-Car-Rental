@@ -22,4 +22,17 @@ class carRepository extends Repository
         }
         return $carId['id_car'];
     }
+
+    public function getName(string $id_car)
+    {
+        $stmt = $this->database->connect()->prepare('SELECT cars.name FROM public.cars WHERE id_car = :id_car');
+        $stmt->bindParam(':id_car', $id_car, PDO::PARAM_STR);
+        $stmt->execute();
+        $name = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$name) {
+            return null;
+        }
+        return $name['name'];
+    }
+
 }
