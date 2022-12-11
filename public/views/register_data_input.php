@@ -19,7 +19,7 @@ if (isset($_COOKIE["register_data_input"])) {
     <div class="logo_and_title">
         <img src="public/img/logo.svg">
         <h1>Electric Car Rent</h1>
-        <h3>Największa wypożyczalnia samochodów elekrycznych w Polsce</h3>
+        <h3>Największa wypożyczalnia samochodów elektrycznych w Polsce</h3>
     </div class="data-input-container">
     <form class="data-input" action="register_data_input_check" METHOD="post">
         <div id="error-message">
