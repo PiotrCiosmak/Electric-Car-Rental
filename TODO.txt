@@ -1,9 +1,5 @@
-Najpierw:
-RentRepository: 1TODO
-porsche_tycan.php: 1TODO
-
 POŹNIEJ:
-Przerobienie na widoki mobilne
+Przerobienie na widoki mobilne (register, sign_in, main_page, porshe_tycan, f40, rabat, kontakt)
 Dodanie innych aut(podstrona, nowe zdjęcie, nowy cennik) (albo po stworzeniu podzsotrnt w kodzie php dodac if ze jesli nie ma tekigo w baze to go dodaj)
 Dodanie roli admina, który będzie mógł dodawac samochodu (dodatkowe pole w bazie users bool is admin)
 Dodanie jednego z 4 użycie zapyta do utworzenia widoków na bazie danych, zastosowanie triggerów, funkcji, transakcji
