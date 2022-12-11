@@ -1,5 +1,4 @@
 Najpierw:
-SecurityController::register_check: 1TODO
 SecurityController::booking_check: 4TODO
 porsche_tycan.php: 1TODO
 RentRepository: 2TODO
