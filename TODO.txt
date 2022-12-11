@@ -1,8 +1,6 @@
 Najpierw:
-zahaszować to user_id
 połaczyć gałąż do main
-
-
+porsche_tycan.php: 1TODO
 SecurityController::register_check: 1TODO
 SecurityController::booking_check: 4TODO
 RentRepository: 2TODO
