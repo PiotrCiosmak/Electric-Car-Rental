@@ -10,13 +10,19 @@ class RentRepository extends Repository
         parent::__constructor();
     }
 
-    public function DateIsFree(Rent $rent): bool
+    public function dateIsFree(Rent $rent): bool
     {
-        //TODO
-        //zwracam tblice z wszystkimi rekordmi gdzie id_car = temu z cookie
-        //do tego warunek że data poczatkowa nowa musi być wcześniej niż data końcowa
-        //do tego warunerk że data końcowa nowego musi być wcześniejsza niż data początkowa tego z bazy
-        return true;
+        $stmt = $this->database->connect()->prepare('SELECT * FROM public.rents WHERE id_car = :id_car AND ( (:start_date BETWEEN start_date AND end_date) OR (:end_date BETWEEN start_date AND end_date) OR(:start_date<start_date AND :end_date>end_date) )');
+        $stmt->bindParam(':id_car', $_COOKIE['car_id'], PDO::PARAM_STR);
+        $stmt->bindParam(':start_date', $rent->getBeginDate(), PDO::PARAM_STR);
+        $stmt->bindParam(':end_date', $rent->getEndDate(), PDO::PARAM_STR);
+        $stmt->execute();
+        $cars = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$cars) {
+            return true;
+        }
+        return false;
     }
 
 
