@@ -112,7 +112,7 @@ class SecurityController extends AppController
         }
 
         $rentRepository = new RentRepository();
-        if ($rentRepository->DateIsFree($rent)) {
+        if ($rentRepository->dateIsFree($rent)) {
             $rentRepository->addRent($rent);
             $tmpUserRepository = new UserRepository();
             $email = $tmpUserRepository->getEmail($this->decryptIt($_COOKIE['user_id']));
