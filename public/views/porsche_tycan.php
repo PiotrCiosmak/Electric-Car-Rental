@@ -36,10 +36,10 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                 <a href="faq" class="menu-button">FAQ</a>
             </li>
             <li>
-                <a href="discount" class="menu-button">RABAT</a>
+                <a href="discount" id="bottom-button" class="menu-button">RABAT</a>
             </li>
             <li>
-                <a href="contact" class="menu-button">KONTAKT</a>
+                <a href="contact" id="bottom-button" class="menu-button">KONTAKT</a>
             </li>
         </ul>
         <a href="delete_cookie" class="logout-button">
