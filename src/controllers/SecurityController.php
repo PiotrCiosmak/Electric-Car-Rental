@@ -47,14 +47,14 @@ class SecurityController extends AppController
 
 
         $cookie_name = "user_id";
-        $cookie_value = $userRepository->getId($user->getEmail());
+        $cookie_value = $this->encryptIt($userRepository->getId($user->getEmail()));
         setcookie($cookie_name, $cookie_value, 0, "/");
         return $this->render('register_data_input');
     }
 
     public function register_data_input_check()
     {
-        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], $_COOKIE['user_id']);
+        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], $this->decryptIt($_COOKIE['user_id']));
 
         if ((strlen($userData->getFirstName()) == 0) || (strlen($userData->getLastName()) == 0) || (strlen($userData->getPhoneNumber()) == 0) || (strlen($userData->getStreet()) == 0) || (strlen($userData->getHouseNumber()) == 0) || (strlen($userData->getPostCode()) == 0) || (strlen($userData->getTown()) == 0)) {
             return $this->render('register_data_input', ['messages' => ['Uzupełnij wszystkie pola!']]);
@@ -90,7 +90,7 @@ class SecurityController extends AppController
         }
 
         $cookie_name = "user_id";
-        $cookie_value = $userRepository->getId($user->getEmail());
+        $cookie_value = $this->encryptIt($userRepository->getId($user->getEmail()));
         setcookie($cookie_name, $cookie_value, 0, "/");
 
         $cookie_name = "register_data_input";
@@ -101,7 +101,7 @@ class SecurityController extends AppController
 
     public function booking_check()
     {
-        $rent = new Rent($_POST["start-date"], $_POST["end-date"], $_COOKIE['user_id'], $_COOKIE['car_id']);
+        $rent = new Rent($_POST["start-date"], $_POST["end-date"], $_COOKIE['user_id'], decryptIt($_COOKIE['car_id']));
 
         if ((strlen($rent->getBeginDate()) < 1) || (strlen($rent->getEndDate()) < 1))
             return $this->render('booking', ['messages' => ['Data wynajmu nie została poprawnie wybrana']]);
@@ -122,5 +122,15 @@ class SecurityController extends AppController
         } else {
             return $this->render('booking', ['messages' => ['Brak możliwości dokonania rezerwacji w tym terminie']]);
         }
+    }
+
+    private function encryptIt(?string $x): string
+    {
+        return openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121');
+    }
+
+    private function decryptIt(string $x): string
+    {
+        return openssl_decrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121');
     }
 }
