@@ -5,7 +5,7 @@ include('user_cookie.php');
 require_once __DIR__ . "/../../src/repository/CarRepository.php";
 $carRepository = new CarRepository();
 $cookie_name = "car_id";
-$cookie_value = $carRepository->getId($carName);//TODO encrypt chyba
+$cookie_value = $carRepository->getId($carName);
 setcookie($cookie_name, $cookie_value, 0, "/");
 ?>
 <!DOCTYPE html>
