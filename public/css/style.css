@@ -315,6 +315,7 @@ form.data-input {
 
 /*DONE: our cars*/
 .car > img {
+    height: 13vw;
     border: 4px solid #2D3E50;
     border-radius: 25px 25px 0px 0px;
 }
@@ -411,6 +412,7 @@ form.data-input {
     margin: 1em;
     border: 3px solid #2D3E50;
     border-radius: 25px;
+    height: 30em;
 }
 
 /*DONE: faq*/
@@ -537,6 +539,7 @@ form.data-input {
     border-radius: 25px;
     margin-top: 2em;
     margin-bottom: 2em;
+    width: 100%;
 }
 
 /*DONE: f40*/
@@ -812,6 +815,7 @@ table {
     border-radius: 25px;
     height: 50vh;
     text-align: center;
+    font-size: 1.1em;
 }
 
 /*DONE: one-car*/
@@ -1134,5 +1138,108 @@ table tr:nth-child(even) {
 
     #click-to-switch {
         width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 3000px) {
+    h1 {
+        font-size: 9em;
+    }
+
+    h3 {
+        font-size: 4em;
+    }
+
+    #email, #pass, #sign-in-button, #register-button {
+        font-size: 3.2em;
+    }
+
+    #click-to-switch {
+        font-size: 2em;
+    }
+
+    #car-transporter-description > p {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 6em;
+    }
+
+    .background-of-car > p {
+        font-size: 3em;
+        line-height: 2em;
+    }
+
+    .background-of-car > img {
+        height: 7em;
+    }
+
+    #see-more-button {
+        font-size: 3em;
+    }
+
+    .main-description-title {
+        font-size: 6em;
+    }
+
+    .main-description-content {
+        font-size: 3em;
+    }
+
+    .main-icon > i {
+        font-size: 20em;
+    }
+
+    #logo, #logout {
+        height: 12em;
+    }
+
+    nav > ul > li a {
+        font-size: 4.6em;
+    }
+
+    .car > img {
+        height: 13.9vw;
+    }
+
+    #input-search-bar, .discount-text-box > p {
+        font-size: 3em;
+    }
+
+    #car-name, #car-price {
+        font-size: 4.5em;
+    }
+
+    .date-label {
+        font-size: 4em;
+    }
+
+    #start-date, #end-date, #amount-of-days-button {
+        font-size: 3.12em;
+    }
+
+    .f40-description-content, .f40-description-subtitle, .box > p {
+        font-size: 1.8em;
+    }
+
+    .f40-description-title, .discount-content {
+        font-size: 2.2em;
+    }
+
+    .question, .answer {
+        font-size: 3em;
+    }
+
+    #phone-numer-box, #email-address-box {
+        font-size: 5em;
+    }
+
+    #map > img {
+        height: 70em;
+    }
+
+    table {
+        font-size: 2.2em;
     }
 }
