@@ -21,7 +21,7 @@ include('autologin.php');
     <div class="register-container">
         <form class="register" action="register_check" METHOD="post">
             <div id="error-message">
-                <p style="font-size:1.5em; color: red;">
+                <p style="font-size:1.5em; color: red;text-align: center; margin: 1em;">
                 <?php if (isset($messages)) {
                     foreach ($messages as $message) {
                         echo htmlspecialchars($message);
