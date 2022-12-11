@@ -28,11 +28,11 @@ class SecurityController extends AppController
             return $this->render('register', ['messages' => ['Niepoprawny adres email!']]);
         }
 
-        //TODO sprawdzenie czy haslo ma 1 wielki, 1 mała, 1 znak specialny, 1 cyfre
-        /*        $passwordRegex = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
-                if (!(preg_match($passwordRegex, $user->getPassword()))) {
-                    return $this->render('register', ['messages' => ['Niepoprawne hasło!!']]);
-                }*/
+
+        $passwordRegex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/';
+        if (!(preg_match($passwordRegex, $_POST["password"]))) {
+            return $this->render('register', ['messages' => ['Hasło musi składać się z  ośmiu znaków, wielkich liter, małych liter i cyfr']]);
+        }
 
         $tmpUserRepository = new UserRepository();
 
