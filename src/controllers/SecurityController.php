@@ -8,6 +8,7 @@ require_once __DIR__ . "/../models/Rent.php";
 require_once __DIR__ . "/../repository/UserRepository.php";
 require_once __DIR__ . "/../repository/UserDataRepository.php";
 require_once __DIR__ . "/../repository/RentRepository.php";
+require_once __DIR__ . "/../repository/CarRepository.php";
 
 class SecurityController extends AppController
 {
@@ -113,10 +114,12 @@ class SecurityController extends AppController
         $rentRepository = new RentRepository();
         if ($rentRepository->DateIsFree($rent)) {
             $rentRepository->addRent($rent);
-            //TODO dodać napis z jakiego maila została rezerwacja zrobione
-            //TODO dodac napis jakie auto zostało zarezerownane
-            //TODO dodac napis na jaki czas została rezerwacja zrbione
-            return $this->render('booking', ['messages' => ['Potwierdzenie dokonania rezerwacja']]);
+            $tmpUserRepository = new UserRepository();
+            $email = $tmpUserRepository->getEmail($this->decryptIt($_COOKIE['user_id']));
+            $tmpCarRepository = new CarRepository();
+            $name = $tmpCarRepository->getName($_COOKIE['car_id']);
+            $msg = 'Zarezerwowano ' . $name . ' od ' . $rent->getBeginDate() . ' do ' . $rent->getEndDate() . '. Rezerwacja dokonana na maila ' . $email;
+            return $this->render('booking', ['messages' => [$msg]]);
         } else {
             return $this->render('booking', ['messages' => ['Brak możliwości dokonania rezerwacji w tym terminie']]);
         }
@@ -124,7 +127,6 @@ class SecurityController extends AppController
 
     private function encryptIt(?string $x): string
     {
-
         return strval(openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121'));
     }
 
