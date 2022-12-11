@@ -36,7 +36,7 @@ nav {
     height: 6em;
     margin: 2.38em;
     margin-left: 0;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    filter: invert(91%) sepia(6%) saturate(932%) hue-rotate(194deg) brightness(104%) contrast(105%);
 }
 
 /*DONE: all*/
@@ -84,11 +84,6 @@ nav > ul > li a:hover {
 /*DONE: all*/
 #sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover {
     color: #AD3E42;
-}
-
-/*DONE: all*/
-#logout {
-    filter: invert(91%) sepia(6%) saturate(932%) hue-rotate(194deg) brightness(104%) contrast(105%);
 }
 
 /*DONE: all*/
@@ -789,14 +784,14 @@ form.data-input {
 }
 
 /*DONE: one-car*/
-#secound-box {
+#second-box {
     height: 50%;
     margin: 1em 1em 2em 2em;
     text-align: left;
 }
 
 /*DONE: one-car*/
-#secound-box > p {
+#second-box > p {
     height: 75%;
     display: flex;
     align-items: center;
@@ -928,16 +923,14 @@ table tr:nth-child(even) {
 
 #car-transporter-photo > img {
     width: calc(100% - 4em);
-    margin: 2em;
-    margin-bottom: 0.5em;
+    margin: 2em 2em 0.5em;
     border: 4px solid #2D3E50;
     border-radius: 25px;
 }
 
 #car-transporter-description {
     width: calc(100% - 4em);
-    margin: 2em;
-    margin-bottom: 0.5em;
+    margin: 2em 2em 0.5em;
     background: #2D3E50;
     border-radius: 25px;
 
@@ -951,8 +944,7 @@ table tr:nth-child(even) {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 5em 1em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -1000,5 +992,147 @@ table tr:nth-child(even) {
     line-height: 1.3em;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
 
+@media only screen and (max-device-width: 650px) {
+    nav > ul {
+        padding: unset;
+        margin: 2em 1em;
+    }
+
+    nav > ul > li {
+        width: 50%;
+    }
+
+    nav > ul > li a {
+        width: 80%;
+        font-size: 2em;
+    }
+
+    #logo {
+        align-self: center;
+    }
+
+    .logout-button {
+        align-self: center;
+    }
+
+    .main-description-title {
+        line-height: unset;
+        font-size: 1.7em;
+        margin: 0.5em 2em 0 2em;
+    }
+
+    .main-description-content {
+        font-size: 1.2em;
+        margin: 0 2em 1em 2em;
+    }
+
+    .main-icon > i {
+        font-size: 5em;
+    }
+
+    #car-transporter-description > p {
+        padding: 2em;
+    }
+
+    #date {
+        text-align: center;
+    }
+
+    .date-label {
+        margin: unset;
+    }
+
+    #first-date {
+        margin-top: 1em;
+    }
+
+    #start-date, #end-date {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
+
+    .description {
+        display: unset;
+        width: 100%;
+    }
+
+    .description .info {
+        display: unset;
+        width: 100%;
+    }
+
+    #first-box {
+        margin: 2em 2em 1em;
+    }
+
+    #second-box {
+        margin: 1em 2em;
+    }
+
+    #third-box {
+        margin: 1em 2em 2em;
+        width: unset;
+    }
+
+    table {
+        height: 20vh;
+    }
+
+    #discount-all-box {
+        display: flow-root;
+    }
+
+    .discount-box {
+        width: unset;
+    }
+
+    #contact-info {
+        display: contents;
+    }
+
+    #phone-numer-box {
+        width: unset;
+    }
+
+    #email-address-box {
+        width: unset;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo_and_title {
+        width: 80%;
+        margin-bottom: 5em;
+    }
+
+    .sign-in-container, .register-container {
+        width: 80%;
+        text-align: -webkit-center;
+    }
+
+    form.sign-in, form.register {
+        height: unset;
+        width: 80%;
+    }
+
+    .logo_and_title > img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    #click-to-switch {
+        width: 80%;
+    }
 }
