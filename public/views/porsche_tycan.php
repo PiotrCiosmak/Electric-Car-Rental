@@ -82,7 +82,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         velit porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                         turpis egestas.</p>
                 </div>
-                <div class="box" id="secound-box">
+                <div class="box" id="second-box">
                     <p>PORSCHE TYCAN! <br>
                         - 1-8 dni – 250 km/doba <br>
                         - 9-13 dni – 200 km/doba <br>
