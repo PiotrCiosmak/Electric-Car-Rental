@@ -7,6 +7,7 @@ $carRepository = new CarRepository();
 $cookie_name = "car_id";
 $cookie_value = $carRepository->getId($carName);
 setcookie($cookie_name, $cookie_value, 0, "/");
+$tmpCarRepository = new CarRepository();
 ?>
 <!DOCTYPE html>
 <head>
@@ -105,31 +106,59 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                     </tr>
                     <tr>
                         <td>1-3</td>
-                        <td>1900 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(1));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td>4-6</td>
-                        <td>1800 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.95));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td>7-9</td>
-                        <td>1400 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.75));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td>10-13</td>
-                        <td>1200 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.65));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td>15-17</td>
-                        <td>1000 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.55));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td>18-31</td>
-                        <td>850 zł</td>
+                        <td>
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.45));
+                            ?>
+                        </td>
                     </tr>
                     <tr>
                         <td id="first-column-last-row">>31</td>
-                        <td id="second-column-last-row">700 zł</td>
+                        <td id="second-column-last-row">
+                            <?php
+                            echo($tmpCarRepository->getFinalPrice(0.35));
+                            ?>
+                        </td>
                     </tr>
                 </table>
             </div>
