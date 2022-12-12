@@ -35,4 +35,26 @@ class carRepository extends Repository
         return $name['name'];
     }
 
+    public function getPrice(string $id_car)
+    {
+        $stmt = $this->database->connect()->prepare('SELECT cars.price FROM public.cars WHERE id_car = :id_car');
+        $stmt->bindParam(':id_car', $id_car, PDO::PARAM_STR);
+        $stmt->execute();
+        $price = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$price) {
+            return null;
+        }
+        return $price['price'];
+    }
+
+    public function getFinalPrice(float $percent)
+    {
+        $start_price = $this->getPrice($_COOKIE['car_id']);
+        return $this->roundToHundreds(strval($start_price * $percent));
+    }
+
+    private function roundToHundreds(string $strval)
+    {
+        return round(intval($strval) / 100) * 100. . " zł";
+    }
 }
