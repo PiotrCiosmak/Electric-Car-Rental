@@ -70,6 +70,23 @@ class SecurityController extends AppController
         return $this->render('main_page');
     }
 
+    public function change_data_input_check()
+    {
+        $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], $this->decryptIt($_COOKIE['user_id']));
+
+        if ((strlen($userData->getFirstName()) == 0) || (strlen($userData->getLastName()) == 0) || (strlen($userData->getPhoneNumber()) == 0) || (strlen($userData->getStreet()) == 0) || (strlen($userData->getHouseNumber()) == 0) || (strlen($userData->getPostCode()) == 0) || (strlen($userData->getTown()) == 0)) {
+            return $this->render('register_data_input', ['messages' => ['Uzupełnij wszystkie pola!']]);
+        }
+
+        $userDataRepository = new UserDataRepository();
+        $userDataRepository->addUserData($userData);
+
+        $cookie_name = "register_data_input";
+        $cookie_value = 1;
+        setcookie($cookie_name, $cookie_value, 0, "/");
+        return $this->render('main_page');
+    }
+
     public function sign_in_check()
     {
         $email = $_POST['email'];
