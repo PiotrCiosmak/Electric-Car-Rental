@@ -30,9 +30,9 @@ class SecurityController extends AppController
         }
 
 
-        $passwordRegex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/';
+        $passwordRegex = '/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.* )(?=.*[^a-zA-Z0-9]).{8,16}$/';
         if (!(preg_match($passwordRegex, $_POST["password"]))) {
-            return $this->render('register', ['messages' => ['Hasło musi składać się z  ośmiu znaków, wielkich liter, małych liter i cyfr']]);
+            return $this->render('register', ['messages' => ['Hasło musi zawierać od 8 do 16 znaków, wielką literę, małą literę, cyfrę i znak specjalny']]);
         }
 
         $tmpUserRepository = new UserRepository();
