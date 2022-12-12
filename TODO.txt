@@ -1,6 +1,4 @@
 POŹNIEJ:
-Dla każdego auta cena obliczna jest na podstawie bazy danych
-
 Każdy użytkownik w zakładce konto będzie mógł zobaczyć oraz zmienić swoje UserData
 Każdy użytkownik w zakładce konto będzie mógł zmienić swoje hasło (podaje wcześniejsze oraz dwa razy nowe)
 Każdy użytkownik w zakładce konto bedzie mógł zobaczyć swoje rezerwacje (ubiegłe jak i przyszłe) UŻYCIE JOINÓW
