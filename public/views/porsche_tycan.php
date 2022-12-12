@@ -41,6 +41,9 @@ setcookie($cookie_name, $cookie_value, 0, "/");
             <li>
                 <a href="contact" id="bottom-button" class="menu-button">KONTAKT</a>
             </li>
+            <li>
+                <a href="konto" id="last-button" class="menu-button">KONTO</a>
+            </li>
         </ul>
         <a href="delete_cookie" class="logout-button">
             <img src="public/img/logout.svg" id="logout">
