@@ -8,7 +8,7 @@ class DefaultController extends AppController
     {
         $this->render('register');
     }
-    
+
     public function register()
     {
         $this->render('register');
@@ -28,7 +28,7 @@ class DefaultController extends AppController
     {
         $this->render('booking');
     }
-    
+
     public function contact()
     {
         $this->render('contact');
@@ -92,5 +92,10 @@ class DefaultController extends AppController
     public function register_data_cookie()
     {
         $this->render('register_data_cookie');
+    }
+
+    public function account()
+    {
+        $this->render('account');
     }
 }
