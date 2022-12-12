@@ -12,7 +12,7 @@
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-On this page you can, among other things, check the availability of vehicles and book them. TODO
+On this page you can, among other things, check the availability of vehicles and book them.
 
 ## Technologies Used
 - HTML 5
@@ -27,11 +27,10 @@ On this page you can, among other things, check the availability of vehicles and
 
 ## Features
 List the ready features here:
-- Awesome feature 1 TODO
+- Awesome feature 1
 - Awesome feature 2
 - Awesome feature 3
 
-<!-- TODO -->
 ## Screenshots
 ![Example screenshot](./screenshots/sign-in.png)
 ![Example screenshot](./screenshots/porsche-tycan-1.png)
@@ -46,12 +45,10 @@ Project is: _in progress_.
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
-<!-- TODO -->
 Room for improvement:
 - Improvement to be done 1
 - Improvement to be done 2
 
-<!-- TODO -->
 To do:
 - Feature to be added 1
 - Feature to be added 2
