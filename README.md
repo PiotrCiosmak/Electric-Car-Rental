@@ -6,12 +6,10 @@
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
+* [Launch](#launch)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
 
 ## General Information
 On this page you can, among other things, check the availability of vehicles and book them. TODO
@@ -29,57 +27,36 @@ On this page you can, among other things, check the availability of vehicles and
 
 ## Features
 List the ready features here:
-- Awesome feature 1
+- Awesome feature 1 TODO
 - Awesome feature 2
 - Awesome feature 3
 
-
+<!-- TODO -->
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Example screenshot](./screenshots/sign-in.png)
+![Example screenshot](./screenshots/porsche-tycan-1.png)
+![Example screenshot](./screenshots/porsche-tycan-2.png)
 
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+## Launch
+To run this project you need to have Docker app and some IDE like visual studio code or webstorm. First you need to run Docker app. Then in the IDE terminal you need to write 'docker-compose up'. The last thing you have to do is open your browser and enter 'localhost:8080' in the search bar.
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
-
+Project is: _in progress_.
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
+<!-- TODO -->
 Room for improvement:
 - Improvement to be done 1
 - Improvement to be done 2
 
+<!-- TODO -->
 To do:
 - Feature to be added 1
 - Feature to be added 2
 
-
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
-
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+- This project was created as a final project in the course Introduction to Web Application Design.
+- Many thanks to Adrian Widłak who oversaw the whole project.
