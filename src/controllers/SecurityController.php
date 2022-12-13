@@ -79,9 +79,6 @@ class SecurityController extends AppController
         $userDataRepository = new UserDataRepository();
         $userDataRepository->updateUserData($userData);
 
-        $cookie_name = "update_user_data";
-        $cookie_value = 1;
-        setcookie($cookie_name, $cookie_value, 0, "/");
         return $this->render('account');
     }
 
