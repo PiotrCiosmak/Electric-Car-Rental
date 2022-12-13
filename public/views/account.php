@@ -93,7 +93,7 @@ $tmpUserDataRepository = new UserDataRepository();
                         echo($tmpUserDataRepository->getTown());
                         ?>
                     </p>
-                    <form action="change_data_input">
+                    <form action="update_user_data">
                         <button id="change-user-data">Zmień dane adresowe</button>
                     </form>
                 </div>
