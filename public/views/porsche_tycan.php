@@ -70,7 +70,7 @@ $tmpCarRepository = new CarRepository();
             </p>
             <p id="car-price">
                 <?php
-                echo($carRepository->getFinalPrice($_COOKIE['car_id'], 1));
+                echo($carRepository->getFinalPrice( 1));
                 ?>
             </p>
         </div>
