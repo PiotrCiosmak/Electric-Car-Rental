@@ -74,7 +74,7 @@ class SecurityController extends AppController
     {
         $userData = new UserData($_POST["first-name"], $_POST["last-name"], $_POST["phone-numer"], $_POST["street"], $_POST["house-number"], $_POST["apartment-number"], $_POST["post-code"], $_POST["city"], $this->decryptIt($_COOKIE['user_id']));
         if ((strlen($userData->getFirstName()) == 0) || (strlen($userData->getLastName()) == 0) || (strlen($userData->getPhoneNumber()) == 0) || (strlen($userData->getStreet()) == 0) || (strlen($userData->getHouseNumber()) == 0) || (strlen($userData->getPostCode()) == 0) || (strlen($userData->getTown()) == 0)) {
-            return $this->render('register_data_input', ['messages' => ['Uzupełnij wszystkie pola!']]);
+            return $this->render('update_user_data', ['messages' => ['Uzupełnij wszystkie pola!']]);
         }
         $userDataRepository = new UserDataRepository();
         $userDataRepository->updateUserData($userData);
