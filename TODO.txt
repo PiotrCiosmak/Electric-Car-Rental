@@ -1,10 +1,10 @@
-Zrobić żeby przycisk zmień dane adresowe zaczął działać
-Każdy użytkownik w zakładce konto będzie mógł zmienić swoje hasło (podaje wcześniejsze oraz dwa razy nowe)
 Każdy użytkownik w zakładce konto bedzie mógł zobaczyć swoje rezerwacje (ubiegłe jak i przyszłe) UŻYCIE JOINÓW
+Opcja usunięci konta
 
 Dla każdego użytkownika dodanie kolumny isAdmin ustawiana jest na 'false' za każdym razem
 Dodanie 1 konta admina na moje dane
 Admin w zakładce konto będzie mogł zmieniać bazową ceną auta wypełniając formularz (z listy wybiera auto obok wpisuje cene) UŻYCIE TRANSAKCJI for update
+account.php, update_user_data.php, register_data_input: widoki mobile i min 3000px, error_msg in form czcionka za mała dla min 3000px, error_msg sprawdzić dla mobile
 
 
 
