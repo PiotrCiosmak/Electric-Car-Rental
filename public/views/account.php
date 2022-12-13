@@ -121,15 +121,35 @@ $tmpUserDataRepository = new UserDataRepository();
                                    id="input-change-password-new-password"
                                    placeholder="powtórz nowe hasło">
                         </div>
-                        <button id="submit-change-password-button" type="submit">DALEJ</button>
+                        <button id="submit-change-password-button" type="submit">Dalej</button>
                     </form>
                 </div>
             </div>
             <div class="account-col" id="account-col-2">
                 <h3 class="account-sub-title">Twoje rezerwacje</h3>
+                <?php
+                $tmp = new RentRepository();
+                $userRentals = $tmp->getAllUserRentals();
+                $counter = 0;
+                ?>
+                <table id="rent-table">
+                    <tr>
+                        <th class="rent-table-header-left">Lp.</th>
+                        <th id="rent-table-header-center">Samochód</th>
+                        <th id="rent-table-header-center">Początek wynajmu</th>
+                        <th class="rent-table-header-right">Koniec wynajmu</th>
+                    </tr>
+                    <?php
+                    foreach ($userRentals as $row) { ?>
+                        <tr>
+                            <td> <?php echo(++$counter) ?> </td>
+                            <td> <?php echo($row['name']); ?> </td>
+                            <td> <?php echo($row['start_date']); ?> </td>
+                            <td> <?php echo($row['end_date']); ?> </td>
+                        </tr>
+                    <?php } ?>
+                </table>
             </div>
-        </div>
-</div>
-</main>
+    </main>
 </div>
 </body>
