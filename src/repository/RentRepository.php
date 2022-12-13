@@ -25,7 +25,6 @@ class RentRepository extends Repository
         return false;
     }
 
-
     public function addRent(Rent $rent): void
     {
         $stmt = $this->database->connect()->prepare('
@@ -33,5 +32,28 @@ class RentRepository extends Repository
             VALUES (?,?,?,?)
             ');
         $stmt->execute([$rent->getBeginDate(), $rent->getEndDate(), $rent->getUserID(), $rent->getCarID()]);
+    }
+
+    public function getAllUserRentals()
+    {
+        $stmt = $this->database->connect()->prepare('
+            SELECT c.name, r.start_date, r.end_date
+            FROM rents AS r
+            JOIN cars c on c.id_car = r.id_car
+            WHERE id_user = :id_user
+        ');
+        $stmt->bindParam(':id_user', $this->decryptIt($_COOKIE['user_id']), PDO::PARAM_STR);
+        $stmt->execute();
+
+        $result = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            array_push($result, $row);
+        }
+        return $result;
+    }
+
+    private function decryptIt(string $x): string
+    {
+        return openssl_decrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121');
     }
 }
