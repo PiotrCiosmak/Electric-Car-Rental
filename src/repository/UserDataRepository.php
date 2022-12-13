@@ -37,6 +37,24 @@ class UserDataRepository extends Repository
         $stmt->execute([$userData->getFirstName(), $userData->getLastName(), $userData->getPostCode(), $userData->getStreet(), $userData->getHouseNumber(), $userData->getApartmentNumber(), $userData->getPostCode(), $userData->getTown(), $userData->getIdUser()]);
     }
 
+    public function updateUserData(UserData $userData): void
+    {
+        $stmt = $this->database->connect()->prepare('
+            UPDATE public.users_data
+            SET first_name=:first_name, last_name=:last_name, phone_number=:phone_number, street=:street,house_number=:house_number,apartment_number=:apartment_number,post_code=:post_code,town=:town
+            WHERE id_user=:id_user
+            ');
+        $stmt->bindParam(':first_name', $userData->getFirstName(), PDO::PARAM_STR);
+        $stmt->bindParam(':last_name', $userData->getLastName(), PDO::PARAM_STR);
+        $stmt->bindParam(':phone_number', $userData->getPhoneNumber(), PDO::PARAM_STR);
+        $stmt->bindParam(':street', $userData->getStreet(), PDO::PARAM_STR);
+        $stmt->bindParam(':house_number', $userData->getHouseNumber(), PDO::PARAM_STR);
+        $stmt->bindParam(':apartment_number', $userData->getApartmentNumber(), PDO::PARAM_STR);
+        $stmt->bindParam(':post_code', $userData->getPostCode(), PDO::PARAM_STR);
+        $stmt->bindParam(':town', $userData->getTown(), PDO::PARAM_STR);
+        $stmt->execute();
+    }
+
     public function getFirstName()
     {
         $stmt = $this->database->connect()->prepare('SELECT first_name FROM public.users_data WHERE id_user = :id_user');
