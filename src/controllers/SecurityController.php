@@ -36,7 +36,6 @@ class SecurityController extends AppController
         }
 
         $tmpUserRepository = new UserRepository();
-
         $tmpUser = $tmpUserRepository->getUser($user->getEmail());
 
         if ($tmpUser) {
@@ -82,7 +81,38 @@ class SecurityController extends AppController
         return $this->render('account');
     }
 
-    public function sign_in_check()
+    public function change_password_check()
+    {
+        $oldPassword = $_POST['old-password'];
+        $firstNewPassword = $_POST['new-password-1'];
+        $secondNewPassword = $_POST['new-password-2'];
+        if ((strlen($oldPassword) < 1) || (strlen($firstNewPassword) < 1) || (strlen($secondNewPassword) < 1)) {
+            return $this->render('account', ['messages' => ['Wszystkie wymagane pola nie zostały uzupełnione!']]);
+        }
+
+        $userRepository = new UserRepository();
+        $user = $userRepository->getUserById($this->decryptIt($_COOKIE['user_id']));
+
+        if (!password_verify($oldPassword, $user->getPassword())) {
+            return $this->render('account', ['messages' => ['Stare hasło jest niepoprawne!']]);
+        }
+
+
+        if (!($firstNewPassword === $secondNewPassword)) {
+            return $this->render('account', ['messages' => ['Nowe hasła nie są identyczne!']]);
+        }
+
+        $passwordRegex = '/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.* )(?=.*[^a-zA-Z0-9]).{8,16}$/';
+        if (!(preg_match($passwordRegex, $firstNewPassword))) {
+            return $this->render('account', ['messages' => ['Nowe hasło musi zawierać od 8 do 16 znaków, wielką literę, małą literę, cyfrę i znak specjalny']]);
+        }
+
+        $userRepository->updatePassword(password_hash($firstNewPassword, PASSWORD_BCRYPT, ['cost' => 12,]));
+        return $this->render('account', ['messages' => ['Hasło zostało zaktualizowane']]);
+    }
+
+    public
+    function sign_in_check()
     {
         $email = $_POST['email'];
         $password = $_POST['password'];
