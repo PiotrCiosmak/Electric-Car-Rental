@@ -99,7 +99,7 @@ $tmpUserDataRepository = new UserDataRepository();
                 </div>
                 <div id="account-user-change-password">
                     <h3 class="account-sub-title">Zmień hasło</h3>
-                    <form id="change-password">//todo ekran info ze zmienono i pozniej do account
+                    <form id="change-password">
                         <div>
                             <input class="input-change-password" id="input-change-password-old-password"
                                    placeholder="stare hasło">
@@ -113,7 +113,6 @@ $tmpUserDataRepository = new UserDataRepository();
             </div>
             <div class="account-col" id="account-col-2">
                 <h3 class="account-sub-title">Twoje rezerwacje</h3>
-
             </div>
         </div>
 </div>
