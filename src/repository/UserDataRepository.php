@@ -40,10 +40,10 @@ class UserDataRepository extends Repository
     public function updateUserData(UserData $userData): void
     {
         $stmt = $this->database->connect()->prepare('
-            UPDATE public.users_data
-            SET first_name=:first_name, last_name=:last_name, phone_number=:phone_number, street=:street,house_number=:house_number,apartment_number=:apartment_number,post_code=:post_code,town=:town
-            WHERE id_user=:id_user
-            ');
+                    UPDATE public.users_data
+                    SET first_name = :first_name, last_name = :last_name, phone_number = :phone_number, street = :street, house_number = :house_number, apartment_number = :apartment_number, post_code = :post_code, town = :town
+                    WHERE id_user = :id_user
+                    ');
         $stmt->bindParam(':first_name', $userData->getFirstName(), PDO::PARAM_STR);
         $stmt->bindParam(':last_name', $userData->getLastName(), PDO::PARAM_STR);
         $stmt->bindParam(':phone_number', $userData->getPhoneNumber(), PDO::PARAM_STR);
@@ -52,7 +52,7 @@ class UserDataRepository extends Repository
         $stmt->bindParam(':apartment_number', $userData->getApartmentNumber(), PDO::PARAM_STR);
         $stmt->bindParam(':post_code', $userData->getPostCode(), PDO::PARAM_STR);
         $stmt->bindParam(':town', $userData->getTown(), PDO::PARAM_STR);
-        $stmt->bindParam(':id_user', $_COOKIE['user_id'], PDO::PARAM_STR);
+        $stmt->bindParam(':id_user', $this->decryptIt($_COOKIE['user_id']), PDO::PARAM_STR);
         $stmt->execute();
     }
 
