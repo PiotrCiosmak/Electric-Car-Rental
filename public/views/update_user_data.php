@@ -1,9 +1,6 @@
 <?php
-/*if (isset($_COOKIE["register_data_input"])) {
-    header("Location: main_page");
-}*/
+include('user_cookie.php');
 ?>
-
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
