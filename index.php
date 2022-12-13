@@ -25,4 +25,6 @@ Routing::get('delete_cookie', 'CookieController');
 Routing::get('register_data_cookie', 'DefaultController');
 Routing::get('account', 'DefaultController');
 Routing::get('update_user_data', 'DefaultController');
+Routing::get('update_user_data_check', 'SecurityController');
+
 Routing::run($path);

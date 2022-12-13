@@ -103,4 +103,9 @@ class DefaultController extends AppController
     {
         $this->render('update_user_data');
     }
+
+    public function update_user_data_check()
+    {
+        $this->render('update_user_data_check');
+    }
 }
