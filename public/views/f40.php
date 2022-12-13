@@ -1,5 +1,13 @@
 <?php
+$carName = "FERRARI F40"; //Zmienna
 include('user_cookie.php');
+
+require_once __DIR__ . "/../../src/repository/CarRepository.php";
+$carRepository = new CarRepository();
+$cookie_name = "car_id";
+$cookie_value = $carRepository->getId($carName);
+setcookie($cookie_name, $cookie_value, 0, "/");
+$tmpCarRepository = new CarRepository();
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +17,11 @@ include('user_cookie.php');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/8d0d2d9a42.js" crossorigin="anonymous"></script>
-    <title>FERRARI F40</title>
+    <title>
+        <?php
+        echo($carName);
+        ?>
+    </title>
 
 </head>
 
@@ -46,11 +58,23 @@ include('user_cookie.php');
     </nav>
     <main class="f40-main">
         <div class="title">
-            <h2>F40</h2>
+            <h2>
+                <?php
+                echo($carName);
+                ?>
+            </h2>
         </div>
         <div id="car-name-and-price">
-            <p id="car-name">FERRARI F40</p>
-            <p id="car-price">4 000 ZŁ</p>
+            <p id="car-name">
+                <?php
+                echo($carName);
+                ?>
+            </p>
+            <p id="car-price">
+                <?php
+                echo($carRepository->getFinalPrice($_COOKIE['car_id'], 1));
+                ?>
+            </p>
         </div>
         <img id="car-photo" src="public/img/porche.webp">
 
