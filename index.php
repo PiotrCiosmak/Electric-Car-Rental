@@ -26,5 +26,6 @@ Routing::get('register_data_cookie', 'DefaultController');
 Routing::get('account', 'DefaultController');
 Routing::get('update_user_data', 'DefaultController');
 Routing::get('update_user_data_check', 'SecurityController');
+Routing::get('change_password_check', 'SecurityController');
 
 Routing::run($path);

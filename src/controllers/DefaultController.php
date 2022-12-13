@@ -108,4 +108,9 @@ class DefaultController extends AppController
     {
         $this->render('update_user_data_check');
     }
+
+    public function change_password_check()
+    {
+        $this->render('change_password_check');
+    }
 }
