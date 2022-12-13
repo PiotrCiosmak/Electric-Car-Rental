@@ -99,15 +99,29 @@ $tmpUserDataRepository = new UserDataRepository();
                 </div>
                 <div id="account-user-change-password">
                     <h3 class="account-sub-title">Zmień hasło</h3>
-                    <form id="change-password">
-                        <div>
-                            <input class="input-change-password" id="input-change-password-old-password"
+                    <form id="change-password" action="change_password_check" METHOD="post">
+                        <div id="error-message">
+                            <p style="font-size:1.5em; color: red;text-align: center; margin: 1em;">
+                                <?php if (isset($messages)) {
+                                    foreach ($messages as $message) {
+                                        echo htmlspecialchars($message);
+                                    }
+                                }
+                                ?>
+                            </p>
+                        </div>
+                        <div id="all-input-change-password">
+                            <input type="password" name="old-password" class="input-change-password"
+                                   id="input-change-password-old-password"
                                    placeholder="stare hasło">
-                            <input class="input-change-password" id="input-change-password-new-password"
+                            <input type="password" name="new-password-1" class="input-change-password"
+                                   id="input-change-password-new-password"
                                    placeholder="nowe hasło">
-                            <input class="input-change-password" id="input-change-password-new-password"
+                            <input type="password" name="new-password-2" class="input-change-password"
+                                   id="input-change-password-new-password"
                                    placeholder="powtórz nowe hasło">
                         </div>
+                        <button id="submit-change-password-button" type="submit">DALEJ</button>
                     </form>
                 </div>
             </div>
