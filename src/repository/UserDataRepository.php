@@ -52,6 +52,7 @@ class UserDataRepository extends Repository
         $stmt->bindParam(':apartment_number', $userData->getApartmentNumber(), PDO::PARAM_STR);
         $stmt->bindParam(':post_code', $userData->getPostCode(), PDO::PARAM_STR);
         $stmt->bindParam(':town', $userData->getTown(), PDO::PARAM_STR);
+        $stmt->bindParam(':id_user', $_COOKIE['user_id'], PDO::PARAM_STR);
         $stmt->execute();
     }
 
