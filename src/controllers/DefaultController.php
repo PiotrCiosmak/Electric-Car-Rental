@@ -69,11 +69,6 @@ class DefaultController extends AppController
         $this->render('register_data_input');
     }
 
-    public function change_data_input()
-    {
-        $this->render('register_data_input');
-    }
-
     public function register_data_input_check()
     {
         $this->render('register_data_input_check');
@@ -102,5 +97,10 @@ class DefaultController extends AppController
     public function account()
     {
         $this->render('account');
+    }
+
+    public function update_user_data()
+    {
+        $this->render('update_user_data');
     }
 }

@@ -24,4 +24,5 @@ Routing::get('booking_check', 'SecurityController');
 Routing::get('delete_cookie', 'CookieController');
 Routing::get('register_data_cookie', 'DefaultController');
 Routing::get('account', 'DefaultController');
+Routing::get('update_user_data', 'DefaultController');
 Routing::run($path);
