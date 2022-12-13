@@ -1,4 +1,3 @@
-POŹNIEJ:
 Zrobić żeby przycisk zmień dane adresowe zaczął działać
 Każdy użytkownik w zakładce konto będzie mógł zmienić swoje hasło (podaje wcześniejsze oraz dwa razy nowe)
 Każdy użytkownik w zakładce konto bedzie mógł zobaczyć swoje rezerwacje (ubiegłe jak i przyszłe) UŻYCIE JOINÓW
