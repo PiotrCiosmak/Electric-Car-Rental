@@ -17,6 +17,7 @@ POZA KODEM:
 Diagram ERD bazy danych w formacie pdf, w głównym folderze projektu na repozytorium
 readme.md (General Informations, Features, SS, Project Status, Room for Improvement,
 Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
+Diagram sql (chyba)
 
 
 TO CZEGO NIE OBEJRZAŁEM
