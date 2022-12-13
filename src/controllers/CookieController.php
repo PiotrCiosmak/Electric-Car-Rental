@@ -13,6 +13,7 @@ class CookieController extends AppController
         setcookie('user_id', "", -3600, "/");
         setcookie('car_id', "", -3600, "/");
         setcookie('register_data_input', "", -3600, "/");
+        setcookie('update_user_data', "", -3600, "/");
         return $this->render('sign_in');
     }
 }
