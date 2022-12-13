@@ -127,12 +127,13 @@ $tmpUserDataRepository = new UserDataRepository();
             </div>
             <div class="account-col" id="account-col-2">
                 <h3 class="account-sub-title">Twoje rezerwacje</h3>
-                <?php
-                $tmp = new RentRepository();
-                $userRentals = $tmp->getAllUserRentals();
-                $counter = 0;
-                ?>
                 <table id="rent-table">
+
+                    <?php
+                    $tmp = new RentRepository();
+                    $userRentals = $tmp->getAllUserRentals();
+                    $counter = 0;
+                    ?>
                     <tr>
                         <th class="rent-table-header-left">Lp.</th>
                         <th id="rent-table-header-center">Samochód</th>
@@ -140,6 +141,16 @@ $tmpUserDataRepository = new UserDataRepository();
                         <th class="rent-table-header-right">Koniec wynajmu</th>
                     </tr>
                     <?php
+                    if (sizeof($userRentals) == 0) {
+                        ?>
+                        <tr>
+                            <td> <?php echo("1") ?> </td>
+                            <td> <?php echo("brak"); ?> </td>
+                            <td> <?php echo("brak"); ?> </td>
+                            <td> <?php echo("brak"); ?> </td>
+                        </tr>
+                        <?php
+                    }
                     foreach ($userRentals as $row) { ?>
                         <tr>
                             <td> <?php echo(++$counter) ?> </td>
