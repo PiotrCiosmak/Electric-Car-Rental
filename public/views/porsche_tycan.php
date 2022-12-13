@@ -16,7 +16,11 @@ $tmpCarRepository = new CarRepository();
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/8d0d2d9a42.js" crossorigin="anonymous"></script>
-    <title>Porsche Tycan</title>
+    <title>
+        <?php
+        echo($carName);
+        ?>
+    </title>
 </head>
 
 <body>
@@ -52,11 +56,23 @@ $tmpCarRepository = new CarRepository();
     </nav>
     <main class="one-car-main">
         <div class="title">
-            <h2>PORSCHE TYCAN</h2>
+            <h2>
+                <?php
+                echo($carName);
+                ?>
+            </h2>
         </div>
         <div id="car-name-and-price">
-            <p id="car-name">PORSCHE TYCAN</p>
-            <p id="car-price">1 900 ZŁ</p>
+            <p id="car-name">
+                <?php
+                echo($carName);
+                ?>
+            </p>
+            <p id="car-price">
+                <?php
+                echo($carRepository->getFinalPrice($_COOKIE['car_id'], 1));
+                ?>
+            </p>
         </div>
         <img src="public/img/porche.webp" id="car-photo">
 
@@ -87,7 +103,11 @@ $tmpCarRepository = new CarRepository();
                         turpis egestas.</p>
                 </div>
                 <div class="box" id="second-box">
-                    <p>PORSCHE TYCAN! <br>
+                    <p>
+                        <?php
+                        echo($carName);
+                        ?>
+                        ! <br>
                         - 1-8 dni – 250 km/doba <br>
                         - 9-13 dni – 200 km/doba <br>
                         - od 14 dni – 150 km/doba <br>
