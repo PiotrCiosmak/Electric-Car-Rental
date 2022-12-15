@@ -644,7 +644,7 @@ form.data-input {
 }
 
 /*DONE: one-car*/
-.one-car-container {
+.one-car-container, .admin-panel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1082,7 +1082,7 @@ table tr:nth-child(odd) {
     text-align-last: center;
 }
 
-#change-password {
+#change-password, #go-to-page-form {
     text-align: -webkit-center;
     display: flex;
     flex-direction: column;
@@ -1095,7 +1095,7 @@ table tr:nth-child(odd) {
 }
 
 #goto-admin-page {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 @media only screen and (max-device-width: 1874px) {

@@ -104,7 +104,9 @@ $tmpUserDataRepository = new UserDataRepository();
                             <p style="font-size:1.5em; color: red;text-align: center; margin: 1em;">
                                 <?php if (isset($messages)) {
                                     foreach ($messages as $message) {
-                                        echo htmlspecialchars($message);
+                                        if ($message <> "Brak uprawnień!") {
+                                            echo htmlspecialchars($message);
+                                        }
                                     }
                                 }
                                 ?>
@@ -163,7 +165,20 @@ $tmpUserDataRepository = new UserDataRepository();
             </div>
         </div>
         <div id="goto-admin-page">
-            <form action="admin-panel">
+            <form id="go-to-page-form" action="admin_panel_check">
+                <div id="error-message">
+                    <p style="font-size:1.5em; color: red;text-align: center; margin: 1em;">
+                        <?php
+                        if (isset($messages)) {
+                            foreach ($messages as $message) {
+                                if ($message === "Brak uprawnień!") {
+                                    echo htmlspecialchars($message);
+                                }
+                            }
+                        }
+                        ?>
+                    </p>
+                </div>
                 <button id="goto-admin-page-button">Przejdź do panelu administratora</button>
             </form>
     </main>
