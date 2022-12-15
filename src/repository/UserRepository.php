@@ -44,6 +44,22 @@ class UserRepository extends Repository
         );
     }
 
+    public function isAdmin(): ?bool
+    {
+        $stmt = $this->database->connect()->prepare('SELECT is_admin FROM public.users WHERE id_user = :id_user');
+        $stmt->bindParam(':id_user', $this->decryptIt($_COOKIE['user_id']), PDO::PARAM_STR);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$user) {
+            return null;
+        }
+        if ($user['is_admin'] === "false") {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public function updatePassword(string $password): void
     {
         $stmt = $this->database->connect()->prepare('
