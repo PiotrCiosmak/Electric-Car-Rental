@@ -113,4 +113,14 @@ class DefaultController extends AppController
     {
         $this->render('change_password_check');
     }
+
+    public function admin_panel()
+    {
+        $this->render('admin_panel');
+    }
+
+    public function admin_panel_check()
+    {
+        $this->render('admin_panel_check');
+    }
 }
