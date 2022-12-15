@@ -83,7 +83,7 @@ nav > ul > li a:hover {
 }
 
 /*DONE: all*/
-#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover, #change-user-data:hover, #submit-change-password-button:hover {
+#sign-in-button:hover, #click-to-switch:hover, #amount-of-days-button:hover, #register-button:hover, #summary-button:hover, #see-more-button:hover, #submit-data-button:hover, #change-user-data:hover, #submit-change-password-button:hover, #goto-admin-page-button:hover {
     color: #AD3E42;
 }
 
@@ -1039,7 +1039,7 @@ table tr:nth-child(odd) {
     text-shadow: 0px 4px 4px rgb(0 0 0 / 30%);
 }
 
-#change-user-data, #submit-change-password-button {
+#change-user-data, #submit-change-password-button, #goto-admin-page-button {
     background: #0097FF;
     border: none;
     box-sizing: border-box;
@@ -1092,6 +1092,10 @@ table tr:nth-child(odd) {
     box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
     border-radius: 28px;
     width: 50%;
+}
+
+#goto-admin-page {
+    margin-top: 2em;
 }
 
 @media only screen and (max-device-width: 1874px) {
