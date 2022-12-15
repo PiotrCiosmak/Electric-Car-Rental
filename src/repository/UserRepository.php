@@ -53,10 +53,10 @@ class UserRepository extends Repository
         if (!$user) {
             return null;
         }
-        if ($user['is_admin'] === "false") {
-            return false;
-        } else {
+        if ($user['is_admin']) {
             return true;
+        } else {
+            return false;
         }
     }
 
@@ -95,7 +95,6 @@ class UserRepository extends Repository
 
     public function getId(string $email): ?string
     {
-
         $stmt = $this->database->connect()->prepare('SELECT id_user FROM public.users WHERE email = :email');
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->execute();
