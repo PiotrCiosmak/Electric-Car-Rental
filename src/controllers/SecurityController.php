@@ -167,6 +167,17 @@ class SecurityController extends AppController
         }
     }
 
+    public function admin_panel_check()
+    {
+        $tmpUserRepository = new UserRepository();
+        if (!$tmpUserRepository->isAdmin()) {
+            return $this->render('account', ['messages' => ['Brak uprawnień!']]);
+        } else {
+            return $this->render('admin_panel');
+
+        }
+    }
+
     private function encryptIt(?string $x): string
     {
         return strval(openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121'));
