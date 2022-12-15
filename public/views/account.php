@@ -161,6 +161,10 @@ $tmpUserDataRepository = new UserDataRepository();
                     <?php } ?>
                 </table>
             </div>
+        </div>
+        <div id="goto-admin-page">
+            <form action="admin-panel">
+                <button id="goto-admin-page-button">Przejdź do panelu administratora</button>
+            </form>
     </main>
-</div>
 </body>
