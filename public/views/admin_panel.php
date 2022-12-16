@@ -1,5 +1,9 @@
 <?php
 include('user_cookie.php');
+$tmpUserRepository = new UserRepository();
+if (!$tmpUserRepository->isAdmin()) {
+    header("Location: account");
+}
 ?>
 <!DOCTYPE html>
 <head>
@@ -34,8 +38,8 @@ include('user_cookie.php');
             <li>
                 <a href="contact" id="bottom-button" class="menu-button">KONTAKT</a>
             </li>
-            <li>
-                <a href="account" id="last-button" class="menu-button">KONTO</a>
+            <li id="last-button">
+                <a href="account" class="menu-button">KONTO</a>
             </li>
         </ul>
         <a href="delete_cookie" class="logout-button">
