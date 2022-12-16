@@ -123,4 +123,9 @@ class DefaultController extends AppController
     {
         $this->render('admin_panel_check');
     }
+
+    public function change_car_price()
+    {
+        $this->render('change_car_price');
+    }
 }

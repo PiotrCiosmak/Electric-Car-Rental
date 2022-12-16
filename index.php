@@ -29,5 +29,6 @@ Routing::get('update_user_data_check', 'SecurityController');
 Routing::get('change_password_check', 'SecurityController');
 Routing::get('admin_panel', 'DefaultController');
 Routing::get('admin_panel_check', 'SecurityController');
+Routing::get('change_car_price', 'SecurityController');
 
 Routing::run($path);
