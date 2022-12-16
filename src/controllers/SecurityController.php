@@ -180,7 +180,15 @@ class SecurityController extends AppController
 
     public function change_car_price()
     {
+        if (strlen($_POST['car-price']) < 1) {
+            return $this->render('admin_panel', ['messages' => ['Uzupełnij wymagane pola!']]);
+        }
+
         $tmpCar = new Car($_POST['car-name'], $_POST['car-price']);
+
+        if ($tmpCar->getPrice() < 0) {
+            return $this->render('admin_panel', ['messages' => ['Cena nie może być wartością ujemną!']]);
+        }
         $tmpCarRepository = new CarRepository();
         $tmpCarRepository->updatePrice($tmpCar);
         return $this->render('admin_panel', ['messages' => ['Cena została zaktualizowana!']]);
