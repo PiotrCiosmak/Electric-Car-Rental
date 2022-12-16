@@ -31,6 +31,7 @@ function loadCars(cars) {
 }
 
 function createCar(car) {
+    //tu coś nie dziła chyba, ale nie wiem czy tylko tu czy gdzieś jeszcze
     const template = document.querySelector("#car-template");
 
     const clone = template.content.cloneNode(true);

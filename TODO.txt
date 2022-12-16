@@ -1,19 +1,7 @@
-POZA KODEM:
-Diagram ERD bazy danych w formacie pdf, w głównym folderze projektu na repozytorium
-readme.md (General Informations, Features, SS, Project Status, Room for Improvement,
+TODO
+dodanie auta przez admina //wpisz nazwe, cena, czas do 100, link zrobi się sam na podstawie nazyw (spacje na_ i to lowwer)
+readme.md (General Informations, Features, SS, Project Status, Room for Improvement)
+Zadane pytania: Wyszukiwarka mi nie działa (naprawić)
 Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
-Diagram sql (chyba)
-
-
-
-
-TO CZEGO NIE OBEJRZAŁEM
-JS mid, JS fetch
 DEPLOY
-
-TE dwa pkt do zrealizowanie z tego co nie obejrzałem
-10. JAVA SCRIPT
-Zastosowanie języka Javascript w utworzeniu walidacji formularzy, zapytań Fetch API, a także do tworzenia, pobierania oraz manipulowania elementami DOM.
-
-11. FETCH API (AJAX)
-Zastosowanie Fetch API z użyciem metody POST oraz GET. Przetworzenie otrzymanych danych z serwera w blokach then().
+Zapisac się na oddanie pon 19:00?
