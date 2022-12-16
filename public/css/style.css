@@ -1317,7 +1317,23 @@ table tr:nth-child(odd) {
     }
 
     #click-to-switch {
-        width: 80%;
+        font-size: 1.56em;
+    }
+
+    #account-all-columns {
+        display: unset;
+    }
+
+    .account-col {
+        width: unset;
+    }
+
+    #change-password {
+        margin-bottom: 4%;
+    }
+
+    #update-car-price {
+        display: grid;
     }
 }
 
@@ -1395,7 +1411,7 @@ table tr:nth-child(odd) {
         font-size: 4em;
     }
 
-    #start-date, #end-date, #amount-of-days-button {
+    #start-date, #end-date, #amount-of-days-button, #change-user-data, #submit-change-password-button, #goto-admin-page-button, #submit-data-button, .input-car-price, .select-car-name, #submit-change-car-price-button {
         font-size: 3.12em;
     }
 
@@ -1407,7 +1423,7 @@ table tr:nth-child(odd) {
         font-size: 2.2em;
     }
 
-    .question, .answer {
+    .question, .answer, .input-change-password {
         font-size: 3em;
     }
 
@@ -1421,5 +1437,17 @@ table tr:nth-child(odd) {
 
     table {
         font-size: 2.2em;
+    }
+
+    .account-sub-title {
+        font-size: 5em;
+    }
+
+    .account-text {
+        font-size: 3em;
+    }
+
+    .data-input > input {
+        font-size: 2.4em;
     }
 }
