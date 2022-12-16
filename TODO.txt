@@ -1,9 +1,8 @@
-Admin w zakładce konto będzie mogł zmieniać bazową ceną auta wypełniając formularz (z listy wybiera auto obok wpisuje cene) UŻYCIE TRANSAKCJI for update
+UŻYCIE TRANSAKCJI for update
+zabezpieczyć strone admin_page
+poprawić przycisk konto na moblinym vivew
 account.php, update_user_data.php, register_data_input, admin-panel: widoki mobile i min 3000px, error_msg in form czcionka za mała dla min 3000px, error_msg sprawdzić dla mobile
 
-
-PYTANIA: (zadane)
-wszędzie przy bardzo dużej rozdzielczości robi sie białe tło na dole
 
 
 POZA KODEM:
