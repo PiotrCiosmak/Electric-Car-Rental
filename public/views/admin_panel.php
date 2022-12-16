@@ -11,7 +11,7 @@ include('user_cookie.php');
     <title>Panel admina</title>
 </head>
 
-<body>
+<body id="body2">
 <div class="admin-panel-container">
     <nav>
         <img src="public/img/logo.svg" id="logo">
@@ -54,19 +54,34 @@ include('user_cookie.php');
                         <?php
                         if (isset($messages)) {
                             foreach ($messages as $message) {
-                                echo htmlspecialchars($message);
+                                if ($message === "Cena została zaktualizowana!") {
+                                    echo htmlspecialchars($message);
+                                }
                             }
                         }
                         ?>
                     </p>
                 </div>
-                <select name="car-name">
+                <div id="error-message-car-price">
+                    <p>
+                        <?php
+                        if (isset($messages)) {
+                            foreach ($messages as $message) {
+                                if ($message <> "Cena została zaktualizowana!") {
+                                    echo htmlspecialchars($message);
+                                }
+                            }
+                        }
+                        ?>
+                    </p>
+                </div>
+                <select class="select-car-name" name="car-name">
                     <?php
                     $tmp = new CarRepository();
                     $cars = $tmp->getAllNames();
                     foreach ($cars as $row) { ?>
                         <tr>
-                            <option> <?php echo($row['name']); ?> </option>
+                            <option class="option"> <?php echo($row['name']); ?> </option>
                         </tr>
                     <?php } ?>
                     ?>
