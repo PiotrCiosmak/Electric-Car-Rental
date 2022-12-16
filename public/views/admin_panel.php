@@ -8,6 +8,7 @@ if (!$tmpUserRepository->isAdmin()) {
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script type="text/javascript" src="./public/js/changeCarPrice.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
