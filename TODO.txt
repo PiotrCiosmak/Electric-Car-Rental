@@ -1,6 +1,3 @@
-account.php, update_user_data.php, register_data_input, admin-panel: widoki mobile i min 3000px, error_msg in form czcionka za mała dla min 3000px, error_msg sprawdzić dla mobile
-
-
 POZA KODEM:
 Diagram ERD bazy danych w formacie pdf, w głównym folderze projektu na repozytorium
 readme.md (General Informations, Features, SS, Project Status, Room for Improvement,
@@ -10,10 +7,8 @@ Diagram sql (chyba)
 
 
 
-
-
 TO CZEGO NIE OBEJRZAŁEM
-JS basic, JS mid, JS fetch
+JS mid, JS fetch
 DEPLOY
 
 TE dwa pkt do zrealizowanie z tego co nie obejrzałem
