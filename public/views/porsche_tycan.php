@@ -45,7 +45,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
             </p>
             <p id="car-price">
                 <?php
-                echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
+                echo($carRepository->getFinalPrice(1));
                 ?>
             </p>
         </div>
@@ -103,7 +103,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>1-3</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(1));
                             ?>
                         </td>
                     </tr>
@@ -111,7 +111,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>4-6</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(0.95, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.95));
                             ?>
                         </td>
                     </tr>
@@ -119,7 +119,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>7-9</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(0.75, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.75));
                             ?>
                         </td>
                     </tr>
@@ -127,7 +127,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>10-13</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(0.65, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.65));
                             ?>
                         </td>
                     </tr>
@@ -135,7 +135,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>15-17</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(0.55, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.55));
                             ?>
                         </td>
                     </tr>
@@ -143,7 +143,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td>18-31</td>
                         <td>
                             <?php
-                            echo($carRepository->getFinalPrice(0.45, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.45));
                             ?>
                         </td>
                     </tr>
@@ -151,7 +151,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                         <td id="first-column-last-row">>31</td>
                         <td id="second-column-last-row">
                             <?php
-                            echo($carRepository->getFinalPrice(0.35, $_COOKIE['car_id']));
+                            echo($carRepository->getFinalPrice(0.35));
                             ?>
                         </td>
                     </tr>

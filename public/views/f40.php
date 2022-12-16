@@ -46,7 +46,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
             </p>
             <p id="car-price">
                 <?php
-                echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
+                echo($carRepository->getFinalPrice(1));
                 ?>
             </p>
         </div>
