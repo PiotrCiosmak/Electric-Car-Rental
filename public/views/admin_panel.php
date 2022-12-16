@@ -63,7 +63,6 @@ if (!$tmpUserRepository->isAdmin()) {
                             <option class="option"> <?php echo($row['name']); ?> </option>
                         </tr>
                     <?php } ?>
-                    ?>
                 </select>
                 <input name="car-price" class="input-car-price"
                        placeholder="nowa cena">
