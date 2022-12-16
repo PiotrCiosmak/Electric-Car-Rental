@@ -55,6 +55,9 @@ class carRepository extends Repository
         if (!$price) {
             return null;
         }
+        if ($price['price'] == 0) {
+            $this->getPrice();
+        }
         return $price['price'];
     }
 
