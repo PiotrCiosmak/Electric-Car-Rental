@@ -1091,7 +1091,7 @@ table tr:nth-child(odd) {
     text-align-last: center;
 }
 
-#change-password, #go-to-page-form {
+#change-password {
     text-align: -webkit-center;
     display: flex;
     flex-direction: column;
@@ -1115,7 +1115,7 @@ table tr:nth-child(odd) {
     width: max-content;
 }
 
-#error-message > p, #error-message-car-price > p {
+#error-message > p, #error-message-car-price > p, #error-message-admin-access > p {
     font-size: 1.5em;
     color: red;
     text-align: center;
@@ -1128,6 +1128,15 @@ table tr:nth-child(odd) {
     padding-inline: 1em;
     box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
     border-radius: 28px;
+}
+
+#error-message-admin-access > p {
+    background-color: #D8F3FF;
+    width: max-content;
+    padding-inline: 1em;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+    border-radius: 28px;
+    margin-bottom: unset;
 }
 
 #booking-message {

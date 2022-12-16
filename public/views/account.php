@@ -166,7 +166,7 @@ $tmpUserDataRepository = new UserDataRepository();
         </div>
         <div id="goto-admin-page">
             <form id="go-to-page-form" action="admin_panel_check">
-                <div id="error-message">
+                <div id="error-message-admin-access">
                     <p>
                         <?php
                         if (isset($messages)) {
