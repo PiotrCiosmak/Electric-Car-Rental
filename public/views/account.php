@@ -7,6 +7,7 @@ $tmpUserDataRepository = new UserDataRepository();
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script type="text/javascript" src="./public/js/changePassword.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
@@ -91,10 +92,10 @@ $tmpUserDataRepository = new UserDataRepository();
                                    id="input-change-password-old-password"
                                    placeholder="stare hasło">
                             <input type="password" name="new-password-1" class="input-change-password"
-                                   id="input-change-password-new-password"
+                                   id="input-change-password-new-password-1"
                                    placeholder="nowe hasło">
                             <input type="password" name="new-password-2" class="input-change-password"
-                                   id="input-change-password-new-password"
+                                   id="input-change-password-new-password-2"
                                    placeholder="powtórz nowe hasło">
                         </div>
                         <button id="submit-change-password-button" type="submit">Dalej</button>
