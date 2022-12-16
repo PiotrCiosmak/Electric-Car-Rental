@@ -12,7 +12,7 @@ include('user_cookie.php');
     <title>KONTAKT</title>
 </head>
 
-<body>
+<body id="body2">
 <div class="contact-container">
     <nav>
         <img src="public/img/logo.svg" id="logo">

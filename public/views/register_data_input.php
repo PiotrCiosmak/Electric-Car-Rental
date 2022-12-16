@@ -14,7 +14,7 @@ if (isset($_COOKIE["register_data_input"])) {
     <title>WPROWADŹ DANE</title>
 </head>
 
-<body>
+<body id="body2">
 <div class="container">
     <div class="logo_and_title">
         <img src="public/img/logo.svg">

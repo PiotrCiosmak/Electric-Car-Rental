@@ -11,7 +11,7 @@ include('autologin.php');
     <title>ZAREJESTRUJ SIĘ</title>
 </head>
 
-<body>
+<body id="body2">
 <div class="container">
     <div class="logo_and_title">
         <img src="public/img/logo.svg">
@@ -22,14 +22,14 @@ include('autologin.php');
         <form class="register" action="register_check" METHOD="post">
             <div id="error-message">
                 <p>
-                <?php if (isset($messages)) {
-                    foreach ($messages as $message) {
-                        echo htmlspecialchars($message);
+                    <?php if (isset($messages)) {
+                        foreach ($messages as $message) {
+                            echo htmlspecialchars($message);
+                        }
                     }
-                }
-                ?>
+                    ?>
                 </p>
-            </div>   
+            </div>
             <input name="email" type="text" placeholder="email" id="email">
             <input name="password" type="password" placeholder="hasło" id="pass">
             <button id="register-button" type="submit">ZAREJESTRUJ SIĘ</button>
