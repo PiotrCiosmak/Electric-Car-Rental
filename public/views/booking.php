@@ -13,7 +13,7 @@ include('user_cookie.php');
 
 </head>
 
-<body>
+<body id="body2">
 <div class="container">
     <div class="summary">
         <p id="summary-title">
