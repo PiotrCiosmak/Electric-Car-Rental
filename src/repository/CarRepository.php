@@ -95,7 +95,11 @@ class carRepository extends Repository
 
     public function getCarsByName(string $searchString)
     {
-        //TODO
+        $searchString = '%' . strtolower($searchString) . '%';
+        $stmt = $this->database->connect()->prepare('SELECT * FROM public.cars WHERE LOWER(name) LIKE :searchString');
+        $stmt->bindParam(':searchString', $searchString, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
     private function roundToHundreds(string $strval)
