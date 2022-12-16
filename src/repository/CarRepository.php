@@ -76,6 +76,28 @@ class carRepository extends Repository
         return $this->roundToHundreds(strval($start_price * $percent));
     }
 
+    public function getAllCars()
+    {
+        $result = [];
+        $stmt = $this->database->connect()->prepare('SELECT * FROM public.cars');
+        $stmt->execute();
+        $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($cars as $car) {
+            $result[] = new Car(
+                $car['name'],
+                $car['price'],
+                $car['0-100'],
+                $car['img_source']
+            );
+        }
+        return $result;
+    }
+
+    public function getCarsByName(string $searchString)
+    {
+        //TODO
+    }
+
     private function roundToHundreds(string $strval)
     {
         return round(intval($strval) / 100) * 100. . " zł";
