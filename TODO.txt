@@ -8,6 +8,10 @@ Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
 Diagram sql (chyba)
 
 
+
+
+
+
 TO CZEGO NIE OBEJRZAŁEM
 JS basic, JS mid, JS fetch
 DEPLOY
