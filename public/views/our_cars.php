@@ -36,7 +36,7 @@ include('user_cookie.php');
             foreach ($cars as $car) { ?>
                 <a href="<?php echo($car->getImgSource()) ?>">
                     <div class="car">
-                        <img src="public/img/<?php echo($car->getImgSource()) ?>.webp">
+                        <img class="car-img" src="public/img/<?php echo($car->getImgSource()) ?>.webp">
                         <div class="background-of-car">
                             <p class="car-name"><?php echo($car->getName()) ?></p>
                             <img src="public/img/0-100icon.svg">
@@ -51,11 +51,11 @@ include('user_cookie.php');
 </body>
 
 <template id="car-template">
-    <a href="img_source">
+    <a class="car-link" href="">
         <div class="car">
-            <img src="public/img/img_source.webp">
+            <img class="car-img" src="">
             <div class="background-of-car">
-                <p class="car-name"> Nazwa</p>
+                <p class="car-name">Nazwa</p>
                 <img src="public/img/0-100icon.svg">
                 <p class="car-time-to-100">10.0</p>
             </div>

@@ -1030,6 +1030,11 @@ table tr:nth-child(odd) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+.car > img, .car-img {
+    width: 20.8vw;
+    height: 13.9vw;
+}
+
 #account-all-columns {
     display: flex;
     width: 100%;
@@ -1343,6 +1348,11 @@ table tr:nth-child(odd) {
     #update-car-price {
         display: grid;
     }
+
+    .car > img, .car-img {
+        width: 20.8vw;
+        height: 13.9vw;
+    }
 }
 
 @media only screen and (min-device-width: 3000px) {
@@ -1403,7 +1413,8 @@ table tr:nth-child(odd) {
         font-size: 4.3em;
     }
 
-    .car > img {
+    .car > img, .car-img {
+        width: 20.8vw;
         height: 13.9vw;
     }
 
