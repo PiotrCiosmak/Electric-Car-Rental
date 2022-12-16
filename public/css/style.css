@@ -1094,6 +1094,29 @@ table tr:nth-child(odd) {
     width: 50%;
 }
 
+#message > p {
+    font-size: 1.5em;
+    color: green;
+    text-align: center;
+    margin: 1em;
+    background-color: #D8F3FF;
+    width: 25%;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+    border-radius: 28px;
+}
+
+#error-message > p {
+    font-size: 1.5em;
+    color: red;
+    text-align: center;
+    margin: 1em;
+}
+
+#booking-message {
+    font-size: 3em;
+    color: #F3FAFF;
+}
+
 #goto-admin-page {
     margin-top: 3em;
 }

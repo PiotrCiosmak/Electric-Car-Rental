@@ -17,8 +17,8 @@ include('user_cookie.php');
 <div class="container">
     <div class="summary">
         <p id="summary-title">
-        <div id="error-message">
-            <p style="font-size:3em; color: #F3FAFF;">
+        <div id="booking-message">
+            <p>
                 <?php if (isset($messages)) {
                     foreach ($messages as $message) {
                         echo htmlspecialchars($message);

@@ -20,7 +20,7 @@ include('user_cookie.php');
     </div class="data-input-container">
     <form class="data-input" action="update_user_data_check" METHOD="post">
         <div id="error-message">
-            <p style="font-size:1.5em; color: red;text-align: center; margin: 1em;">
+            <p>
                 <?php if (isset($messages)) {
                     foreach ($messages as $message) {
                         echo htmlspecialchars($message);
