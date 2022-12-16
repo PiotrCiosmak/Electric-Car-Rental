@@ -5,6 +5,7 @@ include('autologin.php');
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script type="text/javascript" src="./public/js/registerAndSignIn.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
@@ -30,8 +31,8 @@ include('autologin.php');
                     ?>
                 </p>
             </div>
-            <input name="email" type="text" placeholder="email" id="email">
-            <input name="password" type="password" placeholder="hasło" id="pass">
+            <input name="email" type="text" placeholder="email" class="email">
+            <input name="password" type="password" placeholder="hasło" class="pass">
             <button id="register-button" type="submit">ZAREJESTRUJ SIĘ</button>
         </form>
         <a href="sign_in">
