@@ -48,8 +48,32 @@ include('user_cookie.php');
         </div>
         <div id="change-car-price">
             <h3 class="account-sub-title">Zmień cenę auta</h3>
-            <form>
-
+            <form id="update-car-price" action="change_car_price" METHOD="post">
+                <div id="message">
+                    <p>
+                        <?php
+                        if (isset($messages)) {
+                            foreach ($messages as $message) {
+                                echo htmlspecialchars($message);
+                            }
+                        }
+                        ?>
+                    </p>
+                </div>
+                <select name="car-name">
+                    <?php
+                    $tmp = new CarRepository();
+                    $cars = $tmp->getAllNames();
+                    foreach ($cars as $row) { ?>
+                        <tr>
+                            <option> <?php echo($row['name']); ?> </option>
+                        </tr>
+                    <?php } ?>
+                    ?>
+                </select>
+                <input name="car-price" class="input-car-price"
+                       placeholder="nowa cena">
+                <button id="submit-change-car-price-button" type="submit">Potwierdź</button>
             </form>
         </div>
     </main>
