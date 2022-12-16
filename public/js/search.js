@@ -31,23 +31,26 @@ function loadCars(cars) {
 }
 
 function createCar(car) {
-    //tu coś nie dziła chyba, ale nie wiem czy tylko tu czy gdzieś jeszcze
+    //tu coś nie dziła chyba
     const template = document.querySelector("#car-template");
-
     const clone = template.content.cloneNode(true);
+    const div = clone.querySelector("div");
+    div.id = car.id;
+
+    const carLink = clone.querySelector(".car-link");
+    carLink.href = car.img_source;
+
+    const image = clone.querySelector("img");
+    image.src = `public/img/${car.img_source}.webp`;
 
     /*    const imgSource = clone.querySelector("img");
         imgSource.innerHTML = car.img_source;*/
-    const imgSource = clone.querySelector("img");
-    imgSource.innerHTML = car.name;
+
     const carName = clone.querySelector(".car-name");
     carName.innerHTML = car.name;
-    const carPrice = clone.querySelector("p")
-    carPrice.innerHTML = car.name;
-    const timeTo100 = clone.querySelector(".car-time-to-100");
-    timeTo100.innerHTML = car.name;
-    /*const timeTo100 = clone.querySelector(".car-time-to-100");
-    timeTo100.innerHTML = car.timeTo100;*/
 
-    carContainer.appendChild(car);
+    const timeTo100 = clone.querySelector(".car-time-to-100");
+    timeTo100.innerHTML = car.timeTo100;
+
+    carContainer.appendChild(clone);
 }
