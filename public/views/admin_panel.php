@@ -46,7 +46,7 @@ if (!$tmpUserRepository->isAdmin()) {
                         <?php
                         if (isset($messages)) {
                             foreach ($messages as $message) {
-                                if ($message <> "Cena została zaktualizowana!") {
+                                if ($message === "Uzupełnij wymagane pola!" || $message === "Cena nie może być wartością ujemną!") {
                                     echo htmlspecialchars($message);
                                 }
                             }
@@ -67,6 +67,45 @@ if (!$tmpUserRepository->isAdmin()) {
                 <input name="car-price" class="input-car-price"
                        placeholder="nowa cena">
                 <button id="submit-change-car-price-button" type="submit">Potwierdź</button>
+            </form>
+        </div>
+        <div id="add-new-car">
+            <h3 id = "add-new-car-label" class="account-sub-title">Dodaj nowe auto</h3>
+            <form id="add-new-car" action="add_new_car" METHOD="post">
+                <div id="message">
+                    <p>
+                        <?php
+                        if (isset($messages)) {
+                            foreach ($messages as $message) {
+                                if ($message === "Auto zostało dodane!") {
+                                    echo htmlspecialchars($message);
+                                }
+                            }
+                        }
+                        ?>
+                    </p>
+                </div>
+                <div id="error-message-car-price">
+                    <p>
+                        <?php
+                        if (isset($messages)) {
+                            foreach ($messages as $message) {
+                                if ($message === "Błąd! Auto nie zostało dodane!") {
+                                    echo htmlspecialchars($message);
+                                }
+                            }
+                        }
+                        ?>
+                    </p>
+                </div>
+                <input name="car-name" class="input-car-name"
+                       placeholder="nazwa">
+                <input name="car-price" class="input-car-price"
+                       placeholder="nowa cena">
+                <input name="car-time-to-100" class="input-car-time-to-100"
+                       placeholder="czas 0-100">
+
+                <button id="add-new-car-button" type="submit">Potwierdź</button>
             </form>
         </div>
     </main>

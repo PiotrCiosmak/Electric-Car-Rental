@@ -31,5 +31,5 @@ Routing::get('admin_panel', 'DefaultController');
 Routing::get('admin_panel_check', 'SecurityController');
 Routing::get('change_car_price', 'SecurityController');
 Routing::post('search', 'CarController');
-
+Routing::post('add_new_car', 'CarController');
 Routing::run($path);
