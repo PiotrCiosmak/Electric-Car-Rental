@@ -102,6 +102,15 @@ class carRepository extends Repository
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function addCar(Car $car)
+    {
+        $stmt = $this->database->connect()->prepare('
+            INSERT INTO cars (name, price, "timeTo100" ,img_source)
+            VALUES (?,?,?,?)
+            ');
+        $stmt->execute([$car->getName(), $car->getPrice(), $car->getTimeTo100(), $car->getImgSource()]);
+    }
+
     private function roundToHundreds(string $strval)
     {
         return round(intval($strval) / 100) * 100. . " zł";
