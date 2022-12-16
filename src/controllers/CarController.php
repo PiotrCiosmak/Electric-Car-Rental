@@ -24,6 +24,21 @@ class CarController extends AppController
 
             echo json_encode($this->carRepository->getCarsByName($decoded['search']));
         }
+    }
+
+    public function add_new_car()
+    {
+        if ((strlen($_POST["car-name"]) == 0) || (strlen($_POST["car-price"]) == 0) || (strlen($_POST["car-time-to-100"]) == 0)) {
+            return $this->render('admin_panel', ['messages' => ['Błąd! Auto nie zostało dodane!']]);
+        }
+        if ($_POST["car-price"] < 0 || $_POST["car-time-to-100"] < 0) {
+            return $this->render('admin_panel', ['messages' => ['Błąd! Auto nie zostało dodane!']]);
+        }
+        $tmpImgSrc = str_replace(" ", "_", strtolower($_POST["car-name"]));
+        $car = new Car($_POST["car-name"], $_POST["car-price"], $_POST["car-time-to-100"], $tmpImgSrc);
+
+        $this->carRepository->addCar($car);
+        return $this->render('admin_panel', ['messages' => ['Auto zostało dodane!']]);
 
     }
 }
