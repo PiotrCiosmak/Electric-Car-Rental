@@ -1411,7 +1411,7 @@ table tr:nth-child(odd) {
         font-size: 4em;
     }
 
-    #start-date, #end-date, #amount-of-days-button, #change-user-data, #submit-change-password-button, #goto-admin-page-button, #submit-data-button, .input-car-price, .select-car-name, #submit-change-car-price-button {
+    #start-date, #end-date, #amount-of-days-button, #change-user-data, #submit-change-password-button, #goto-admin-page-button, #submit-data-button, .input-car-price, .select-car-name, #submit-change-car-price-button, #summary-button {
         font-size: 3.12em;
     }
 
@@ -1449,5 +1449,13 @@ table tr:nth-child(odd) {
 
     .data-input > input {
         font-size: 2.4em;
+    }
+
+    #error-message > p, #error-message-car-price > p, #error-message-admin-access > p {
+        font-size: 3em;
+    }
+
+    #booking-message > p {
+        font-size: 2em;
     }
 }
