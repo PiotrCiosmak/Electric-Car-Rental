@@ -5,6 +5,7 @@ include('user_cookie.php');
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script type="text/javascript" src="./public/js/search.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
     </style>
@@ -24,9 +25,7 @@ include('user_cookie.php');
         </div>
         <header>
             <div>
-                <form>
-                    <input id="input-search-bar" placeholder="wyszukaj">
-                </form>
+                <input id="input-search-bar" placeholder="wyszukaj">
             </div>
         </header>
 
@@ -39,9 +38,9 @@ include('user_cookie.php');
                     <div class="car">
                         <img src="public/img/<?php echo($car->getImgSource()) ?>.webp">
                         <div class="background-of-car">
-                            <p><?php echo($car->getName()) ?></p>
+                            <p class="car-name"><?php echo($car->getName()) ?></p>
                             <img src="public/img/0-100icon.svg">
-                            <p><?php echo($car->getTimeTo100()) ?></p>
+                            <p class="car-time-to-100"><?php echo($car->getTimeTo100()) ?></p>
                         </div>
                     </div>
                 </a>
@@ -50,3 +49,16 @@ include('user_cookie.php');
     </main>
 </div>
 </body>
+
+<template id="car-template">
+    <a href="img_source">
+        <div class="car">
+            <img src="public/img/img_source.webp">
+            <div class="background-of-car">
+                <p class="car-name"> Nazwa</p>
+                <img src="public/img/0-100icon.svg">
+                <p class="car-time-to-100">10.0</p>
+            </div>
+        </div>
+    </a>
+</template>
