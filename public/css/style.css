@@ -1214,7 +1214,7 @@ table tr:nth-child(odd) {
     }
 
     #last-button {
-        width: 180%;
+        width: 100%;
     }
 
     .date-label {
