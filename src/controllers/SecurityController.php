@@ -178,6 +178,14 @@ class SecurityController extends AppController
         }
     }
 
+    public function change_car_price()
+    {
+        $tmpCar = new Car($_POST['car-name'], $_POST['car-price']);
+        $tmpCarRepository = new CarRepository();
+        $tmpCarRepository->updatePrice($tmpCar);
+        return $this->render('admin_panel', ['messages' => ['Cena została zaktualizowana!']]);
+    }
+
     private function encryptIt(?string $x): string
     {
         return strval(openssl_encrypt($x, "AES-128-CTR", "GeeksforGeeks", 0, '1234567891011121'));
