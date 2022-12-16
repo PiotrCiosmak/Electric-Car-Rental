@@ -50,7 +50,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                 ?>
             </p>
         </div>
-        <img id="car-photo" src="public/img/porche.webp">
+        <img id="car-photo" src="public/img/porsche_taycan.webp">
 
         <div id="booking-container">
             <form id="booking" action="booking_check" METHOD="post">
