@@ -35,6 +35,17 @@ class carRepository extends Repository
         return $name['name'];
     }
 
+    public function getAllNames()
+    {
+        $stmt = $this->database->connect()->prepare('SELECT cars.name FROM public.cars');
+        $stmt->execute();
+        $result = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            array_push($result, $row);
+        }
+        return $result;
+    }
+
     public function getPrice()
     {
         $stmt = $this->database->connect()->prepare('SELECT cars.price FROM public.cars WHERE id_car = :id_car');
@@ -45,6 +56,18 @@ class carRepository extends Repository
             return null;
         }
         return $price['price'];
+    }
+
+    public function updatePrice(Car $newCar)
+    {
+        $stmt = $this->database->connect()->prepare('
+                    UPDATE public.cars
+                    SET price = :price
+                    WHERE name = :name
+                    ');
+        $stmt->bindParam(':price', $newCar->getPrice(), PDO::PARAM_STR);
+        $stmt->bindParam(':name', $newCar->getName(), PDO::PARAM_STR);
+        $stmt->execute();
     }
 
     public function getFinalPrice(float $percent)
