@@ -1,4 +1,5 @@
 <?php
+setcookie('car_id', "", -3600, "/");
 $carName = "FERRARI F40"; //Zmienna
 include('user_cookie.php');
 
@@ -7,7 +8,6 @@ $carRepository = new CarRepository();
 $cookie_name = "car_id";
 $cookie_value = $carRepository->getId($carName);
 setcookie($cookie_name, $cookie_value, 0, "/");
-$tmpCarRepository = new CarRepository();
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ $tmpCarRepository = new CarRepository();
             </p>
             <p id="car-price">
                 <?php
-                echo($carRepository->getFinalPrice(1));
+                echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
                 ?>
             </p>
         </div>

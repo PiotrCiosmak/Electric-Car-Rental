@@ -46,17 +46,14 @@ class carRepository extends Repository
         return $result;
     }
 
-    public function getPrice()
+    public function getPrice(string $car_id)
     {
         $stmt = $this->database->connect()->prepare('SELECT cars.price FROM public.cars WHERE id_car = :id_car');
-        $stmt->bindParam(':id_car', $_COOKIE['car_id'], PDO::PARAM_STR);
+        $stmt->bindParam(':id_car', $car_id, PDO::PARAM_STR);
         $stmt->execute();
         $price = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$price) {
             return null;
-        }
-        if ($price['price'] == 0) {
-            $this->getPrice();
         }
         return $price['price'];
     }
@@ -73,9 +70,9 @@ class carRepository extends Repository
         $stmt->execute();
     }
 
-    public function getFinalPrice(float $percent)
+    public function getFinalPrice(float $percent, string $car_id)
     {
-        $start_price = $this->getPrice();
+        $start_price = $this->getPrice($car_id);
         return $this->roundToHundreds(strval($start_price * $percent));
     }
 

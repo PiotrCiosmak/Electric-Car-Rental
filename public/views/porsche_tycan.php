@@ -1,4 +1,6 @@
 <?php
+setcookie('car_id', "", -3600, "/");
+
 $carName = "Porsche Tycan"; //Zmienna
 include('user_cookie.php');
 
@@ -7,7 +9,6 @@ $carRepository = new CarRepository();
 $cookie_name = "car_id";
 $cookie_value = $carRepository->getId($carName);
 setcookie($cookie_name, $cookie_value, 0, "/");
-$tmpCarRepository = new CarRepository();
 ?>
 <!DOCTYPE html>
 <head>
@@ -70,7 +71,7 @@ $tmpCarRepository = new CarRepository();
             </p>
             <p id="car-price">
                 <?php
-                echo($carRepository->getFinalPrice( 1));
+                echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
                 ?>
             </p>
         </div>
@@ -128,7 +129,7 @@ $tmpCarRepository = new CarRepository();
                         <td>1-3</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(1));
+                            echo($carRepository->getFinalPrice(1, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -136,7 +137,7 @@ $tmpCarRepository = new CarRepository();
                         <td>4-6</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.95));
+                            echo($carRepository->getFinalPrice(0.95, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -144,7 +145,7 @@ $tmpCarRepository = new CarRepository();
                         <td>7-9</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.75));
+                            echo($carRepository->getFinalPrice(0.75, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -152,7 +153,7 @@ $tmpCarRepository = new CarRepository();
                         <td>10-13</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.65));
+                            echo($carRepository->getFinalPrice(0.65, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -160,7 +161,7 @@ $tmpCarRepository = new CarRepository();
                         <td>15-17</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.55));
+                            echo($carRepository->getFinalPrice(0.55, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -168,7 +169,7 @@ $tmpCarRepository = new CarRepository();
                         <td>18-31</td>
                         <td>
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.45));
+                            echo($carRepository->getFinalPrice(0.45, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
@@ -176,7 +177,7 @@ $tmpCarRepository = new CarRepository();
                         <td id="first-column-last-row">>31</td>
                         <td id="second-column-last-row">
                             <?php
-                            echo($tmpCarRepository->getFinalPrice(0.35));
+                            echo($carRepository->getFinalPrice(0.35, $_COOKIE['car_id']));
                             ?>
                         </td>
                     </tr>
