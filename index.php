@@ -17,7 +17,7 @@ Routing::get('f40', 'DefaultController');
 Routing::get('faq', 'DefaultController');
 Routing::get('main_page', 'DefaultController');
 Routing::get('our_cars', 'DefaultController');
-Routing::get('porsche_tycan', 'DefaultController');
+Routing::get('porsche_taycan', 'DefaultController');
 Routing::get('register_data_input', 'DefaultController');
 Routing::get('register_data_input_check', 'SecurityController');
 Routing::get('booking_check', 'SecurityController');
@@ -30,5 +30,6 @@ Routing::get('change_password_check', 'SecurityController');
 Routing::get('admin_panel', 'DefaultController');
 Routing::get('admin_panel_check', 'SecurityController');
 Routing::get('change_car_price', 'SecurityController');
+Routing::post('search', 'CarController');
 
 Routing::run($path);

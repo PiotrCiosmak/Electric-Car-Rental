@@ -59,9 +59,9 @@ class DefaultController extends AppController
         $this->render('our_cars');
     }
 
-    public function porsche_tycan()
+    public function porsche_taycan()
     {
-        $this->render('porsche_tycan');
+        $this->render('porsche_taycan');
     }
 
     public function register_data_input()

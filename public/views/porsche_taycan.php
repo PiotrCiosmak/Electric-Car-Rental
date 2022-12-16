@@ -1,7 +1,7 @@
 <?php
 setcookie('car_id', "", -3600, "/");
 
-$carName = "Porsche Tycan"; //Zmienna
+$carName = "Porsche Taycan"; //Zmienna
 include('user_cookie.php');
 
 require_once __DIR__ . "/../../src/repository/CarRepository.php";
@@ -49,7 +49,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                 ?>
             </p>
         </div>
-        <img src="public/img/porche.webp" id="car-photo">
+        <img src="public/img/porsche_taycan.webp" id="car-photo">
 
         <div id="booking-container">
             <form id="booking" action="booking_check" METHOD="post">
