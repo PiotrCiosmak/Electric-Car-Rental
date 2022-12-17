@@ -186,11 +186,11 @@ class DefaultController extends AppController
 
     public function volkswagen_id_5()
     {
-        $this->render('volkswagen_id.5');
+        $this->render('volkswagen_id_5');
     }
 
     public function volkswagen_id_buzz()
     {
-        $this->render('volkswagen_id.buzz');
+        $this->render('volkswagen_id_buzz');
     }
 }
