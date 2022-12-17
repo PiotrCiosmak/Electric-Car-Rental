@@ -1,3 +1,2 @@
-readme.md (General Informations, Features, SS, Project Status, Room for Improvement)
 Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
 DEPLOY

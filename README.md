@@ -1,7 +1,9 @@
 # Electric Car Rental
+
 > Electric car rental website.
 
 ## Table of Contents
+
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
@@ -12,9 +14,12 @@
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-On this page you can, among other things, check the availability of vehicles and book them.
+
+On this page you can, among other things, check the availability of vehicles and book them. You can also view rental history and future bookings.
+The administrator can add cars, change the price of current cars.
 
 ## Technologies Used
+
 - HTML 5
 - CSS 3
 - PHP 7.4.0
@@ -26,34 +31,40 @@ On this page you can, among other things, check the availability of vehicles and
 - Docker
 
 ## Features
+
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+
+- The user can book a car rental through the website.
+- The user can check his past and future rentals.
+- The website has a car search engine operating by car name.
+- The admin can change the price of the car and add new cars using the admin panel.
 
 ## Screenshots
+
 ![Example screenshot](./screenshots/sign-in.png)
 ![Example screenshot](./screenshots/porsche-taycan-1.png)
 ![Example screenshot](./screenshots/porsche-taycan-2.png)
+![Example screenshot](./screenshots/admin-panel.png)
 
 ## Launch
-To run this project you need to have Docker app and some IDE like visual studio code or webstorm. First you need to run Docker app. Then in the IDE terminal you need to write 'docker-compose up'. The last thing you have to do is open your browser and enter 'localhost:8080' in the search bar.
+
+To run this project you need to have Docker app and some IDE like visual studio code or webstorm. First you need to run
+Docker app. Then in the IDE terminal you need to write 'docker-compose up'. The last thing you have to do is open your
+browser and enter 'localhost:8080' in the search bar.
 
 ## Project Status
-Project is: _in progress_.
+
+Project is: _complete_.
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
+- Change the kilometer limits and personalize the prices for driving additional kilometers for each car
 
 ## Acknowledgements
+
 Give credit here.
+
 - This project was created as a final project in the course Introduction to Web Application Design.
 - Many thanks to Adrian Widłak who oversaw the whole project.
