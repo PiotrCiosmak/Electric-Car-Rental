@@ -49,7 +49,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                 ?>
             </p>
         </div>
-        <img src="public/img/porsche_taycan.webp" id="car-photo">
+        <img id="car-photo" src="public/img/<?php echo(trim($carRepository->getImgSrc($carName))) ?>.webp">
 
         <div id="booking-container">
             <form id="booking" action="booking_check" METHOD="post">

@@ -1,6 +1,6 @@
 <?php
 setcookie('car_id', "", -3600, "/");
-$carName = "FERRARI F40"; //Zmienna
+$carName = "Ferrari F40"; //Zmienna
 include('user_cookie.php');
 
 require_once __DIR__ . "/../../src/repository/CarRepository.php";
@@ -50,7 +50,7 @@ setcookie($cookie_name, $cookie_value, 0, "/");
                 ?>
             </p>
         </div>
-        <img id="car-photo" src="public/img/f40.webp">
+        <img id="car-photo" src="public/img/<?php echo(trim($carRepository->getImgSrc($carName))) ?>.webp">
 
         <div id="booking-container">
             <form id="booking" action="booking_check" METHOD="post">
