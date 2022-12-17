@@ -111,6 +111,19 @@ class carRepository extends Repository
         $stmt->execute([$car->getName(), $car->getPrice(), $car->getTimeTo100(), $car->getImgSource()]);
     }
 
+    public function getImgSrc(string $carName)
+    {
+        $stmt = $this->database->connect()->prepare('SELECT img_source FROM public.cars WHERE name = :name');
+        $stmt->bindParam(':name', $carName, PDO::PARAM_STR);
+        $stmt->execute();
+        $imgSrc = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$imgSrc) {
+            return null;
+        }
+        return $imgSrc['img_source'];
+
+    }
+
     private function roundToHundreds(string $strval)
     {
         return round(intval($strval) / 100) * 100. . " zł";
