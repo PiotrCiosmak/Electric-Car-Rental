@@ -128,4 +128,69 @@ class DefaultController extends AppController
     {
         $this->render('change_car_price');
     }
+
+    public function fiat_500()
+    {
+        $this->render('fiat_500');
+    }
+
+    public function audi_rs_e_tron_gt()
+    {
+        $this->render('audi_rs_e_tron_gt');
+    }
+
+    public function bmw_i3()
+    {
+        $this->render('bmw_i3');
+    }
+
+    public function kia_niro()
+    {
+        $this->render('kia_niro');
+    }
+
+    public function mazda_mx_30()
+    {
+        $this->render('mazda_mx_30');
+    }
+
+    public function nissan_leaf()
+    {
+        $this->render('nissan_leaf');
+    }
+
+    public function renault_zoe()
+    {
+        $this->render('renault_zoe');
+    }
+
+    public function skoda_enyaq()
+    {
+        $this->render('skoda_enyaq');
+    }
+
+    public function tesla_model_s()
+    {
+        $this->render('tesla_model_s');
+    }
+
+    public function tesla_model_x()
+    {
+        $this->render('tesla_model_x');
+    }
+
+    public function tesla_model_y()
+    {
+        $this->render('tesla_model_y');
+    }
+
+    public function volkswagen_id_5()
+    {
+        $this->render('volkswagen_id.5');
+    }
+
+    public function volkswagen_id_buzz()
+    {
+        $this->render('volkswagen_id.buzz');
+    }
 }
