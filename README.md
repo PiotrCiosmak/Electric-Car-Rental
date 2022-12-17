@@ -33,8 +33,8 @@ List the ready features here:
 
 ## Screenshots
 ![Example screenshot](./screenshots/sign-in.png)
-![Example screenshot](./screenshots/porsche-tycan-1.png)
-![Example screenshot](./screenshots/porsche-tycan-2.png)
+![Example screenshot](./screenshots/porsche-taycan-1.png)
+![Example screenshot](./screenshots/porsche-taycan-2.png)
 
 ## Launch
 To run this project you need to have Docker app and some IDE like visual studio code or webstorm. First you need to run Docker app. Then in the IDE terminal you need to write 'docker-compose up'. The last thing you have to do is open your browser and enter 'localhost:8080' in the search bar.
