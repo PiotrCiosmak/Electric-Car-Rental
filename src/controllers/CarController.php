@@ -35,6 +35,8 @@ class CarController extends AppController
             return $this->render('admin_panel', ['messages' => ['Błąd! Auto nie zostało dodane!']]);
         }
         $tmpImgSrc = str_replace(" ", "_", strtolower($_POST["car-name"]));
+        $tmpImgSrc = str_replace("-", "_", $tmpImgSrc);
+        $tmpImgSrc = str_replace(".", "_", $tmpImgSrc);
         $car = new Car($_POST["car-name"], $_POST["car-price"], $_POST["car-time-to-100"], $tmpImgSrc);
 
         $this->carRepository->addCar($car);
