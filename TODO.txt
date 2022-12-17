@@ -1,2 +1,0 @@
-Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
-DEPLOY
