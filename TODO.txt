@@ -1,9 +1,3 @@
-TODO
-dodanie auta przez admina //wpisz nazwe, cena, czas do 100, link zrobi się sam na podstawie nazyw (spacje na_ i to lowwer)
-dodać zdjęcia innych aut
-dodać podstrony dla innych aut
 readme.md (General Informations, Features, SS, Project Status, Room for Improvement)
-Zadane pytania: Wyszukiwarka mi nie działa (naprawić)
 Pobrać kopie pliku .sql wraz z danymi do głównego folderu na repozytorium
 DEPLOY
-Zapisac się na oddanie pon 19:00?
