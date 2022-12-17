@@ -25,7 +25,7 @@ include('user_cookie.php');
         <div class="cars">
             <a href="porsche_tycan">
                 <div class="car">
-                    <img src="public/img/porche.webp">
+                    <img src="public/img/porsche_taycan.webp">
                     <div class="background-of-car">
                         <p>Porsche Tycan</p>
                         <img src="public/img/0-100icon.svg">
@@ -35,7 +35,7 @@ include('user_cookie.php');
             </a>
             <a href="porsche_tycan">
                 <div class="car">
-                    <img src="public/img/porche.webp">
+                    <img src="public/img/audi_rs_e_tron_gt.webp">
                     <div class="background-of-car">
                         <p>Audi RS E-tron GT</p>
                         <img src="public/img/0-100icon.svg">
@@ -45,7 +45,7 @@ include('user_cookie.php');
             </a>
             <a href="porsche_tycan">
                 <div class="car">
-                    <img src="public/img/porche.webp">
+                    <img src="public/img/nissan_leaf.webp">
                     <div class="background-of-car">
                         <p>Nissan Leaf</p>
                         <img src="public/img/0-100icon.svg">
@@ -55,13 +55,13 @@ include('user_cookie.php');
             </a>
         </div>
         <div id="see-more">
-            <a href="porsche_tycan">
+            <a href="our_cars">
                 <button id="see-more-button">ZOBACZ WIĘCEJ</button>
             </a>
         </div>
         <div class="main-box-background">
             <div id="car-transporter-photo">
-                <img src="public/img/porche.webp">
+                <img src="public/img/car_transporter.webp">
             </div>
             <div id="car-transporter-description">
                 <p>
