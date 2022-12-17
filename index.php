@@ -44,5 +44,5 @@ Routing::post('tesla_model_s', 'DefaultController');
 Routing::post('tesla_model_x', 'DefaultController');
 Routing::post('tesla_model_y', 'DefaultController');
 Routing::post('volkswagen_id_5', 'DefaultController');
-Routing::post('volkswagen_id.buzz_5', 'DefaultController');
+Routing::post('volkswagen_id_buzz', 'DefaultController');
 Routing::run($path);
