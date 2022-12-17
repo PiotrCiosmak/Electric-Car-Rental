@@ -23,7 +23,7 @@ include('user_cookie.php');
             <h2>NASZA FLOTA</h2>
         </div>
         <div class="cars">
-            <a href="porsche_tycan">
+            <a href="porsche_taycan">
                 <div class="car">
                     <img src="public/img/porsche_taycan.webp">
                     <div class="background-of-car">
@@ -33,7 +33,7 @@ include('user_cookie.php');
                     </div>
                 </div>
             </a>
-            <a href="porsche_tycan">
+            <a href="audi_rs_e_tron_gt">
                 <div class="car">
                     <img src="public/img/audi_rs_e_tron_gt.webp">
                     <div class="background-of-car">
@@ -43,7 +43,7 @@ include('user_cookie.php');
                     </div>
                 </div>
             </a>
-            <a href="porsche_tycan">
+            <a href="nissan_leaf">
                 <div class="car">
                     <img src="public/img/nissan_leaf.webp">
                     <div class="background-of-car">
