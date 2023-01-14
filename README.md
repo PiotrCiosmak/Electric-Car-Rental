@@ -32,8 +32,6 @@ The administrator can add cars, change the price of current cars.
 
 ## Features
 
-List the ready features here:
-
 - The user can book a car rental through the website.
 - The user can check his past and future rentals.
 - The website has a car search engine operating by car name.
